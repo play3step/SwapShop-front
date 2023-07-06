@@ -1,0 +1,436 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*시작화면 화면 css*/
+
+body {
+    width: 390px;
+    height: 844px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    margin-top: 217px;
+}
+
+#logo img {
+    width: 344px;
+    height: 193px;
+}
+
+.login_but {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 282px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 106px;
+    border: 2px solid;
+    background-color: #6CB7F8;
+    color: white;
+    font-size: 14px;
+}
+
+.login_but:last-child {
+    background-color: white;
+    color: #6CB7F8;
+    margin-top: 15px;
+}
+
+#social_text {
+    margin-top: 56px;
+    color: #ADAAAA;
+    font-size: 14px;
+}
+
+.social_container {
+    display: flex;
+    margin-top: 24px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social_box {
+    display: flex;
+    width: 138px;
+    height: 50px;
+    border: 1px solid #6CB7F8;
+    border-radius: 50px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    color: #6CB7F8;
+    margin: 0 6px;
+}
+
+
+/*회원가입 화면 css*/
+.sub_logo {
+    margin-left: -20px;
+}
+
+.sub_logo img {
+    width: 138px;
+    height: 25px;
+}
+
+.main_text {
+    margin-top: 50px;
+    font-size: 32px;
+    color: #333333;
+    font-weight: 700;
+}
+
+.sub_text {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #ADAAAA;
+}
+
+.input_container {
+    margin-top: 78px;
+
+}
+
+.input_box {
+    width: 360px;
+    height: 50px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #6CB7F8;
+    border-radius: 15px;
+    align-items: center;
+    padding: 20px 22px;
+    margin-top: 24px;
+    color: #ADAAAA;
+}
+
+.input_box:first-child {
+    margin-top: 0px;
+}
+
+.input_box:last-child {
+    margin-top: 30px;
+    background-color: #6CB7F8;
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.account_container {
+    margin-top: 54px;
+}
+
+.account_container p {
+    display: inline-block;
+    font-size: 14px;
+    color: #ADAAAA;
+}
+
+.account_container p:last-child {
+    color: #6CB7F8;
+    margin-left: 8px;
+}
+
+
+/*메인화면 css*/
+
+.main_container {
+    position: relative;
+    width: 390px;
+    height: 844px;
+}
+.sign_logo {
+    margin-top: 90px;
+
+}
+
+.sign_logo img {
+    width: 138px;
+    height: 25px;
+}
+.search_bar {
+    list-style: none;
+    display: flex;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px 8px 20px;
+    background-color: white;
+    border-bottom: #6CB7F8 1px solid;
+}
+
+.search_bar .logo {
+    font-size: 10px;
+    letter-spacing: 4px;
+
+}
+
+.search_bar .search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: #6CB7F8;
+
+}
+
+.search_bar .search li {
+    list-style: none;
+}
+
+.search_bar .search span {
+    font-size: 18px;
+}
+
+.post_list_container {
+    width: 350px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post_container {
+    width: 350px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    border-bottom: #6CB7F8 1px solid;
+    position: relative;
+
+}
+
+.post_container img {
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    display: inline-block;
+
+
+}
+
+.post_text {
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: -18 px;
+}
+
+.post_text p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.post_title {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 700;
+
+}
+
+.post_information {
+    font-size: 10px;
+    color: #ADAAAA;
+}
+
+.post_price {
+    font-size: 12px;
+    color: #333333;
+    font-weight: 700;
+}
+
+.icons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+
+}
+
+.icons span {
+    bottom: 0;
+    right: 10;
+    margin: 5px;
+    font-size: 20px;
+    color: #6CB7F8;
+
+}
+
+.menu_bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #6CB7F8;
+}
+
+.icon_container {
+    padding: 14px 30px;
+}
+
+.icon_container a {
+    color: white;
+    font-size: 35px;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.icon_container a:last-child {
+    margin: 0px;
+
+}
+
+/*마이페이지 css*/
+
+.page_title {
+    font-size: 16px;
+    color: #6CB7F8;
+    margin-left: -20px;
+}
+
+
+.profile_container {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 0 30px;
+    
+}
+
+.profile {
+    width: 55px;
+    height: 55px;
+    background-color: #6CB7F8;
+    border-radius: 50px;
+    margin-left: -10px;
+
+}
+
+.nickname {
+    margin-left: 12px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.major{
+    font-size: 10px;
+    color: #ADAAAA;
+    margin-left: 12px;
+
+}
+
+
+.profile_container span{
+    margin-left: 176px;
+    color: #6CB7F8;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.my_container{
+    margin-top: 35px;
+    width: 350px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: #6CB7F8 1px solid ;
+}
+.my_container h1{
+    text-align: justify;
+    font-size: 12px;
+}
+.my_container a{
+    font-size: 10px;
+    text-decoration: none;
+    color: #6CB7F8;
+    display: block;
+    text-align: justify;
+    margin-top: 10px;
+}
+.my_container span{
+    vertical-align: middle;
+}
+.my_container span:last-child{
+    margin-left: 10px;
+}
+
+
+/*알람 페이지 css*/
+
+.back_arrow{
+    margin-left: 20px;
+    color: #6CB7F8;
+    text-align: justify;
+    margin-top: 44px;
+}
+.back_arrow a{
+    text-decoration: none;
+    color: #6CB7F8;
+    vertical-align: middle;
+}
+.back_arrow span{
+    font-size: 14px;
+}
+.alarm_list{
+    font-size: 14px;
+    color: #6CB7F8;
+    text-align: justify;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 30px;
+    border-bottom: #6CB7F8 1px solid;
+    
+}
+.alarm_list span:last-child{
+    margin-left: 14px;
+}
+
+.alarm_container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0 10px 14px;
+    text-align: left;
+    width: 350px;
+    height: 65px;
+    border-bottom: #6CB7F8 1px solid;
+
+}
+
+.alarm_png {
+    width: 35px;
+    height: 35px;
+    background-color: #6CB7F8;
+    border-radius: 50px;
+    margin-left: -10px;
+
+}
+
+.alarm_title {
+    margin-left: 16px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.alarm_time{
+    font-size: 10px;
+    color: #ADAAAA;
+    margin-left: 16px;
+}
