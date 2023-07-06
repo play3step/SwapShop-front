@@ -2,6 +2,7 @@
   <div id="logo">
     <img src="png/main_logo.png">
   </div>
+  <!-- 이미지 넣을 예정 -->
   <div>
     <div class="login_but">
       <a href="sign_up.html">STARTED</a>
