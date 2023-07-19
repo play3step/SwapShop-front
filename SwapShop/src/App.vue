@@ -16,6 +16,7 @@
     <div class="social_box">KAKAO</div>
     <div class="social_box">GOOGLE</div>
   </div>
+  <!--나는 컴포넌트 구글을 만들어야한다.-->
 </template>
 
 <style>

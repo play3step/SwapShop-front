@@ -1,0 +1,30 @@
+[
+  {
+    "name": "profile",
+    "path": "/profile",
+    "component": "/Users/echo/Desktop/myCoding/myVue/nodebird/front/pages/profile.vue",
+    "chunkName": "pages/profile",
+    "_name": "_c92fa826"
+  },
+  {
+    "name": "signup",
+    "path": "/signup",
+    "component": "/Users/echo/Desktop/myCoding/myVue/nodebird/front/pages/signup.vue",
+    "chunkName": "pages/signup",
+    "_name": "_c85093f8"
+  },
+  {
+    "name": "user-login",
+    "path": "/user/login",
+    "component": "/Users/echo/Desktop/myCoding/myVue/nodebird/front/pages/user/login.vue",
+    "chunkName": "pages/user/login",
+    "_name": "_4bf20891"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/echo/Desktop/myCoding/myVue/nodebird/front/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_3357acd4"
+  }
+]
