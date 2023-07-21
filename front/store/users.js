@@ -1,10 +1,10 @@
 export const state = () => ({
-    me: null,
+    me: null,   //초기값 null
     followerList: [],
     followingList: [],
 });
 
-export const mutations = {  /*동기 작업*/
+export const mutations = {  /*동기 작업할 때는 mutations*/
     setMe(state, payload) {  /*회원 가입*/
         state.me = payload;
     },
@@ -14,19 +14,18 @@ export const mutations = {  /*동기 작업*/
 };
 
 
-export const actions = {    /*비동기 작업*/
+export const actions = {    /*비동기 작업할 때는 actions*/
     signUp({ commit, state }, payload) {//rest api 생각하기
-        this.$axios.post('http://localhost:8080/user/new', {
+        this.$axios.post('http://localhost:8080/user/new', {    //백에게 보낼 데이터
             email: payload.email,
             nickname: payload.nickname,
-            password: payload.password,
             major: payload.major,
             authenticationType: payload.authenticationType,
         }).then((data) => {
             commit('setMe', payload)
         })
     },
-    logIn({ commit }, payload) {
+    logIn({ commit }, payload) {    //로그인 구간은 아직 미정
         this.$axios.post('http://localhost:8080/user/login', {
             email: payload.email,
             password: payload.password,

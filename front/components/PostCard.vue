@@ -1,13 +1,11 @@
 <template>
-    <div style="margin-bottom: 20px;">
+    <div>
         <v-container>
             <v-card>
                 <v-img />
                 <v-card-text>
                     <div>
-                        <h1>{{ post.title }}</h1>
-                        <h3>{{ post.User.nickname }}</h3>
-                        
+                        <h1>{{ post.title }}</h1>                        
                         <div>{{ post.content }}</div>
                     </div>
                 </v-card-text>

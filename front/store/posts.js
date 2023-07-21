@@ -23,7 +23,7 @@ export const actions = {
             content: payload.content,
         }, {
             headers: {
-                'Authorization': 'Bearer ' + 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwbGF5M3N0ZXBAbmF2ZXIuY29tIiwidHlwZSI6IktBS0FPIiwiaWF0IjoxNjg5ODM3OTA0LCJleHAiOjE2ODk4Mzg1MDR9.aGRuMIY4QbjoYj7V6BbiWwNVVEjI6LctNx6__rJsBh8', // 여기서 'token'은 실제 토큰 값입니다.
+                'Authorization': 'Bearer ' + payload.token, // 여기서 'token'은 실제 토큰 값입니다.
                 'Content-Type': 'application/json',
             }
         }).then((data) => {
