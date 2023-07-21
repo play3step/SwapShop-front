@@ -1,17 +1,17 @@
 [
   {
+    "name": "post",
+    "path": "/post",
+    "component": "/Users/echo/Desktop/myCoding/myVue/SwapShop-front/front/pages/post.vue",
+    "chunkName": "pages/post",
+    "_name": "_5687eca2"
+  },
+  {
     "name": "profile",
     "path": "/profile",
     "component": "/Users/echo/Desktop/myCoding/myVue/SwapShop-front/front/pages/profile.vue",
     "chunkName": "pages/profile",
     "_name": "_9faa43d2"
-  },
-  {
-    "name": "signup",
-    "path": "/signup",
-    "component": "/Users/echo/Desktop/myCoding/myVue/SwapShop-front/front/pages/signup.vue",
-    "chunkName": "pages/signup",
-    "_name": "_d77dd2cc"
   },
   {
     "name": "user-login",

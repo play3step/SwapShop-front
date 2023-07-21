@@ -1,41 +1,45 @@
 <template>
     <v-app>
+        <nuxt />
         <nav>
-            <v-toolbar dark color="green">
-                <v-toolbar-title>
-                    <nuxt-link to="/">Nodebird</nuxt-link>
-                </v-toolbar-title>
-                <v-spacer></v-spacer>
-                <v-toolbar-items>
-                    <v-text-field label="검색" hide-details prepend-icon="mdi-magnify"
-                        :style="{ display: 'flex', alignItem: 'center' }" />
-                    <v-btn text nuxt to="/profile" :style="{ display: 'flex', alignItem: 'center' }">
-                        <div>프로필</div>
-                    </v-btn>
-                    <v-btn text nuxt to="/signup" :style="{ display: 'flex', alignItem: 'center' }">
-                        <div>회원가입</div>
-                    </v-btn>
-                </v-toolbar-items>
-            </v-toolbar>
+            <div class="menu_bar">
+                <div class="icon_container"><!--각 라우터 지정 해야함-->
+                    <nuxt-link to="/">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                    </nuxt-link>
+                    <nuxt-link to="/">
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                    </nuxt-link>
+                    <nuxt-link to="/post">
+                        <span class="material-symbols-outlined">
+                            description
+                        </span>
+                    </nuxt-link>
+                    <nuxt-link to="/">
+                        <span class="material-symbols-outlined">
+                            notifications
+                        </span>
+                    </nuxt-link>
+                    <nuxt-link to="/profile">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                    </nuxt-link>
+                </div>
+            </div>
         </nav>
-        <v-row>
-            <v-col cols="12" md="4">
-                <LoginForm />
-            </v-col>
-            <v-col cols="12" md="8">
-                <nuxt />
-            </v-col>
-        </v-row>
+
     </v-app>
 </template>
 
 <script>
-import LoginForm from '../components/LoginForm.vue';
 
 export default {
-    components: {
-        LoginForm
-    },
+
     computed: {
 
     },
@@ -44,3 +48,41 @@ export default {
     }
 };
 </script>
+
+<style>
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    width: 375px;
+    height: 812px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu_bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #6CB7F8;
+}
+
+.icon_container {
+    padding: 14px 30px;
+}
+
+.icon_container a {
+    color: white;
+    font-size: 35px;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.icon_container a:last-child {
+    margin: 0px;
+
+}
+</style>
