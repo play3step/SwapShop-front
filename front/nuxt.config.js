@@ -1,6 +1,6 @@
 module.exports = {
     head: {
-        title: 'nodebird',
+        title: 'SwapShop',
         link: [
             {
                 rel: 'stylesheet',

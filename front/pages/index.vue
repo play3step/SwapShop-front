@@ -24,15 +24,9 @@
                         </ul>
                     </div>
                     <div>
-                        <!--메뉴판 가운데에 버튼 누르고 글 쓰면 카드 양식에 맞게 나오며 DB에 저장됨-->
-                        <PostCard v-for="p in mainPosts" :key="p.id" :post="p" />
-                        
                         <!--이부분은 DB에 저장되어 있는 데이터 부르는 방식, 아직 작업중-->
                         <!--컴포넌트로 해서 나중에 위에 있는 로고랑 검색창은 고정 되도록 해야한다.-->
-                        <div v-for="post in posts" :key="post.id">
-                            <h2>{{ post.title }}</h2>
-                            <p>{{ post.content }}</p>
-                        </div>
+                        <PostCard v-for="post in posts" :key="post.id" :post="post"/>
                     </div>
                 </div>
             </div>
