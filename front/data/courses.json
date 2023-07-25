@@ -1,0 +1,4460 @@
+[
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "박보경",
+    "major": "기계공학과"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "변진숙",
+    "major": "기계공학과"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "이영수",
+    "major": "기계공학과"
+  },
+  {
+    "name": "일반물리학2",
+    "code": "AAK11093",
+    "professor": "미배정",
+    "major": "기계공학과"
+  },
+  {
+    "name": "일반물리학2",
+    "code": "AAK11093",
+    "professor": "이규용",
+    "major": "기계공학과"
+  },
+  {
+    "name": "일반물리학2",
+    "code": "AAK11093",
+    "professor": "황종승",
+    "major": "기계공학과"
+  },
+  {
+    "name": "일반물리학실험2",
+    "code": "AAK11107",
+    "professor": "김순구",
+    "major": "기계공학과"
+  },
+  {
+    "name": "일반물리학실험2",
+    "code": "AAK11107",
+    "professor": "미배정",
+    "major": "기계공학과"
+  },
+  {
+    "name": "일반물리학실험2",
+    "code": "AAK11107",
+    "professor": "황종승",
+    "major": "기계공학과"
+  },
+  {
+    "name": "일반물리학실험2",
+    "code": "AAK11107",
+    "professor": "김원년",
+    "major": "기계공학과"
+  },
+  {
+    "name": "일반물리학실험2",
+    "code": "AAK11107",
+    "professor": "김성원",
+    "major": "기계공학과"
+  },
+  {
+    "name": "컴퓨터프로그래밍기초",
+    "code": "AME11026",
+    "professor": "이강원",
+    "major": "기계공학과"
+  },
+  {
+    "name": "정역학",
+    "code": "AME12002",
+    "professor": "박승철",
+    "major": "기계공학과"
+  },
+  {
+    "name": "창의공학설계",
+    "code": "AME11022",
+    "professor": "조언정",
+    "major": "기계공학과"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "한진호",
+    "major": "기계공학과"
+  },
+  {
+    "name": "기계제작실습",
+    "code": "AME21019",
+    "professor": "미배정",
+    "major": "기계공학과"
+  },
+  {
+    "name": "3D CAD1",
+    "code": "AME21102",
+    "professor": "홍미경",
+    "major": "기계공학과"
+  },
+  {
+    "name": "3D CAD1",
+    "code": "AME21102",
+    "professor": "김찬우",
+    "major": "기계공학과"
+  },
+  {
+    "name": "유체역학",
+    "code": "AME22006",
+    "professor": "김경엽",
+    "major": "기계공학과"
+  },
+  {
+    "name": "공업수학2",
+    "code": "AME21043",
+    "professor": "이진교",
+    "major": "기계공학과"
+  },
+  {
+    "name": "기계재료학",
+    "code": "AME21099",
+    "professor": "박철우",
+    "major": "기계공학과"
+  },
+  {
+    "name": "에너지공학",
+    "code": "AME22008",
+    "professor": "한진호",
+    "major": "기계공학과"
+  },
+  {
+    "name": "응용재료역학",
+    "code": "AME22010",
+    "professor": "이종길",
+    "major": "기계공학과"
+  },
+  {
+    "name": "기구학",
+    "code": "AME23004",
+    "professor": "서진성",
+    "major": "기계공학과"
+  },
+  {
+    "name": "CAE기초",
+    "code": "AME31050",
+    "professor": "이종길",
+    "major": "기계공학과"
+  },
+  {
+    "name": "CAE기초",
+    "code": "AME31050",
+    "professor": "심진형",
+    "major": "기계공학과"
+  },
+  {
+    "name": "재료실험",
+    "code": "AME32014",
+    "professor": "이진교",
+    "major": "기계공학과"
+  },
+  {
+    "name": "열유체실험",
+    "code": "AME34002",
+    "professor": "진송완",
+    "major": "기계공학과"
+  },
+  {
+    "name": "기계진동학",
+    "code": "AME31011",
+    "professor": "서진성",
+    "major": "기계공학과"
+  },
+  {
+    "name": "자동제어",
+    "code": "AME35002",
+    "professor": "윤원수",
+    "major": "기계공학과"
+  },
+  {
+    "name": "생산제조공학",
+    "code": "AME36002",
+    "professor": "이종항",
+    "major": "기계공학과"
+  },
+  {
+    "name": "3D프린터응용",
+    "code": "AME36003",
+    "professor": "심진형",
+    "major": "기계공학과"
+  },
+  {
+    "name": "EH전공(혁신공학특론 및 기술경영)",
+    "code": "AAJ32049",
+    "professor": "조언정",
+    "major": "기계공학과"
+  },
+  {
+    "name": "공기조화",
+    "code": "AME43006",
+    "professor": "박승철",
+    "major": "기계공학과"
+  },
+  {
+    "name": "CFD 응용",
+    "code": "AME43024",
+    "professor": "김윤철",
+    "major": "기계공학과"
+  },
+  {
+    "name": "확률통계",
+    "code": "AME43039",
+    "professor": "이종항",
+    "major": "기계공학과"
+  },
+  {
+    "name": "기계공학특론2",
+    "code": "AME43043",
+    "professor": "이혁",
+    "major": "기계공학과"
+  },
+  {
+    "name": "스마트팩토리생산관리",
+    "code": "AME46005",
+    "professor": "박철우",
+    "major": "기계공학과"
+  },
+  {
+    "name": "전공영어",
+    "code": "AME47001",
+    "professor": "박보경",
+    "major": "기계공학과"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "정갑준",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "송경란",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "이유경",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "강봉조",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "김지숙",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "이영수",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "일반물리학2",
+    "code": "AAK11093",
+    "professor": "이성은",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "일반물리학실험2",
+    "code": "AAK11107",
+    "professor": "이성은",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "일반물리학실험2",
+    "code": "AAK11107",
+    "professor": "김성원",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "정역학",
+    "code": "AMD11032",
+    "professor": "미배정",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "정역학",
+    "code": "AMD11032",
+    "professor": "김광",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "창의공학설계",
+    "code": "AMD11036",
+    "professor": "박지황",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "객체지향언어",
+    "code": "AMD13001",
+    "professor": "송은하",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "측정실습",
+    "code": "AMD21036",
+    "professor": "미배정",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "김광",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "공업수학2",
+    "code": "AMD21030",
+    "professor": "장태익",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "열역학 및 열전달",
+    "code": "AMD31040",
+    "professor": "장태익",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "지능형로봇의이해",
+    "code": "AIR10002",
+    "professor": "정명진",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "기구학 및 해석",
+    "code": "AMD11027",
+    "professor": "김태웅",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "마이크로컨트롤러응용설계",
+    "code": "AMD21031",
+    "professor": "황달연",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "기계제작실습",
+    "code": "AMD21035",
+    "professor": "이선후",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "기계제작실습",
+    "code": "AMD21035",
+    "professor": "양해정",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "재료역학2",
+    "code": "AMD21038",
+    "professor": "이재학",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "전자제품기구설계",
+    "code": "AMD31027",
+    "professor": "김광",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "전자제품기구설계",
+    "code": "AMD31027",
+    "professor": "이국환",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "기계진동학",
+    "code": "AMD31035",
+    "professor": "신형철",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "최적설계",
+    "code": "AMD31045",
+    "professor": "강병훈",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "공차설계",
+    "code": "AMD31046",
+    "professor": "미배정",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "전공영어",
+    "code": "AMD31048",
+    "professor": "강봉조",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "제품 및 금형설계",
+    "code": "AMD32007",
+    "professor": "김욱배",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "디지털제조실습",
+    "code": "AMD32008",
+    "professor": "임윤규",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "영상처리",
+    "code": "AMD33003",
+    "professor": "안세종",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "강병훈",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "이재학",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "황달연",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "김태웅",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "3D CAD(CATIA)",
+    "code": "AMD31037",
+    "professor": "채호석",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "3D CAD(Pro E)",
+    "code": "AMD41028",
+    "professor": "김창식",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "품질과 표준",
+    "code": "AMD41034",
+    "professor": "미배정",
+    "major": "기계설계전공"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "이병순",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "이유경",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "강봉조",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "강봉조",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "변진숙",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "이영수",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "이영수",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "일반물리학2",
+    "code": "AAK11093",
+    "professor": "이성은",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "일반물리학2",
+    "code": "AAK11093",
+    "professor": "이성은",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "일반물리학실험2",
+    "code": "AAK11107",
+    "professor": "이성은",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "일반물리학실험2",
+    "code": "AAK11107",
+    "professor": "이성은",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "정역학",
+    "code": "AMD11032",
+    "professor": "최종근",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "자동차분해조립실습",
+    "code": "AMD11035",
+    "professor": "나재원",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "객체지향언어",
+    "code": "AMD13001",
+    "professor": "송은하",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "모빌리티제작실습1",
+    "code": "AMD31050",
+    "professor": "나재원",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "실험계획법",
+    "code": "AMD31051",
+    "professor": "심관보",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "차량센서융합시스템",
+    "code": "AMD31053",
+    "professor": "나재원",
+    "major": "지능형모빌리티전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "지난영",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "나은주",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "남지영",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "신행수",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "금교은",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "한광희",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "대학물리학2",
+    "code": "AAK11095",
+    "professor": "유순유",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "대학물리학실험2",
+    "code": "AAK11109",
+    "professor": "유순유",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "대학물리학실험2",
+    "code": "AAK11109",
+    "professor": "김순구",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "전기회로1",
+    "code": "AAE13003",
+    "professor": "주형길",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "전기회로1",
+    "code": "AAE13003",
+    "professor": "김중교",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "지능형로봇의이해",
+    "code": "AIR10002",
+    "professor": "정명진",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "컴퓨터응용설계",
+    "code": "AAE11009",
+    "professor": "김용상",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "남대훈",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "C 프로그래밍2",
+    "code": "AAE31020",
+    "professor": "이석원",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "C 프로그래밍2",
+    "code": "AAE31020",
+    "professor": "김진형",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "공업수학2",
+    "code": "AAE21022",
+    "professor": "한광희",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "디지털회로",
+    "code": "AAE23020",
+    "professor": "미배정",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "디지털회로",
+    "code": "AAE23020",
+    "professor": "이양희",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "디지털회로실험",
+    "code": "AAE23021",
+    "professor": "미배정",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "디지털회로실험",
+    "code": "AAE23021",
+    "professor": "어규호",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "PLC제어",
+    "code": "AAE21026",
+    "professor": "남대훈",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "PLC제어",
+    "code": "AAE21026",
+    "professor": "오재준",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "재료역학",
+    "code": "AAE22001",
+    "professor": "김정균",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "신호및시스템",
+    "code": "AAE23023",
+    "professor": "허헌",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "시스템제어공학",
+    "code": "AAE31012",
+    "professor": "김효영",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "시스템제어공학",
+    "code": "AAE31012",
+    "professor": "정명진",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "마이크로컴퓨터응용",
+    "code": "AAE31014",
+    "professor": "남윤석",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "반도체공정개론",
+    "code": "AAE31029",
+    "professor": "오찬권",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "기계요소설계",
+    "code": "AAE32007",
+    "professor": "이원봉",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "PC제어응용",
+    "code": "AAE33003",
+    "professor": "이익현",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "서보전동기2",
+    "code": "AAE33005",
+    "professor": "주형길",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "서보전동기2",
+    "code": "AAE33005",
+    "professor": "장두원",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "제어용통신",
+    "code": "AAE33006",
+    "professor": "차동혁",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "EH전공(로봇을 활용한 시스템설계 및 제어)",
+    "code": "AAJ32026",
+    "professor": "정명진",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "EH전공(반도체장비실습)",
+    "code": "AAJ32063",
+    "professor": "허헌",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "차동혁",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "어규호",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "창의설계기법",
+    "code": "AAE41035",
+    "professor": "서욱원",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "메카트로닉스와인공지능",
+    "code": "AAE41053",
+    "professor": "김효영",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "가상계측응용",
+    "code": "AAE42005",
+    "professor": "미배정",
+    "major": "메카트로닉스전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "나은주",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "남지영",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "변진숙",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "금교은",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "한광희",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "대학물리학2",
+    "code": "AAK11095",
+    "professor": "유순유",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "대학물리학실험2",
+    "code": "AAK11109",
+    "professor": "유순유",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "전기회로1",
+    "code": "AAE13003",
+    "professor": "주형길",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "전기회로1",
+    "code": "AAE13003",
+    "professor": "김중교",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "지능형로봇의이해",
+    "code": "AIR10002",
+    "professor": "정명진",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "컴퓨터응용설계",
+    "code": "AAE11009",
+    "professor": "김용상",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "남대훈",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "C 프로그래밍2",
+    "code": "AAE31020",
+    "professor": "이석원",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "C 프로그래밍2",
+    "code": "AAE31020",
+    "professor": "김진형",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "공업수학2",
+    "code": "AAE21022",
+    "professor": "한광희",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "디지털회로",
+    "code": "AAE23020",
+    "professor": "미배정",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "디지털회로",
+    "code": "AAE23020",
+    "professor": "이양희",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "디지털회로실험",
+    "code": "AAE23021",
+    "professor": "미배정",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "디지털회로실험",
+    "code": "AAE23021",
+    "professor": "어규호",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "자료구조",
+    "code": "AAE21028",
+    "professor": "허헌",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "AI응용제어",
+    "code": "AAE22002",
+    "professor": "어규호",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "신호및시스템",
+    "code": "AAE23023",
+    "professor": "허헌",
+    "major": "AI로봇전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "김혜경",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "김지숙",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "조규동",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "장우진",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "조영경",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "김미래",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "대학물리학2",
+    "code": "AAK11095",
+    "professor": "미배정",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "대학물리학2",
+    "code": "AAK11095",
+    "professor": "김순구",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "대학물리학2",
+    "code": "AAK11095",
+    "professor": "용남식",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "대학물리학2",
+    "code": "AAK11095",
+    "professor": "오승훈",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "대학물리학실험2",
+    "code": "AAK11109",
+    "professor": "미배정",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "대학물리학실험2",
+    "code": "AAK11109",
+    "professor": "김순구",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "대학물리학실험2",
+    "code": "AAK11109",
+    "professor": "용남식",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "대학물리학실험2",
+    "code": "AAK11109",
+    "professor": "김완수",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "프로그래밍언어",
+    "code": "AEE11081",
+    "professor": "최정훈",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "선형대수학",
+    "code": "AEE20013",
+    "professor": "김대우",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "선형대수학",
+    "code": "AEE20013",
+    "professor": "김우수",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "선형대수학",
+    "code": "AEE20013",
+    "professor": "김재흥",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "기초전자공학",
+    "code": "AEE11050",
+    "professor": "설봉환",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "기초전자공학",
+    "code": "AEE11050",
+    "professor": "최웅세",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "기초전자공학",
+    "code": "AEE11050",
+    "professor": "최성연",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "창의적사고방법론",
+    "code": "AEE30093",
+    "professor": "박진성",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "창의적사고방법론",
+    "code": "AEE30093",
+    "professor": "이동훈",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "창의적사고방법론",
+    "code": "AEE30093",
+    "professor": "미배정",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "김문철",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "확률및통계학",
+    "code": "AEE20011",
+    "professor": "채승호",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "확률및통계학",
+    "code": "AEE20011",
+    "professor": "김형수",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "파이썬",
+    "code": "AEE20072",
+    "professor": "유길현",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "파이썬",
+    "code": "AEE20072",
+    "professor": "민경예",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "파이썬",
+    "code": "AEE20072",
+    "professor": "백지훈",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "전자기학",
+    "code": "AEE21011",
+    "professor": "박상규",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "통신이론",
+    "code": "AEE22010",
+    "professor": "김형수",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "통신이론",
+    "code": "AEE22010",
+    "professor": "김정곤",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "통신이론",
+    "code": "AEE22010",
+    "professor": "이제호",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "전자회로 및 실습1",
+    "code": "AEE22050",
+    "professor": "이재명",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "전자회로 및 실습1",
+    "code": "AEE22050",
+    "professor": "김재흥",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "회로이론2",
+    "code": "AEE22051",
+    "professor": "이재명",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "컴퓨터구조론",
+    "code": "AEE24052",
+    "professor": "박진성",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "컴퓨터구조론",
+    "code": "AEE24052",
+    "professor": "김대우",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "머신러닝의이해",
+    "code": "AEE26011",
+    "professor": "채승호",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "머신러닝의이해",
+    "code": "AEE26011",
+    "professor": "김준수",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "머신러닝의이해",
+    "code": "AEE26011",
+    "professor": "이동훈",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "머신러닝의이해",
+    "code": "AEE26011",
+    "professor": "방수식",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "지능형로봇의이해",
+    "code": "AIR10002",
+    "professor": "정명진",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "EH전공(디지털방송시스템)",
+    "code": "AAJ32030",
+    "professor": "김응태",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "EH전공(IoT를위한FPGA설계기초)",
+    "code": "AAJ32071",
+    "professor": "김성용",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "인터넷프로토콜설계",
+    "code": "AEE32062",
+    "professor": "박주현",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "디지털통신2",
+    "code": "AEE33051",
+    "professor": "김정곤",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "마이크로프로세서2",
+    "code": "AEE34035",
+    "professor": "엄수홍",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "마이크로프로세서2",
+    "code": "AEE34035",
+    "professor": "송창헌",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "FPGA설계실습",
+    "code": "AEE34037",
+    "professor": "박진성",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "FPGA설계실습",
+    "code": "AEE34037",
+    "professor": "최종성",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "RF기초 및 회로설계",
+    "code": "AEE35056",
+    "professor": "임제상",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "영상신호처리",
+    "code": "AEE36005",
+    "professor": "김문철",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "DSP시스템및실습",
+    "code": "AEE37050",
+    "professor": "장승관",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "전자공학ESP",
+    "code": "AEE40001",
+    "professor": "김혜경",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "이동통신공학",
+    "code": "AEE43051",
+    "professor": "이제호",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "리눅스시스템설계",
+    "code": "AEE44027",
+    "professor": "이명재",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "고급머신러닝실습",
+    "code": "AEE44032",
+    "professor": "방수식",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "지능형반도체개론",
+    "code": "AEE45062",
+    "professor": "미배정",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "차세대디스플레이",
+    "code": "AEE47011",
+    "professor": "김문철",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "채승호",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "김정곤",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "이재명",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "정두희",
+    "major": "전자공학전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "김혜경",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "남미향",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "조규동",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "강우석",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "김미래",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "대학물리학2",
+    "code": "AAK11095",
+    "professor": "김완수",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "대학물리학2",
+    "code": "AAK11095",
+    "professor": "김원년",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "대학물리학2",
+    "code": "AAK11095",
+    "professor": "오승훈",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "대학물리학실험2",
+    "code": "AAK11109",
+    "professor": "김완수",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "대학물리학실험2",
+    "code": "AAK11109",
+    "professor": "김원년",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "프로그래밍언어",
+    "code": "AEE11081",
+    "professor": "최정훈",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "선형대수학",
+    "code": "AEE20013",
+    "professor": "김대우",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "선형대수학",
+    "code": "AEE20013",
+    "professor": "김우수",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "선형대수학",
+    "code": "AEE20013",
+    "professor": "김재흥",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "기초전자공학",
+    "code": "AEE11050",
+    "professor": "설봉환",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "기초전자공학",
+    "code": "AEE11050",
+    "professor": "최웅세",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "기초전자공학",
+    "code": "AEE11050",
+    "professor": "최성연",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "창의적사고방법론",
+    "code": "AEE30093",
+    "professor": "박진성",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "창의적사고방법론",
+    "code": "AEE30093",
+    "professor": "이동훈",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "창의적사고방법론",
+    "code": "AEE30093",
+    "professor": "미배정",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "김문철",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "대학물리학실험2",
+    "code": "AAK11109",
+    "professor": "김순구",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "IT수학",
+    "code": "AEE21012",
+    "professor": "채승호",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "파이썬",
+    "code": "AEE20072",
+    "professor": "유길현",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "파이썬",
+    "code": "AEE20072",
+    "professor": "민경예",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "파이썬",
+    "code": "AEE20072",
+    "professor": "백지훈",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "전기전자회로2",
+    "code": "AEE21014",
+    "professor": "박상규",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "임베디드시스템구조론",
+    "code": "AEE25055",
+    "professor": "김대우",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "컴퓨터네트워크",
+    "code": "AEE23054",
+    "professor": "오성현",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "컴퓨터네트워크",
+    "code": "AEE23054",
+    "professor": "이제호",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "머신러닝의이해",
+    "code": "AEE26011",
+    "professor": "채승호",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "머신러닝의이해",
+    "code": "AEE26011",
+    "professor": "김준수",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "머신러닝의이해",
+    "code": "AEE26011",
+    "professor": "이동훈",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "머신러닝의이해",
+    "code": "AEE26011",
+    "professor": "방수식",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "자바프로그래밍",
+    "code": "AEE35064",
+    "professor": "김평수",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "지능형로봇의이해",
+    "code": "AIR10002",
+    "professor": "정명진",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "EH전공(IoT를위한FPGA설계기초)",
+    "code": "AAJ32071",
+    "professor": "김성용",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "제어기설계",
+    "code": "AEE31052",
+    "professor": "정두희",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "임베디드신호처리실습",
+    "code": "AEE35066",
+    "professor": "임제상",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "IoT기초",
+    "code": "AEE35068",
+    "professor": "허윤석",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "임베디드프로세서2",
+    "code": "AEE35069",
+    "professor": "엄수홍",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "임베디드운영체제",
+    "code": "AEE37053",
+    "professor": "백지훈",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "임베디드비전시스템",
+    "code": "AEE37055",
+    "professor": "김응태",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "전자공학ESP",
+    "code": "AEE40001",
+    "professor": "김혜경",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "고급임베디드시스템",
+    "code": "AEE45054",
+    "professor": "이명재",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "인공지능설계실습2",
+    "code": "AEE45063",
+    "professor": "방수식",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "AI반도체개론",
+    "code": "AEE45064",
+    "professor": "미배정",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "EH전공(디지털방송시스템)",
+    "code": "AAJ32030",
+    "professor": "김응태",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "채승호",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "김정곤",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "이재명",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "정두희",
+    "major": "임베디드시스템전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "이수길",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "김지숙",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "수학2",
+    "code": "AAK11087",
+    "professor": "박경원",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "물리학",
+    "code": "AAK11096",
+    "professor": "미배정",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "물리학",
+    "code": "AAK11096",
+    "professor": "김성원",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "물리학실험",
+    "code": "AAK11097",
+    "professor": "용남식",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "물리학실험",
+    "code": "AAK11097",
+    "professor": "김성원",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "물리학실험",
+    "code": "AAK11097",
+    "professor": "김완수",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "창의적공학설계",
+    "code": "ACS10033",
+    "professor": "노영주",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "창의적공학설계",
+    "code": "ACS10033",
+    "professor": "오세춘",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "창의적공학설계",
+    "code": "ACS10033",
+    "professor": "문호상",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "창의적공학설계",
+    "code": "ACS10033",
+    "professor": "한익주",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "프로그래밍",
+    "code": "ACS12021",
+    "professor": "전광일",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "프로그래밍",
+    "code": "ACS12021",
+    "professor": "박정민",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "프로그래밍",
+    "code": "ACS12021",
+    "professor": "최우진",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "프로그래밍",
+    "code": "ACS12021",
+    "professor": "나보균",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "프로그래밍",
+    "code": "ACS12021",
+    "professor": "정의훈",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "이정준",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "확률및통계학",
+    "code": "ACS21023",
+    "professor": "정성택",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "확률및통계학",
+    "code": "ACS21023",
+    "professor": "나보균",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "확률및통계학",
+    "code": "ACS21023",
+    "professor": "박성호",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "확률및통계학",
+    "code": "ACS21023",
+    "professor": "이동훈",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "자료구조",
+    "code": "ACS20010",
+    "professor": "이동훈",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "자료구조",
+    "code": "ACS20010",
+    "professor": "미배정",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "컴퓨터구조",
+    "code": "ACS24020",
+    "professor": "최진구",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "컴퓨터구조",
+    "code": "ACS24020",
+    "professor": "오세춘",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "컴퓨터구조",
+    "code": "ACS24020",
+    "professor": "이동훈",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "데이터베이스",
+    "code": "ACS26015",
+    "professor": "허훈식",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "데이터베이스",
+    "code": "ACS26015",
+    "professor": "이정준",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "데이터베이스",
+    "code": "ACS26015",
+    "professor": "이상호",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "파이썬프로그래밍",
+    "code": "ACS22022",
+    "professor": "서대영",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "파이썬프로그래밍",
+    "code": "ACS22022",
+    "professor": "최우진",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "파이썬프로그래밍",
+    "code": "ACS22022",
+    "professor": "이동훈",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "오픈소스SW기초",
+    "code": "ACS23001",
+    "professor": "민정환",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "스마트센서개론",
+    "code": "ACS24032",
+    "professor": "고광혁",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "자바",
+    "code": "ACS32021",
+    "professor": "노영주",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "자바",
+    "code": "ACS32021",
+    "professor": "한경숙",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "자바",
+    "code": "ACS32021",
+    "professor": "미배정",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "자바",
+    "code": "ACS32021",
+    "professor": "허훈식",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "EH전공(데이터분석과핀테크)",
+    "code": "AAJ32082",
+    "professor": "이정준",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "알고리즘",
+    "code": "ACS30010",
+    "professor": "방영철",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "알고리즘",
+    "code": "ACS30010",
+    "professor": "서대영",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "컴퓨터네트워크",
+    "code": "ACS35010",
+    "professor": "이보경",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "컴퓨터네트워크",
+    "code": "ACS35010",
+    "professor": "정의훈",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "컴퓨터네트워크",
+    "code": "ACS35010",
+    "professor": "민정환",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "클라우드컴퓨팅",
+    "code": "ACS26014",
+    "professor": "이정준",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "UNIX시스템프로그래밍",
+    "code": "ACS30036",
+    "professor": "전광일",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "웹서비스프로그래밍",
+    "code": "ACS32023",
+    "professor": "한경숙",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "웹서비스프로그래밍",
+    "code": "ACS32023",
+    "professor": "허훈식",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "웹서비스프로그래밍",
+    "code": "ACS32023",
+    "professor": "민정환",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "웹서비스프로그래밍",
+    "code": "ACS32023",
+    "professor": "안세종",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "컴퓨터응용설계",
+    "code": "ACS33031",
+    "professor": "전광일",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "디지털영상처리",
+    "code": "ACS34032",
+    "professor": "최종필",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "디지털영상처리",
+    "code": "ACS34032",
+    "professor": "나보균",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "임베디드시스템",
+    "code": "ACS44030",
+    "professor": "오세춘",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "EH융합(제조인공지능및빅데이터솔루션)",
+    "code": "AAJ32081",
+    "professor": "배유석",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "박성호",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "이정준",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "EH전공(ARMCortex-M4시스템프로그래밍)",
+    "code": "AAJ40027",
+    "professor": "최진구",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "HCI개론",
+    "code": "ACS48012",
+    "professor": "왕은영",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "기술문서작성",
+    "code": "ACS49003",
+    "professor": "미배정",
+    "major": "컴퓨터공학전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "이수길",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "남미향",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "수학2",
+    "code": "AAK11087",
+    "professor": "박경원",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "물리학",
+    "code": "AAK11096",
+    "professor": "류영선",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "물리학",
+    "code": "AAK11096",
+    "professor": "송호식",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "물리학실험",
+    "code": "AAK11097",
+    "professor": "용남식",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "물리학실험",
+    "code": "AAK11097",
+    "professor": "김원년",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "물리학실험",
+    "code": "AAK11097",
+    "professor": "김완수",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "프로그래밍",
+    "code": "ACS12021",
+    "professor": "전광일",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "프로그래밍",
+    "code": "ACS12021",
+    "professor": "박정민",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "프로그래밍",
+    "code": "ACS12021",
+    "professor": "최우진",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "프로그래밍",
+    "code": "ACS12021",
+    "professor": "나보균",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "프로그래밍",
+    "code": "ACS12021",
+    "professor": "정의훈",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "창의적공학설계",
+    "code": "ACS10033",
+    "professor": "노영주",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "창의적공학설계",
+    "code": "ACS10033",
+    "professor": "오세춘",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "창의적공학설계",
+    "code": "ACS10033",
+    "professor": "문호상",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "창의적공학설계",
+    "code": "ACS10033",
+    "professor": "한익주",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "이정준",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "확률및통계학",
+    "code": "ACS21023",
+    "professor": "정성택",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "확률및통계학",
+    "code": "ACS21023",
+    "professor": "나보균",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "확률및통계학",
+    "code": "ACS21023",
+    "professor": "박성호",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "확률및통계학",
+    "code": "ACS21023",
+    "professor": "이동훈",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "자료구조",
+    "code": "ACS20010",
+    "professor": "이동훈",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "자료구조",
+    "code": "ACS20010",
+    "professor": "미배정",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "컴퓨터구조",
+    "code": "ACS24020",
+    "professor": "최진구",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "컴퓨터구조",
+    "code": "ACS24020",
+    "professor": "오세춘",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "컴퓨터구조",
+    "code": "ACS24020",
+    "professor": "이동훈",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "데이터베이스",
+    "code": "ACS26015",
+    "professor": "허훈식",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "데이터베이스",
+    "code": "ACS26015",
+    "professor": "이정준",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "데이터베이스",
+    "code": "ACS26015",
+    "professor": "이상호",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "파이썬프로그래밍",
+    "code": "ACS22022",
+    "professor": "서대영",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "파이썬프로그래밍",
+    "code": "ACS22022",
+    "professor": "최우진",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "파이썬프로그래밍",
+    "code": "ACS22022",
+    "professor": "이동훈",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "오픈소스SW기초",
+    "code": "ACS23001",
+    "professor": "민정환",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "정보보안개론",
+    "code": "ACS2B001",
+    "professor": "이보경",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "정보보안개론",
+    "code": "ACS2B001",
+    "professor": "민정환",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "자바",
+    "code": "ACS32021",
+    "professor": "노영주",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "자바",
+    "code": "ACS32021",
+    "professor": "한경숙",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "자바",
+    "code": "ACS32021",
+    "professor": "미배정",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "자바",
+    "code": "ACS32021",
+    "professor": "허훈식",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "EH전공(데이터분석과핀테크)",
+    "code": "AAJ32082",
+    "professor": "이정준",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "알고리즘",
+    "code": "ACS30010",
+    "professor": "방영철",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "알고리즘",
+    "code": "ACS30010",
+    "professor": "서대영",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "컴퓨터네트워크",
+    "code": "ACS35010",
+    "professor": "이보경",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "컴퓨터네트워크",
+    "code": "ACS35010",
+    "professor": "정의훈",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "컴퓨터네트워크",
+    "code": "ACS35010",
+    "professor": "민정환",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "클라우드컴퓨팅",
+    "code": "ACS26014",
+    "professor": "이정준",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "웹서비스프로그래밍",
+    "code": "ACS32023",
+    "professor": "한경숙",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "웹서비스프로그래밍",
+    "code": "ACS32023",
+    "professor": "허훈식",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "웹서비스프로그래밍",
+    "code": "ACS32023",
+    "professor": "민정환",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "웹서비스프로그래밍",
+    "code": "ACS32023",
+    "professor": "안세종",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "객체지향분석설계",
+    "code": "ACS33030",
+    "professor": "한익주",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "컴퓨터응용설계",
+    "code": "ACS33031",
+    "professor": "전광일",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "소프트웨어응용설계",
+    "code": "ACS33032",
+    "professor": "노영주",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "EH융합(제조인공지능및빅데이터솔루션)",
+    "code": "AAJ32081",
+    "professor": "배유석",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "박성호",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "이정준",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "EH전공(ARMCortex-M4시스템프로그래밍)",
+    "code": "AAJ40027",
+    "professor": "최진구",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "머신러닝",
+    "code": "ACS48013",
+    "professor": "배유석",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "블록체인",
+    "code": "ACS4B004",
+    "professor": "허훈식",
+    "major": "소프트웨어전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "육서연",
+    "major": "게임공학과"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "김지숙",
+    "major": "게임공학과"
+  },
+  {
+    "name": "수학2",
+    "code": "AAK11087",
+    "professor": "윤혜라",
+    "major": "게임공학과"
+  },
+  {
+    "name": "C프로그래밍",
+    "code": "AMM12012",
+    "professor": "이형구",
+    "major": "게임공학과"
+  },
+  {
+    "name": "C프로그래밍",
+    "code": "AMM12012",
+    "professor": "석진원",
+    "major": "게임공학과"
+  },
+  {
+    "name": "창의적공학설계",
+    "code": "AMM10062",
+    "professor": "김경철",
+    "major": "게임공학과"
+  },
+  {
+    "name": "Open Source SW입문",
+    "code": "AMM11077",
+    "professor": "오황석",
+    "major": "게임공학과"
+  },
+  {
+    "name": "C++프로그래밍",
+    "code": "AMM12041",
+    "professor": "윤정현",
+    "major": "게임공학과"
+  },
+  {
+    "name": "이산수학",
+    "code": "AMM20040",
+    "professor": "이용희",
+    "major": "게임공학과"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "이택희",
+    "major": "게임공학과"
+  },
+  {
+    "name": "게임수학",
+    "code": "AMM21024",
+    "professor": "김영식",
+    "major": "게임공학과"
+  },
+  {
+    "name": "운영체제",
+    "code": "AMM20061",
+    "professor": "정내훈",
+    "major": "게임공학과"
+  },
+  {
+    "name": "운영체제",
+    "code": "AMM20061",
+    "professor": "정재훈",
+    "major": "게임공학과"
+  },
+  {
+    "name": "알고리즘",
+    "code": "AMM21041",
+    "professor": "김기용",
+    "major": "게임공학과"
+  },
+  {
+    "name": "2D게임프로그래밍",
+    "code": "AMM22011",
+    "professor": "이대현",
+    "major": "게임공학과"
+  },
+  {
+    "name": "컴퓨터 그래픽스",
+    "code": "AMM25010",
+    "professor": "송인희",
+    "major": "게임공학과"
+  },
+  {
+    "name": "3D모델링2",
+    "code": "AMM25041",
+    "professor": "김현",
+    "major": "게임공학과"
+  },
+  {
+    "name": "게임소프트웨어공학",
+    "code": "AMM31011",
+    "professor": "이택희",
+    "major": "게임공학과"
+  },
+  {
+    "name": "데이터베이스",
+    "code": "AMM33030",
+    "professor": "장지웅",
+    "major": "게임공학과"
+  },
+  {
+    "name": "인공지능",
+    "code": "AMM31061",
+    "professor": "이형구",
+    "major": "게임공학과"
+  },
+  {
+    "name": "인공지능",
+    "code": "AMM31061",
+    "professor": "이재영",
+    "major": "게임공학과"
+  },
+  {
+    "name": "게임기획2",
+    "code": "AMM31080",
+    "professor": "손기훈",
+    "major": "게임공학과"
+  },
+  {
+    "name": "네트워크 게임 프로그래밍",
+    "code": "AMM32020",
+    "professor": "김재경",
+    "major": "게임공학과"
+  },
+  {
+    "name": "3D게임프로그래밍2",
+    "code": "AMM32033",
+    "professor": "이용희",
+    "major": "게임공학과"
+  },
+  {
+    "name": "3D애니메이션2",
+    "code": "AMM35051",
+    "professor": "김현",
+    "major": "게임공학과"
+  },
+  {
+    "name": "EH전공(실시간VR콘텐츠제작)",
+    "code": "AAJ42016",
+    "professor": "이택희",
+    "major": "게임공학과"
+  },
+  {
+    "name": "게임엔진2",
+    "code": "AMM31075",
+    "professor": "이용희",
+    "major": "게임공학과"
+  },
+  {
+    "name": "가상현실게임",
+    "code": "AMM41074",
+    "professor": "임창주",
+    "major": "게임공학과"
+  },
+  {
+    "name": "멀티코어프로그래밍",
+    "code": "AMM42028",
+    "professor": "정내훈",
+    "major": "게임공학과"
+  },
+  {
+    "name": "게임사운드",
+    "code": "AMM44010",
+    "professor": "배진택",
+    "major": "게임공학과"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "이수길",
+    "major": "인공지능학과"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "변진숙",
+    "major": "인공지능학과"
+  },
+  {
+    "name": "수학2",
+    "code": "AAK11087",
+    "professor": "박경원",
+    "major": "인공지능학과"
+  },
+  {
+    "name": "C프로그래밍",
+    "code": "AIN11003",
+    "professor": "문호상",
+    "major": "인공지능학과"
+  },
+  {
+    "name": "인공지능개론",
+    "code": "AIN10002",
+    "professor": "미배정",
+    "major": "인공지능학과"
+  },
+  {
+    "name": "파이썬AI프로그래밍",
+    "code": "AIN11002",
+    "professor": "미배정",
+    "major": "인공지능학과"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "이병순",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "정경민",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "문선영",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "강봉조",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "지난영",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "박성희",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "신행수",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "장우진",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "송현선",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "일반화학2",
+    "code": "AAK11054",
+    "professor": "정윤성",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "일반화학2",
+    "code": "AAK11054",
+    "professor": "이진영",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "일반화학실험2",
+    "code": "AAK11062",
+    "professor": "심재철",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "일반물리학2",
+    "code": "AAK11093",
+    "professor": "송호식",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "일반물리학실험2",
+    "code": "AAK11107",
+    "professor": "송호식",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "일반물리학실험2",
+    "code": "AAK11107",
+    "professor": "김성원",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "신소재공학개론2",
+    "code": "AMT11010",
+    "professor": "김병준",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "창의적 공학설계",
+    "code": "AMT11015",
+    "professor": "미배정",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "조진기",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "현대물리",
+    "code": "AMT23007",
+    "professor": "미배정",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "신소재공학개론2",
+    "code": "AMT11010",
+    "professor": "최정옥",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "재료열역학",
+    "code": "AMT21004",
+    "professor": "정용석",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "재료의기계적거동",
+    "code": "AMT20003",
+    "professor": "박현균",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "컴퓨터응용소재설계",
+    "code": "AMT22007",
+    "professor": "장태훈",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "금속학개론",
+    "code": "AMT23008",
+    "professor": "임항준",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "재료결정학",
+    "code": "AMT25003",
+    "professor": "조진기",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "박막재료공학",
+    "code": "AMT33006",
+    "professor": "임실묵",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "전자세라믹스",
+    "code": "AMT33026",
+    "professor": "최정옥",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "반응속도공학",
+    "code": "AMT22006",
+    "professor": "정용석",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "전자소자재료공학",
+    "code": "AMT23006",
+    "professor": "문제도",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "분말공정",
+    "code": "AMT32013",
+    "professor": "문제도",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "반도체제조공정",
+    "code": "AMT33013",
+    "professor": "이희철",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "디스플레이 제조공정",
+    "code": "AMT33018",
+    "professor": "이성의",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "재료열전달",
+    "code": "AMT33034",
+    "professor": "권용욱",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "반도체패키징공학 ",
+    "code": "AMT34010",
+    "professor": "김병준",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "EH융합(반도체패키지용초미세기판설계및실습)",
+    "code": "AAJ32077",
+    "professor": "김경민",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "이성의",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "윤창번",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "정용석",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "EH전공(차세대반도체소재)",
+    "code": "AAK30108",
+    "professor": "윤창번",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "반도체미세가공",
+    "code": "AMT34009",
+    "professor": "최정옥",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "이차전지소재공정",
+    "code": "AMT44011",
+    "professor": "윤창번",
+    "major": "신소재공학과"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "김미향",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "박현숙",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "김건형",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "박성희",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "김지숙",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "조영경",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "강우석",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "이형용",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "일반화학2",
+    "code": "AAK11054",
+    "professor": "이진영",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "일반화학2",
+    "code": "AAK11054",
+    "professor": "정윤성",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "일반화학실험2",
+    "code": "AAK11062",
+    "professor": "심재철",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "일반물리학2",
+    "code": "AAK11093",
+    "professor": "황종승",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "프로그래밍기초",
+    "code": "AAK11104",
+    "professor": "정재훈",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "프로그래밍기초",
+    "code": "AAK11104",
+    "professor": "이지영",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "화공양론",
+    "code": "ACH42001",
+    "professor": "전환진",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "신영희",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "공업수학2",
+    "code": "ACH22017",
+    "professor": "조영상",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "분석화학",
+    "code": "ACH22007",
+    "professor": "신흥섭",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "열 및 물질전달",
+    "code": "ACH22015",
+    "professor": "조영상",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "열 및 물질전달",
+    "code": "ACH22015",
+    "professor": "박승준",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "유기화학2",
+    "code": "ACH22002",
+    "professor": "신영희",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "분석화학실험",
+    "code": "ACH22008",
+    "professor": "심재철",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "무기화학",
+    "code": "ACH22010",
+    "professor": "류지헌",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "유기화학실험",
+    "code": "ACH22019",
+    "professor": "차윤종",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "바이오촉매공학",
+    "code": "ACH25001",
+    "professor": "이유석",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "분자생물학",
+    "code": "ACH32016",
+    "professor": "이강문",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "공정제어",
+    "code": "ACH32018",
+    "professor": "김용태",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "생명화공수치해석",
+    "code": "ACH32025",
+    "professor": "박승준",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "반도체·화공소재및실습",
+    "code": "ACH33009",
+    "professor": "전환진",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "환경공학",
+    "code": "ACH35003",
+    "professor": "김용태",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "바이오의과학",
+    "code": "ACH35006",
+    "professor": "신영희",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "발효공학",
+    "code": "ACH37002",
+    "professor": "김정근",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "EH융합(화학및바이오센서)",
+    "code": "AAJ42013",
+    "professor": "이진영",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "공업화학",
+    "code": "ACH42009",
+    "professor": "정혜전",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "고분자·나노소재실습",
+    "code": "ACH42018",
+    "professor": "정혜전",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "바이오공정및실습",
+    "code": "ACH45007",
+    "professor": "이유석",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "전공영어",
+    "code": "ACH4E001",
+    "professor": "박성희",
+    "major": "생명화학공학과"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "박현숙",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "김미향",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "김건형",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "지난영",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "김지숙",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "송현선",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "대학물리학2",
+    "code": "AAK11095",
+    "professor": "류영선",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "대학물리학실험2",
+    "code": "AAK11109",
+    "professor": "류영선",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "대학물리학실험2",
+    "code": "AAK11109",
+    "professor": "김순구",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "프로그래밍언어실습",
+    "code": "ANS10004",
+    "professor": "미배정",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "나노반도체공학개론",
+    "code": "ANS10001",
+    "professor": "백동현",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "나노반도체공학개론",
+    "code": "ANS10001",
+    "professor": "조성훈",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "송용원",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "수리물리",
+    "code": "ANS20001",
+    "professor": "김영일",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "파동광학물리학",
+    "code": "ANS28002",
+    "professor": "민경택",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "반도체물리학",
+    "code": "ANS22003",
+    "professor": "곽태명",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "재료물성학",
+    "code": "ANS20002",
+    "professor": "송용원",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "재료물성학",
+    "code": "ANS20002",
+    "professor": "황상호",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "진공공학",
+    "code": "ANS20003",
+    "professor": "김경국",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "회로이론및실습",
+    "code": "ANS21001",
+    "professor": "백동현",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "반도체열역학",
+    "code": "ANS22004",
+    "professor": "김경국",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "박막공학",
+    "code": "ANS23001",
+    "professor": "황상호",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "반도체설비조명계설계",
+    "code": "ANS35002",
+    "professor": "정미숙",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "연구과제수행법",
+    "code": "ANS30002",
+    "professor": "박병우",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "반도체소자실험",
+    "code": "ANS31002",
+    "professor": "곽태명",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "반도체소자실험",
+    "code": "ANS31002",
+    "professor": "정주철",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "반도체소자실험",
+    "code": "ANS31002",
+    "professor": "유근호",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "LED공학",
+    "code": "ANS31003",
+    "professor": "이성남",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "제어계측공학",
+    "code": "ANS34002",
+    "professor": "최우석",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "응용광학계설계",
+    "code": "ANS35003",
+    "professor": "정미숙",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "반도체광계측실험",
+    "code": "ANS36003",
+    "professor": "김윤석",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "나노전자소자실험",
+    "code": "ANS41001",
+    "professor": "이성남",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "반도체전자회로실습",
+    "code": "ANS41004",
+    "professor": "조성훈",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "EH전공(MEMS소자설계와시뮬레이션)",
+    "code": "AAJ30003",
+    "professor": "김창규",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "EH융합(ICT디바이스물성분석)",
+    "code": "AAJ30004",
+    "professor": "김윤석",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "EH융합(미래융합전략)",
+    "code": "AAJ32044",
+    "professor": "송용원",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "민경택",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "전공영어2",
+    "code": "ANS40005",
+    "professor": "지난영",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "디스플레이공학",
+    "code": "ANS41003",
+    "professor": "박병우",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "전자조명공학",
+    "code": "ANS47003",
+    "professor": "이동재",
+    "major": "나노반도체공학과"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "이병순",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "정갑준",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "정경민",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "황인자",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "변진숙",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "미적분학2",
+    "code": "AAK11089",
+    "professor": "이형용",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "일반화학1",
+    "code": "AAK11053",
+    "professor": "이현주",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "일반물리학2",
+    "code": "AAK11093",
+    "professor": "황종승",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "일반물리학2",
+    "code": "AAK11093",
+    "professor": "김완수",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "일반물리학2",
+    "code": "AAK11093",
+    "professor": "송호식",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "일반물리학실험2",
+    "code": "AAK11107",
+    "professor": "황종승",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "일반물리학실험2",
+    "code": "AAK11107",
+    "professor": "김완수",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "일반물리학실험2",
+    "code": "AAK11107",
+    "professor": "김성원",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "프로그래밍 1",
+    "code": "AEN22003",
+    "professor": "이동근",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "신재생에너지개론",
+    "code": "AEN11004",
+    "professor": "이동건",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "이시영",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "공업수학2",
+    "code": "AEN21001",
+    "professor": "이형용",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "전기전자회로실습1",
+    "code": "AEN23001",
+    "professor": "박상호",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "회로이론2",
+    "code": "AEN24002",
+    "professor": "김우석",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "전자기학2",
+    "code": "AEN24004",
+    "professor": "최경달",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "에너지기계공학",
+    "code": "AEN25001",
+    "professor": "박기홍",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "태양광발전시스템실습",
+    "code": "AEN25007",
+    "professor": "윤아윤",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "태양광발전시스템실습",
+    "code": "AEN25007",
+    "professor": "이동건",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "마이크로프로세서",
+    "code": "AEN33001",
+    "professor": "이동근",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "EH전공(스마트그리드신기술과전력산업)",
+    "code": "AAJ30005",
+    "professor": "이시영",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "전기전자회로실습2",
+    "code": "AEN23002",
+    "professor": "박상호",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "전력계통",
+    "code": "AEN34006",
+    "professor": "김성수",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "제어공학2",
+    "code": "AEN34007",
+    "professor": "장바울",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "전기기기2",
+    "code": "AEN34010",
+    "professor": "최경달",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "전기기기2",
+    "code": "AEN34010",
+    "professor": "김우석",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "전력전자2",
+    "code": "AEN45002",
+    "professor": "이경수",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "AI기반전기·에너지시스템",
+    "code": "AEN45003",
+    "professor": "윤아윤",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "EH전공(마이크로그리드)",
+    "code": "AAJ40030",
+    "professor": "이경수",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "전력설비",
+    "code": "AEN46002",
+    "professor": "김성수",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "최적화개론",
+    "code": "AEN46013",
+    "professor": "미배정",
+    "major": "에너지전기공학과"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "이유경",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "이병순",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "김문숙",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "변진숙",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "경영수학2",
+    "code": "AAK11091",
+    "professor": "최숙자",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "회계원리",
+    "code": "AEB11020",
+    "professor": "이광숙",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "회계원리",
+    "code": "AEB11020",
+    "professor": "김병진",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "프로그래밍응용",
+    "code": "AEB13019",
+    "professor": "이충석",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "경제학원론",
+    "code": "AEB12010",
+    "professor": "이동헌",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "경제학원론",
+    "code": "AEB12010",
+    "professor": "이철원",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "강지훈",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "경영통계학",
+    "code": "AEB11006",
+    "professor": "서종현",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "웹프로그래밍응용",
+    "code": "AEB23010",
+    "professor": "이영곤",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "경영학원론",
+    "code": "AEB11002",
+    "professor": "류옥현",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "생산/운영관리",
+    "code": "AEB21014",
+    "professor": "류옥현",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "생산/운영관리",
+    "code": "AEB21014",
+    "professor": "강지훈",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "생산/운영관리",
+    "code": "AEB21014",
+    "professor": "박충규",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "인적자원관리",
+    "code": "AEB21016",
+    "professor": "육헌영",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "인적자원관리",
+    "code": "AEB21016",
+    "professor": "박종석",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "프로그래밍과데이터분석",
+    "code": "AEB21022",
+    "professor": "이동현",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "프로그래밍과데이터분석",
+    "code": "AEB21022",
+    "professor": "권오성",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "데이터관리",
+    "code": "AEB21023",
+    "professor": "미배정",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "데이터관리",
+    "code": "AEB21023",
+    "professor": "오은성",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "시스템분석설계",
+    "code": "AEB35002",
+    "professor": "김덕은",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "경영과학",
+    "code": "AEB21021",
+    "professor": "허재석",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "마케팅조사론",
+    "code": "AEB31019",
+    "professor": "이재광",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "비즈니스모델과인포메이션아키텍쳐",
+    "code": "AEB33018",
+    "professor": "염난영",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "디지털마케팅",
+    "code": "AEB43020",
+    "professor": "전유현",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "경영전략론",
+    "code": "AEB56008",
+    "professor": "김진권",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "EH전공(클라우드플랫폼구축과웹개발(PaaSTa기반))",
+    "code": "AAJ32080",
+    "professor": "이영곤",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "이동현",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "EH전공(글로벌비즈니스와전자상거래실무)",
+    "code": "AAK30109",
+    "professor": "박종석",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "기술창업론",
+    "code": "AEB41028",
+    "professor": "고혁진",
+    "major": "IT경영전공"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "문선영",
+    "major": "경영학전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "나은주",
+    "major": "경영학전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "김문숙",
+    "major": "경영학전공"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "변진숙",
+    "major": "경영학전공"
+  },
+  {
+    "name": "경영수학2",
+    "code": "AAK11091",
+    "professor": "최숙자",
+    "major": "경영학전공"
+  },
+  {
+    "name": "회계원리",
+    "code": "AEB11020",
+    "professor": "김병진",
+    "major": "경영학전공"
+  },
+  {
+    "name": "경제학원론",
+    "code": "AEB12010",
+    "professor": "이철원",
+    "major": "경영학전공"
+  },
+  {
+    "name": "경제학원론",
+    "code": "AEB12010",
+    "professor": "이동헌",
+    "major": "경영학전공"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "강지훈",
+    "major": "경영학전공"
+  },
+  {
+    "name": "경영통계학",
+    "code": "AEB11006",
+    "professor": "서종현",
+    "major": "경영학전공"
+  },
+  {
+    "name": "생산/운영관리",
+    "code": "AEB21014",
+    "professor": "류옥현",
+    "major": "경영학전공"
+  },
+  {
+    "name": "생산/운영관리",
+    "code": "AEB21014",
+    "professor": "강지훈",
+    "major": "경영학전공"
+  },
+  {
+    "name": "생산/운영관리",
+    "code": "AEB21014",
+    "professor": "박충규",
+    "major": "경영학전공"
+  },
+  {
+    "name": "경영학원론",
+    "code": "AEB11002",
+    "professor": "류옥현",
+    "major": "경영학전공"
+  },
+  {
+    "name": "인적자원관리",
+    "code": "AEB21016",
+    "professor": "육헌영",
+    "major": "경영학전공"
+  },
+  {
+    "name": "인적자원관리",
+    "code": "AEB21016",
+    "professor": "박종석",
+    "major": "경영학전공"
+  },
+  {
+    "name": "무역학원론",
+    "code": "AEB21020",
+    "professor": "이인무",
+    "major": "경영학전공"
+  },
+  {
+    "name": "프로그래밍과데이터분석",
+    "code": "AEB21022",
+    "professor": "이동현",
+    "major": "경영학전공"
+  },
+  {
+    "name": "프로그래밍과데이터분석",
+    "code": "AEB21022",
+    "professor": "권오성",
+    "major": "경영학전공"
+  },
+  {
+    "name": "데이터관리",
+    "code": "AEB21023",
+    "professor": "미배정",
+    "major": "경영학전공"
+  },
+  {
+    "name": "데이터관리",
+    "code": "AEB21023",
+    "professor": "오은성",
+    "major": "경영학전공"
+  },
+  {
+    "name": "중급회계",
+    "code": "AEB31021",
+    "professor": "이광숙",
+    "major": "경영학전공"
+  },
+  {
+    "name": "경영과학",
+    "code": "AEB21021",
+    "professor": "허재석",
+    "major": "경영학전공"
+  },
+  {
+    "name": "마케팅조사론",
+    "code": "AEB31019",
+    "professor": "이재광",
+    "major": "경영학전공"
+  },
+  {
+    "name": "품질관리실무",
+    "code": "AEB31025",
+    "professor": "박충규",
+    "major": "경영학전공"
+  },
+  {
+    "name": "금융및투자론",
+    "code": "AEB31027",
+    "professor": "김병진",
+    "major": "경영학전공"
+  },
+  {
+    "name": "디지털마케팅",
+    "code": "AEB43020",
+    "professor": "전유현",
+    "major": "경영학전공"
+  },
+  {
+    "name": "경영전략론",
+    "code": "AEB56008",
+    "professor": "김진권",
+    "major": "경영학전공"
+  },
+  {
+    "name": "EH전공(클라우드플랫폼구축과웹개발(PaaSTa기반))",
+    "code": "AAJ32080",
+    "professor": "이영곤",
+    "major": "경영학전공"
+  },
+  {
+    "name": "ER(공학연구)",
+    "code": "AAJ40012",
+    "professor": "이동현",
+    "major": "경영학전공"
+  },
+  {
+    "name": "EH전공(글로벌비즈니스와전자상거래실무)",
+    "code": "AAK30109",
+    "professor": "박종석",
+    "major": "경영학전공"
+  },
+  {
+    "name": "기술창업론",
+    "code": "AEB41028",
+    "professor": "고혁진",
+    "major": "경영학전공"
+  },
+  {
+    "name": "ERP물류",
+    "code": "AEB43016",
+    "professor": "윤경옥",
+    "major": "경영학전공"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "최재선",
+    "major": "데이터사이언스경영전공"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "이병순",
+    "major": "데이터사이언스경영전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "김문숙",
+    "major": "데이터사이언스경영전공"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "변진숙",
+    "major": "데이터사이언스경영전공"
+  },
+  {
+    "name": "경영수학2",
+    "code": "AAK11091",
+    "professor": "최숙자",
+    "major": "데이터사이언스경영전공"
+  },
+  {
+    "name": "회계원리",
+    "code": "AEB11020",
+    "professor": "김병진",
+    "major": "데이터사이언스경영전공"
+  },
+  {
+    "name": "회계원리",
+    "code": "AEB11020",
+    "professor": "이광숙",
+    "major": "데이터사이언스경영전공"
+  },
+  {
+    "name": "프로그래밍과데이터분석",
+    "code": "AEB21022",
+    "professor": "허재석",
+    "major": "데이터사이언스경영전공"
+  },
+  {
+    "name": "경제학원론",
+    "code": "AEB12010",
+    "professor": "이동헌",
+    "major": "데이터사이언스경영전공"
+  },
+  {
+    "name": "경제학원론",
+    "code": "AEB12010",
+    "professor": "이철원",
+    "major": "데이터사이언스경영전공"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "정경민",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "최재선",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "황인자",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "변진숙",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "2D그래픽응용",
+    "code": "ADE10005",
+    "professor": "김민혁",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "2D그래픽응용",
+    "code": "ADE10005",
+    "professor": "조은경",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "디자인방법론",
+    "code": "ADE10006",
+    "professor": "고베드로",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "디자인과기업가정신",
+    "code": "ADE10007",
+    "professor": "이현상",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "드로잉응용",
+    "code": "ADE12001",
+    "professor": "이승준",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "디자인과역학",
+    "code": "ADE14001",
+    "professor": "한민섭",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "3D그래픽기초",
+    "code": "ADE17001",
+    "professor": "정동원",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "3D그래픽기초",
+    "code": "ADE17001",
+    "professor": "한고은",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "김한종",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "디자인기획",
+    "code": "ADE20003",
+    "professor": "김억",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "제품디자인응용",
+    "code": "ADE22003",
+    "professor": "박노섭",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "제품디자인응용",
+    "code": "ADE22003",
+    "professor": "조남주",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "디자인재료및그래픽",
+    "code": "ADE22004",
+    "professor": "이승준",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "서스테이너블디자인",
+    "code": "ADE22005",
+    "professor": "장영주",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "디지털스케치응용",
+    "code": "ADE22007",
+    "professor": "장성대",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "기구설계기초",
+    "code": "ADE24003",
+    "professor": "한민섭",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "3D모델링응용",
+    "code": "ADE27003",
+    "professor": "정동원",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "3DCAD",
+    "code": "ADE37005",
+    "professor": "정동원",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "제품인터페이스디자인",
+    "code": "ADE31001",
+    "professor": "권오재",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "제품시스템디자인",
+    "code": "ADE32002",
+    "professor": "장영주",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "제품시스템디자인",
+    "code": "ADE32002",
+    "professor": "조남주",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "지능형제품디자인",
+    "code": "ADE34003",
+    "professor": "홍성수",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "지능형제품디자인",
+    "code": "ADE34003",
+    "professor": "정정필",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "인터페이스프로토타이핑",
+    "code": "ADE30002",
+    "professor": "이문환",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "최적설계디자인",
+    "code": "ADE30005",
+    "professor": "나한범",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "제품컬러플래닝",
+    "code": "ADE32003",
+    "professor": "미배정",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "퍼블릭디자인플래닝",
+    "code": "ADE42001",
+    "professor": "김태균",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "EH전공(창업아이디어크리에이션)",
+    "code": "AAJ32078",
+    "professor": "권오재",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "EH융합(창의공학과디자인융합사례연구)",
+    "code": "AAJ32079",
+    "professor": "한민섭",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "디자인매니지먼트",
+    "code": "ADE40004",
+    "professor": "신상영",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "스마트IoT디자인",
+    "code": "ADE44001",
+    "professor": "정정필",
+    "major": "산업디자인공학전공"
+  },
+  {
+    "name": "글쓰기",
+    "code": "AAK12043",
+    "professor": "송경란",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "영어2",
+    "code": "AAK12047",
+    "professor": "황인자",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "창의와실천",
+    "code": "AAK17009",
+    "professor": "변진숙",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "3D콘텐츠모델링",
+    "code": "ADE17002",
+    "professor": "김창훈",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "2D그래픽응용",
+    "code": "ADE10005",
+    "professor": "강은정",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "디자인방법론",
+    "code": "ADE10006",
+    "professor": "박노섭",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "디자인과기업가정신",
+    "code": "ADE10007",
+    "professor": "이현상",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "UX디자인",
+    "code": "ADE11002",
+    "professor": "강아영",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "진로와미래(취업과창직)",
+    "code": "AAK26007",
+    "professor": "김한종",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "디자인기획",
+    "code": "ADE20003",
+    "professor": "김억",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "사용자조사분석기법",
+    "code": "ADE21003",
+    "professor": "강아영",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "미디어컬러플래닝",
+    "code": "ADE25002",
+    "professor": "미배정",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "웹퍼블리싱응용",
+    "code": "ADE26002",
+    "professor": "이문환",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "웹디자인",
+    "code": "ADE26003",
+    "professor": "강은정",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "XR컨텐츠디자인응용",
+    "code": "ADE37003",
+    "professor": "김한종",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "선행인터랙션디자인",
+    "code": "ADE31004",
+    "professor": "권오재",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "웹어플리케이션구현기초",
+    "code": "ADE36002",
+    "professor": "김한종",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "영상편집디자인",
+    "code": "ADE35001",
+    "professor": "박한진",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "EH전공(창업아이디어크리에이션)",
+    "code": "AAJ32078",
+    "professor": "권오재",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "EH융합(창의공학과디자인융합사례연구)",
+    "code": "AAJ32079",
+    "professor": "한민섭",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "디자인매니지먼트",
+    "code": "ADE40004",
+    "professor": "박노섭",
+    "major": "미디어디자인공학전공"
+  },
+  {
+    "name": "세계속의한국사회",
+    "code": "AAK10055",
+    "professor": "조형일",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "문화한국어",
+    "code": "AAK10056",
+    "professor": "이희순",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "중급한국어읽기",
+    "code": "AAK10057",
+    "professor": "박성희",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "중급한국어듣기",
+    "code": "AAK10058",
+    "professor": "조연하",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "중급한국어듣기",
+    "code": "AAK10058",
+    "professor": "최현실",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "중급한국어말하기",
+    "code": "AAK10059",
+    "professor": "조연하",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "중급한국어말하기",
+    "code": "AAK10059",
+    "professor": "최현실",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "중급한국어쓰기",
+    "code": "AAK10060",
+    "professor": "이희순",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "컴퓨터코딩1",
+    "code": "AAK10061",
+    "professor": "미배정",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "실용한국어읽기와쓰기",
+    "code": "AAK10062",
+    "professor": "최현실",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "실용한국어듣기와말하기",
+    "code": "AAK10063",
+    "professor": "박성희",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "공학한국어",
+    "code": "AAK10064",
+    "professor": "조형일",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "공통수학",
+    "code": "AAK10066",
+    "professor": "김용무",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "컴퓨터코딩2",
+    "code": "AAK10069",
+    "professor": "윤정희",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "소비자와마케팅",
+    "code": "AAK20061",
+    "professor": "이병윤",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "공업수학1(미적분)",
+    "code": "AGL20001",
+    "professor": "김용무",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "미래혁신기술",
+    "code": "AGL20002",
+    "professor": "이병윤",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "센서",
+    "code": "AGL20003",
+    "professor": "강대진",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "전기회로",
+    "code": "AGL20004",
+    "professor": "이광수",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "전산학기초",
+    "code": "AGL20005",
+    "professor": "미배정",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "프로그래밍2",
+    "code": "AGL20006",
+    "professor": "미배정",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "공업수학2",
+    "code": "AGL20007",
+    "professor": "이광수",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "자료구조",
+    "code": "AGL20009",
+    "professor": "미배정",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "논리회로",
+    "code": "AGL20010",
+    "professor": "미배정",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "컴퓨터응용설계기초",
+    "code": "AGL20011",
+    "professor": "강대진",
+    "major": "글로벌융합공학과"
+  },
+  {
+    "name": "기초공학",
+    "code": "AGL20012",
+    "professor": "이광수",
+    "major": "글로벌융합공학과"
+  }
+]
