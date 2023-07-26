@@ -1,56 +1,54 @@
 <template>
     <div>
-        <v-container>
-            <v-card>
-                <v-img />
-                <v-card-text>
-                    <div>
-                        <h1>{{ post.title }}</h1>                        
-                        <div>{{ post.content }}</div>
+        <v-card class="card">
+            <v-img />
+            <v-card-text>
+                <div>
+                    <h1>{{ post.title }}</h1>
+                    <div>{{ post.content }}</div>
+                </div>
+            </v-card-text>
+            <v-card-action>
+                <v-btn text color="orange">
+                    <v-icon>mdi-repeat-variant</v-icon>
+                </v-btn>
+                <v-btn text color="orange">
+                    <v-icon>mdi-heart-outline</v-icon>
+
+                </v-btn>
+                <v-btn text color="orange" @click="onToggleComment">
+                    <v-icon>mdi-comment-outline</v-icon>
+
+                </v-btn>
+
+                <v-menu offset-y open-on-hover>
+                    <template v-slot:activator="{ on }">
+                        <v-btn text color="orange" v-on="on">
+                            <v-icon>mdi-dots-horizontal</v-icon>
+                        </v-btn>
+                    </template>
+                    <div style="background: white">
+                        <v-btn dark color="red" @click="onRemovePost">삭제</v-btn>
+                        <v-btn text color="orange" @click="onEditPost">수정</v-btn>
                     </div>
-                </v-card-text>
-                <v-card-action>
-                    <v-btn text color="orange">
-                        <v-icon>mdi-repeat-variant</v-icon>
-                    </v-btn>
-                    <v-btn text color="orange">
-                        <v-icon>mdi-heart-outline</v-icon>
+                </v-menu>
 
-                    </v-btn>
-                    <v-btn text color="orange" @click="onToggleComment">
-                        <v-icon>mdi-comment-outline</v-icon>
-
-                    </v-btn>
-
-                    <v-menu offset-y open-on-hover>
-                        <template v-slot:activator="{ on }">
-                            <v-btn text color="orange" v-on="on">
-                                <v-icon>mdi-dots-horizontal</v-icon>
-                            </v-btn>
-                        </template>
-                        <div style="background: white">
-                            <v-btn dark color="red" @click="onRemovePost">삭제</v-btn>
-                            <v-btn text color="orange" @click="onEditPost">수정</v-btn>
-                        </div>
-                    </v-menu>
-
-                </v-card-action>
-            </v-card>
-            <template v-if="commentOpened">
-                <CommentForm :post-id="post.id" />
-                <v-list>
-                    <v-list-item v-for="c in post.Comments" :key="c.id">
-                        <v-list-item-avatar color="teal">
-                            <span>{{ c.User.nickname[0] }}</span>
-                        </v-list-item-avatar>
-                        <v-list-item-content>
-                            <h3>{{ c.User.nickname }}</h3>
-                            <div>{{ c.content }}</div>
-                        </v-list-item-content>
-                    </v-list-item>
-                </v-list>
-            </template>
-        </v-container>
+            </v-card-action>
+        </v-card>
+        <template v-if="commentOpened">
+            <CommentForm :post-id="post.id" />
+            <v-list>
+                <v-list-item v-for="c in post.Comments" :key="c.id">
+                    <v-list-item-avatar color="teal">
+                        <span>{{ c.User.nickname[0] }}</span>
+                    </v-list-item-avatar>
+                    <v-list-item-content>
+                        <h3>{{ c.User.nickname }}</h3>
+                        <div>{{ c.content }}</div>
+                    </v-list-item-content>
+                </v-list-item>
+            </v-list>
+        </template>
     </div>
 </template>
 
@@ -67,6 +65,14 @@ export default {
             required: true,
         },
     },
+    computed: {
+        me() {
+            return this.$store.state.users.me;
+        },
+        token() {
+            return this.me.token;
+        },
+    },
     data() {
         return {
             commentOpened: false
@@ -76,6 +82,7 @@ export default {
         onRemovePost() {
             this.$store.dispatch("posts/remove", {
                 id: this.post.id,
+                token: this.token,
             });
         },
         onEditPost() {
@@ -90,4 +97,11 @@ export default {
 </script>
 
 
-<style></style>
+<style>
+
+.card {
+    width: 80%; /* 카드의 너비를 조절합니다. */
+    margin: 20px auto; 
+    text-align: center;
+}
+</style>

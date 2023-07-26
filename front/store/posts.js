@@ -33,8 +33,19 @@ export const actions = {
         })
     },
     remove({ commit }, payload) {
-        commit('removeMainPost', payload);
+        this.$axios.delete(`http://localhost:8080/post/${payload.id}`, {
+            headers: {
+                'Authorization': 'Bearer ' + payload.token, // 여기서 'token'은 실제 토큰 값입니다.
+            }
+        })
+            .then(() => {
+                commit('removeMainPost', payload);
+            })
+            .catch((err) => {
+                console.error(err);
+            });
     },
+
     addComment({ commit }, payload) {
         commit('addComment', payload);
     },

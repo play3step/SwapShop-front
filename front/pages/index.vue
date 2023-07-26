@@ -26,7 +26,7 @@
                     <div>
                         <!--이부분은 DB에 저장되어 있는 데이터 부르는 방식, 아직 작업중-->
                         <!--컴포넌트로 해서 나중에 위에 있는 로고랑 검색창은 고정 되도록 해야한다.-->
-                        <PostCard v-for="post in posts" :key="post.id" :post="post"/>
+                        <PostCard v-for="post in posts" :key="post.id" :post="post" />
                     </div>
                 </div>
             </div>
