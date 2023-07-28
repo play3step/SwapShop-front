@@ -3,7 +3,8 @@
         <v-select :items="majors" label="Major" v-model="selectedMajor" @change="loadProfessors"></v-select>
         <v-select v-if="selectedMajor" :items="professors" label="Professor" v-model="selectedProfessor"
             @change="loadCourses"></v-select>
-        <v-select v-if="selectedProfessor" :items="courses" label="Courses" v-model="selectedCourse"></v-select>
+        <v-select v-if="selectedProfessor" :items="courses" label="Courses" v-model="selectedCourse"
+            @change="onCourseChanged"></v-select>
     </div>
 </template>
 
@@ -49,6 +50,13 @@ export default {
                 .map((course) => course.name);
             this.selectedCourse = '';
         },
+        onCourseChanged() {
+            this.$emit('selection-changed', {
+                major: this.selectedMajor,
+                professor: this.selectedProfessor,
+                course: this.selectedCourse,
+            });
+        }
     },
 };
 </script>

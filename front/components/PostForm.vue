@@ -16,15 +16,20 @@
         <v-container>
             <v-layout row wrap>
                 <v-flex xs12 sm6>
-                    <v-btn class="img_btn">이미지 업로드</v-btn>
+                    <input type="file" ref="fileInput" style="display: none" @change="onFileSelected" />
+                    <v-btn class="img_btn" @click="onUploadButtonClick">이미지 업로드</v-btn>
+                    <!-- 이미지 미리보기 추가 -->
+                    <img v-if="imagePreview" :src="imagePreview"
+                        style="max-width: 200px; max-height: 200px; margin-top: 10px;" />
                 </v-flex>
+
                 <v-text-field v-model="title" outlined auto-grow clearable label="제목" :hide-details="hideDetails"
                     :success-messages="successMessages" :success="success" @input="onChangeTextarea" />
 
                 <v-text-field v-model="price" outlined auto-grow clearable label="가격" :hide-details="hideDetails"
                     :success-messages="successMessages" :success="success" @input="onChangeTextarea" />
                 <v-checkbox v-model="term" label="나눔" />
-                <Category />
+                <Category @selection-changed="onSelectionChanged" />
                 <v-textarea v-model="content" outlined auto-grow clearable label="품질, 거래할 품목에 대한 설명을 적어주세요"
                     :hide-details="hideDetails" :success-messages="successMessages" :success="success"
                     :rules="[v => !!v.trim() || '내용을 입력하세요.']" @input="onChangeTextarea" />
@@ -49,6 +54,14 @@ export default {
             success: false,
             content: '',
             title: '',
+            price: '',
+            selectedMajor: null,
+            selectedProfessor: null,
+            selectedCourse: null,
+            imageFile: null,
+            imagePreview: null,  // 이미지 미리보기 URL
+
+
         }
     },
     computed: {
@@ -68,13 +81,43 @@ export default {
                 this.successMessages = '';
             }
         },
+        onSelectionChanged(selection) {
+            this.selectedMajor = selection.major;
+            this.selectedProfessor = selection.professor;
+            this.selectedCourse = selection.course;
+        },
+        onFileSelected(event) {
+            this.imageFile = event.target.files[0];
+            if (this.imageFile) {
+                let reader = new FileReader();
+                reader.onload = e => {
+                    this.imagePreview = e.target.result;
+                };
+                reader.readAsDataURL(this.imageFile);
+            } else {
+                this.imagePreview = null;
+            }
+        },
+        onUploadButtonClick() {
+            this.$refs.fileInput.click();
+        },
         onSubmitForm() {
+            this.price = parseInt(this.price);
+
+            if (isNaN(this.price)) {
+                alert("가격을 입력하세요.");
+                return;
+            }
             if (this.$refs.form.validate()) {
                 this.$store.dispatch('posts/add', {
                     title: this.title,
                     content: this.content,
+                    price: this.price,
                     token: this.token,
-
+                    major: this.selectedMajor,
+                    professor: this.selectedProfessor,
+                    course: this.selectedCourse,
+                    imageFile: this.imageFile, // 추가된 부분
                 })
                     .then(() => {
                         this.content = '';

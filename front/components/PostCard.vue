@@ -1,107 +1,122 @@
 <template>
     <div>
-        <v-card class="card">
-            <v-img />
-            <v-card-text>
-                <div>
-                    <h1>{{ post.title }}</h1>
-                    <div>{{ post.content }}</div>
+
+        <div class="post_container">
+            <img
+                src="https://cdn.icon-icons.com/icons2/1812/PNG/512/4213421-google-logo-media-network-online-search-social_115428.png">
+            <div class="post_text">
+                <div v-if="post">
+                    <p>{{ post.title }}</p>
+                    <p>{{ post.content }}</p>
+
                 </div>
-            </v-card-text>
-            <v-card-action>
-                <v-btn text color="orange">
-                    <v-icon>mdi-repeat-variant</v-icon>
-                </v-btn>
-                <v-btn text color="orange">
-                    <v-icon>mdi-heart-outline</v-icon>
+            </div>
+            <div class="icons">
+                <span class="material-symbols-outlined">
+                    favorite
+                </span>
+                <span class="material-symbols-outlined">
+                    forum
+                </span>
+            </div>
+        </div>
 
-                </v-btn>
-                <v-btn text color="orange" @click="onToggleComment">
-                    <v-icon>mdi-comment-outline</v-icon>
 
-                </v-btn>
 
-                <v-menu offset-y open-on-hover>
-                    <template v-slot:activator="{ on }">
-                        <v-btn text color="orange" v-on="on">
-                            <v-icon>mdi-dots-horizontal</v-icon>
-                        </v-btn>
-                    </template>
-                    <div style="background: white">
-                        <v-btn dark color="red" @click="onRemovePost">삭제</v-btn>
-                        <v-btn text color="orange" @click="onEditPost">수정</v-btn>
-                    </div>
-                </v-menu>
-
-            </v-card-action>
-        </v-card>
-        <template v-if="commentOpened">
-            <CommentForm :post-id="post.id" />
-            <v-list>
-                <v-list-item v-for="c in post.Comments" :key="c.id">
-                    <v-list-item-avatar color="teal">
-                        <span>{{ c.User.nickname[0] }}</span>
-                    </v-list-item-avatar>
-                    <v-list-item-content>
-                        <h3>{{ c.User.nickname }}</h3>
-                        <div>{{ c.content }}</div>
-                    </v-list-item-content>
-                </v-list-item>
-            </v-list>
-        </template>
+        <!-- <v-card-action>
+            <v-menu offset-y open-on-hover>
+                <template v-slot:activator="{ on }">
+                    <v-btn text color="orange" v-on="on">
+                        <v-icon>mdi-dots-horizontal</v-icon>
+                    </v-btn>
+                </template>
+                <div style="background: white">
+                    <v-btn dark color="red" @click="onRemovePost">삭제</v-btn>
+                    <v-btn text color="orange" @click="onEditPost">수정</v-btn>
+                </div>
+            </v-menu>
+        </v-card-action> -->
     </div>
 </template>
 
 <script>
-import CommentForm from "../components/CommentForm.vue";
 
 export default {
-    components: {
-        CommentForm,
-    },
+
     props: {
         post: {
             type: Object,
             required: true,
-        },
-    },
-    computed: {
-        me() {
-            return this.$store.state.users.me;
-        },
-        token() {
-            return this.me.token;
+
         },
     },
     data() {
         return {
-            commentOpened: false
         }
     },
     methods: {
         onRemovePost() {
             this.$store.dispatch("posts/remove", {
                 id: this.post.id,
-                token: this.token,
             });
         },
         onEditPost() {
         },
-        onToggleComment() {
-            this.commentOpened = !this.commentOpened;
-        }
     },
-    components: { CommentForm }
 }
 
 </script>
+    
+
+<style scoped>
+.card_container {
+    width: 80%;
+    /* 카드의 너비를 조절합니다. */
+    margin: 20px auto;
+    /* 상하로 20px의 마진을 주고 좌우로는 자동 마진을 줍니다. */
+}
+.post_container {
+    width: 350px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    border-bottom: #6CB7F8 1px solid;
+    position: relative;
+
+}
+
+.post_container img {
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    display: inline-block;
 
 
-<style>
+}
+.icons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
 
-.card {
-    width: 80%; /* 카드의 너비를 조절합니다. */
-    margin: 20px auto; 
-    text-align: center;
+}
+
+.icons span {
+    bottom: 0;
+    right: 10;
+    margin: 5px;
+    font-size: 20px;
+    color: #6CB7F8;
+
+}
+.post_text {
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: -18 px;
+}
+
+.post_text p {
+    line-height: 1.6;
+    text-align: justify;
 }
 </style>

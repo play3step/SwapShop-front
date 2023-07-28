@@ -3,6 +3,9 @@ export const state = () => ({
 });
 
 export const mutations = {
+    setMainPosts(state, posts) {
+        state.mainPosts = posts.data;
+    },
     addMainPost(state, payload) {
         state.mainPosts.unshift(payload);
     },
@@ -13,40 +16,68 @@ export const mutations = {
     addComment(state, payload) {
         const index = state.mainPosts.findIndex(v => v.id === payload.postId);
         state.mainPosts[index].Comments.unshift(payload);
-    }
-};
+    },
 
+
+};
 export const actions = {
     add({ commit }, payload) {
-        this.$axios.post('http://localhost:8080/post', {
+        let postObject = {
             title: payload.title,
             content: payload.content,
-        }, {
+            price: payload.price,
+            location: "E동",
+            status: "WAITING",
+            views: 0,
+            category: {
+                major: payload.major,
+                name: payload.course,
+                professor: payload.professor,
+                code: "AME11026",
+            },
+        };
+        let formData = new FormData();
+        formData.append("post", JSON.stringify(postObject)); // JSON 객체를 문자열로 변환하여 'post' 파트에 추가
+
+        if (payload.imageFile) {
+            formData.append("image", payload.imageFile);
+        }
+
+        let axiosConfig = {
             headers: {
-                'Authorization': 'Bearer ' + payload.token, // 여기서 'token'은 실제 토큰 값입니다.
-                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + payload.token,
+                'Content-Type': 'multipart/form-data',
             }
-        }).then((data) => {
-            commit('addMainPost', payload)
-        }).catch((err) => {
-            console.error(err);
-        })
+        };
+
+        this.$axios.post('http://localhost:8080/post', formData, axiosConfig)
+            .then((response) => {
+                commit('addMainPost', postObject);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+
     },
     remove({ commit }, payload) {
-        this.$axios.delete(`http://localhost:8080/post/${payload.id}`, {
-            headers: {
-                'Authorization': 'Bearer ' + payload.token, // 여기서 'token'은 실제 토큰 값입니다.
-            }
-        })
-            .then(() => {
+        this.$axios.delete(`http://localhost:8080/post/${payload.id}`)
+            .then((response) => {
                 commit('removeMainPost', payload);
             })
-            .catch((err) => {
-                console.error(err);
+            .catch((error) => {
+                console.error(error);
             });
     },
-
     addComment({ commit }, payload) {
         commit('addComment', payload);
+    },
+    loadPosts({ commit }) {
+        this.$axios.get('http://localhost:8080/post')
+            .then((response) => {
+                commit('setMainPosts', response.data);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
     },
 };
