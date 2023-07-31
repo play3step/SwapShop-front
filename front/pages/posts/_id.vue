@@ -4,6 +4,21 @@
             <div class="post_container">
                 <v-img v-if="post.images && post.images[0]" :src="post.images[0].filePath" />
                 <v-img v-else src="https://www.eclosio.ong/wp-content/uploads/2018/08/default.png" />
+                <div class="hamburger_btn">
+                    <v-card-action>
+                        <v-menu offset-y open-on-hover>
+                            <template v-slot:activator="{ on }">
+                                <v-btn text color="orange" v-on="on">
+                                    <v-icon>mdi-dots-horizontal</v-icon>
+                                </v-btn>
+                            </template>
+                            <div style="background: white">
+                                <v-btn dark color="red" @click="onRemovePost">삭제</v-btn>
+                                <v-btn text color="orange" @click="onEditPost">수정</v-btn>
+                            </div>
+                        </v-menu>
+                    </v-card-action>
+                </div>
                 <div class="profile_container">
                     <div class="profile"></div>
                     <div>
@@ -46,6 +61,8 @@ export default {
         onRemovePost() {
             this.$store.dispatch("posts/remove", {
                 id: this.post.id,
+            }).then(() => {
+                this.$router.push('/');
             });
         },
         onEditPost() {
