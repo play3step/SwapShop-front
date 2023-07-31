@@ -11,10 +11,8 @@
                 </div>
                 <!--백에서 받은 jwt를 해석하고 거기에 email, type를 뺀 추가 정보 입력 받는 구간 (닉네임, 전공)-->
                 <v-form ref="form" class="input_container" v-model="valid" @submit.prevent="onSubmitForm">
-                    <v-text-field class="input_box" v-model="nickname" label="nickname" type="nickname"
-                        :rules="nicknameRulse" required />
-                    <v-text-field class="input_box" v-model="major" label="major" type="major" :rules="majorRulse"
-                        required />
+                    <v-text-field v-model="nickname" label="nickname" type="nickname" :rules="nicknameRulse" required />
+                    <v-text-field v-model="major" label="major" type="major" :rules="majorRulse" required />
                     <v-checkbox v-model="term" :rules="checkRulse" required label="동의" />
                     <v-btn class="input_box" color="#6CB7F8" type="submit">가입하기</v-btn>
                 </v-form>
@@ -89,6 +87,7 @@ export default {
     margin: 0px;
     padding: 0px;
 }
+
 body {
     width: 375px;
     height: 812px;
@@ -134,20 +133,6 @@ body {
 
 }
 
-.input_box {
-    width: 340px;
-    height: 50px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid #6CB7F8;
-    border-radius: 15px;
-    align-items: center;
-    padding: 20px 22px;
-    margin-top: 24px;
-    color: #ADAAAA;
-}
-
 .input_box:first-child {
     margin-top: 0px;
 }
@@ -159,5 +144,4 @@ body {
     justify-content: center;
 
 }
-
 </style>

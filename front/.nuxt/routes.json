@@ -26,5 +26,12 @@
     "component": "/Users/echo/Desktop/myCoding/myVue/SwapShop-front/front/pages/index.vue",
     "chunkName": "pages/index",
     "_name": "_54dd4380"
+  },
+  {
+    "name": "posts-id",
+    "path": "/posts/:id?",
+    "component": "/Users/echo/Desktop/myCoding/myVue/SwapShop-front/front/pages/posts/_id.vue",
+    "chunkName": "pages/posts/_id",
+    "_name": "_199d4dec"
   }
 ]

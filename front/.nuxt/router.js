@@ -8,6 +8,7 @@ const _5687eca2 = () => interopDefault(import('../pages/post.vue' /* webpackChun
 const _9faa43d2 = () => interopDefault(import('../pages/profile.vue' /* webpackChunkName: "pages/profile" */))
 const _38ed2e27 = () => interopDefault(import('../pages/user/login.vue' /* webpackChunkName: "pages/user/login" */))
 const _54dd4380 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _199d4dec = () => interopDefault(import('../pages/posts/_id.vue' /* webpackChunkName: "pages/posts/_id" */))
 
 const emptyFn = () => {}
 
@@ -36,6 +37,10 @@ export const routerOptions = {
     path: "/",
     component: _54dd4380,
     name: "index"
+  }, {
+    path: "/posts/:id?",
+    component: _199d4dec,
+    name: "posts-id"
   }],
 
   fallback: false
