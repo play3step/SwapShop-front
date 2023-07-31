@@ -25,6 +25,7 @@
                     </div>
                     <div>
                         <PostCard v-for="post in mainPosts" :key="post.id" :post="post" />
+                    
                     </div>
                 </div>
             </div>

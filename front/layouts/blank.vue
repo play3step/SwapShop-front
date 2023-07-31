@@ -1,26 +1,15 @@
 <template>
-    <PostForm />
+    <v-app>
+        <nuxt />
 
-
+    </v-app>
 </template>
 
 <script>
-import PostForm from '../components/PostForm'
-export default {
-    layout: 'blank',
 
-    components: {
-        PostForm
-    },
-    data() {
-        return {
-
-        }
-    }
-}
 </script>
 
-<style>
+<style scoped>
 body {
     box-sizing: border-box;
     margin: 0px;

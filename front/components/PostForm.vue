@@ -43,6 +43,7 @@ import Category from "../components/category.vue";
 import { mapState } from 'vuex';
 
 export default {
+    
     components: {
         Category
     },
@@ -60,8 +61,6 @@ export default {
             selectedCourse: null,
             imageFile: null,
             imagePreview: null,  // 이미지 미리보기 URL
-
-
         }
     },
     computed: {

@@ -2,15 +2,16 @@
     <div>
 
         <div class="post_container">
-            <img
-                src="https://cdn.icon-icons.com/icons2/1812/PNG/512/4213421-google-logo-media-network-online-search-social_115428.png">
-            <div class="post_text">
+            <div class="image-container">
+                <v-img v-if="post.images && post.images[0]" :src="post.images[0].filePath" />
+                <v-img v-else src="https://www.eclosio.ong/wp-content/uploads/2018/08/default.png" />
+            </div>
+            <nuxt-link :to="'/posts/' + post.id" class="post_text">
                 <div v-if="post">
                     <p>{{ post.title }}</p>
                     <p>{{ post.content }}</p>
-
                 </div>
-            </div>
+            </nuxt-link>
             <div class="icons">
                 <span class="material-symbols-outlined">
                     favorite
@@ -21,21 +22,6 @@
             </div>
         </div>
 
-
-
-        <!-- <v-card-action>
-            <v-menu offset-y open-on-hover>
-                <template v-slot:activator="{ on }">
-                    <v-btn text color="orange" v-on="on">
-                        <v-icon>mdi-dots-horizontal</v-icon>
-                    </v-btn>
-                </template>
-                <div style="background: white">
-                    <v-btn dark color="red" @click="onRemovePost">삭제</v-btn>
-                    <v-btn text color="orange" @click="onEditPost">수정</v-btn>
-                </div>
-            </v-menu>
-        </v-card-action> -->
     </div>
 </template>
 
@@ -55,13 +41,7 @@ export default {
         }
     },
     methods: {
-        onRemovePost() {
-            this.$store.dispatch("posts/remove", {
-                id: this.post.id,
-            });
-        },
-        onEditPost() {
-        },
+        
     },
 }
 
@@ -75,6 +55,7 @@ export default {
     margin: 20px auto;
     /* 상하로 20px의 마진을 주고 좌우로는 자동 마진을 줍니다. */
 }
+
 .post_container {
     width: 350px;
     height: 110px;
@@ -85,7 +66,7 @@ export default {
 
 }
 
-.post_container img {
+.image-container {
     width: 90px;
     height: 90px;
     background-size: cover;
@@ -93,6 +74,7 @@ export default {
 
 
 }
+
 .icons {
     position: absolute;
     bottom: 0;
@@ -109,14 +91,16 @@ export default {
     color: #6CB7F8;
 
 }
+
 .post_text {
     margin-left: 20px;
     display: inline-block;
     margin-top: -18 px;
+    text-decoration: none;
+    color: black;
 }
 
 .post_text p {
     line-height: 1.6;
     text-align: justify;
-}
-</style>
+}</style>

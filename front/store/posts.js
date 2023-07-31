@@ -17,7 +17,9 @@ export const mutations = {
         const index = state.mainPosts.findIndex(v => v.id === payload.postId);
         state.mainPosts[index].Comments.unshift(payload);
     },
-
+    setMainPosts(state, posts) {
+        state.mainPosts = posts.data;
+    },
 
 };
 export const actions = {
@@ -33,7 +35,6 @@ export const actions = {
                 major: payload.major,
                 name: payload.course,
                 professor: payload.professor,
-                code: "AME11026",
             },
         };
         let formData = new FormData();
@@ -42,11 +43,10 @@ export const actions = {
         if (payload.imageFile) {
             formData.append("image", payload.imageFile);
         }
-
+        
         let axiosConfig = {
             headers: {
                 'Authorization': 'Bearer ' + payload.token,
-                'Content-Type': 'multipart/form-data',
             }
         };
 

@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <nuxt />
-        <nav>
+        <nav v-if="me">
             <div class="menu_bar">
                 <div class="icon_container"><!--각 라우터 지정 해야함-->
                     <nuxt-link to="/">
@@ -20,7 +20,7 @@
                         </span>
                     </nuxt-link>
                     <nuxt-link to="/">
-                        <span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined">    
                             notifications
                         </span>
                     </nuxt-link>
@@ -41,7 +41,9 @@
 export default {
 
     computed: {
-
+        me() {
+            return this.$store.state.users.me;
+        },
     },
     methods: {
 
