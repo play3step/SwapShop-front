@@ -1,10 +1,13 @@
 <template>
     <div>
-        <v-select :items="majors" label="Major" v-model="selectedMajor" @change="loadProfessors"></v-select>
+        <v-select :items="majors" label="Major" v-model="selectedMajor" @change="loadProfessors"
+            :rules="[v => !!v || '필수 항목입니다.']"></v-select>
+
         <v-select v-if="selectedMajor" :items="professors" label="Professor" v-model="selectedProfessor"
-            @change="loadCourses"></v-select>
+            @change="loadCourses" :rules="[v => !!v || '필수 항목입니다.']"></v-select>
+
         <v-select v-if="selectedProfessor" :items="courses" label="Courses" v-model="selectedCourse"
-            @change="onCourseChanged"></v-select>
+            @change="onCourseChanged" :rules="[v => !!v || '필수 항목입니다.']"></v-select>
     </div>
 </template>
 
