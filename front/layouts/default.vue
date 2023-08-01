@@ -19,7 +19,7 @@
                             description
                         </span>
                     </nuxt-link>
-                    <nuxt-link to="/">
+                    <nuxt-link to="/alarm">
                         <span class="material-symbols-outlined">    
                             notifications
                         </span>
@@ -51,13 +51,13 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 body {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     width: 375px;
-    height: 812px;
+    height: 780px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -71,7 +71,7 @@ body {
 }
 
 .icon_container {
-    padding: 14px 30px;
+    padding: 14px 20px;
 }
 
 .icon_container a {

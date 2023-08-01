@@ -5,6 +5,11 @@
                 <v-img v-if="post.images && post.images[0]" :src="post.images[0].filePath" />
                 <v-img v-else src="https://www.eclosio.ong/wp-content/uploads/2018/08/default.png" />
                 <div class="hamburger_btn">
+                    <a class="back_arrow" @click="goToIndex">
+                        <span class="material-symbols-outlined">
+                            arrow_back_ios
+                        </span>
+                    </a>
                     <v-card-action>
                         <v-menu offset-y open-on-hover>
                             <template v-slot:activator="{ on }">
@@ -12,7 +17,7 @@
                                     <v-icon>mdi-dots-horizontal</v-icon>
                                 </v-btn>
                             </template>
-                            <div style="background: white">
+                            <div>
                                 <v-btn dark color="red" @click="onRemovePost">삭제</v-btn>
                                 <v-btn text color="orange" @click="onEditPost">수정</v-btn>
                             </div>
@@ -35,6 +40,17 @@
                     <h1>{{ post.title }}</h1>
                     <p>{{ post.category.name }}, {{ post.category.professor }}, {{ post.category.major }}</p>
                 </div>
+                <div class="information_bar">
+                    <div class="icon_container">
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                        <span>{{ post.price }}원</span>
+                        <span class="material-symbols-outlined">
+                            forum
+                        </span>
+                    </div>
+                </div>
             </div>
         </v-container>
         <div v-else>
@@ -47,6 +63,8 @@
 <script>
 import PostCard from '../../components/PostCard.vue';
 export default {
+    layout: 'blank',
+
     components: {
         PostCard,
     },
@@ -66,8 +84,13 @@ export default {
             });
         },
         onEditPost() {
+            
+        },
+        goToIndex() {
+            this.$router.push('/');
         },
     },
+    
 }
 
 </script>
@@ -98,7 +121,7 @@ body {
 .post_container {
     width: 100%;
     margin-left: auto;
-    margin-left: auto;
+    margin-right: auto;
     position: relative;
 }
 
@@ -117,7 +140,6 @@ body {
     height: 65px;
     display: flex;
     align-items: center;
-    ;
     padding: 5px 0 5px 30px;
     background-color: #6CB7F8;
     border-top-left-radius: 10px;
@@ -178,7 +200,42 @@ body {
     position: absolute;
     top: 10px;
     left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-left: auto;
-    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.information_bar {
+    position: fixed;
+    bottom: 0;
+    width: 375px;
+    background-color: #6CB7F8;
+}
+
+.icon_container {
+    padding: 20px 0 20px 18px;
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.icon_container span {
+    color: white;
+    font-size: 16px;
+    margin-right: 30px;
+}
+
+.icon_container span:first-child {
+    font-size: 24px;
+    border-right: white 1px solid;
+    padding-right: 18px;
+}
+
+.icon_container span:last-child {
+    font-size: 24px;
+    margin-left: 134px;
 }
 </style>
