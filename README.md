@@ -7,6 +7,8 @@
 <div><h3> 사용기술</h3></div>
 
 <div>
+<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+<img src="https://img.shields.io/badge/Nuxt.js-F05032?style=for-the-badge&logo=nuxtdotjs&logoColor=white">
 
 </div>   
 
