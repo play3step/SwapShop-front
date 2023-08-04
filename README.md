@@ -8,7 +8,7 @@
 
 <div>
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
-<img src="https://img.shields.io/badge/Nuxt.js-F05032?style=for-the-badge&logo=nuxtdotjs&logoColor=white">
+<img src="https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white">
 
 </div>   
 
