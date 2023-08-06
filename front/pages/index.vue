@@ -4,7 +4,11 @@
             <div id="logo">
                 <img :src="require(`@/png/${img}`)" />
             </div>
-            <button class="social_box" @click="login">Kakao</button> <!--로그인이 성공한다면 /user/login으로 이동-->
+            <div class="social_container">
+                <button class="social_box" @click="loginkakao">Kakao</button>
+                <button class="social_box" @click="logingoogle">google</button>
+            </div>
+
         </div>
         <v-container>
             <div v-if="me"> <!--로그인 성공 후 모습-->
@@ -59,8 +63,11 @@ export default {
         }
     },
     methods: {
-        login() {   //백이 만든 localhost로 (이동 로그인 과정)
-            window.location.href = 'http://localhost:8080/login';
+        loginkakao() {   //백이 만든 localhost로 (이동 로그인 과정)
+            window.location.href = 'http://localhost:8080/user/new/kakao';
+        },
+        logingoogle() {   //백이 만든 localhost로 (이동 로그인 과정)
+            window.location.href = 'http://localhost:8080/user/new/google';
         }
     }
 };
@@ -90,7 +97,13 @@ export default {
     width: 344px;
     height: 193px;
 }
+.social_container {
+    display: flex;
+    margin-top: 24px;
+    justify-content: center;
+    align-items: center;
 
+}
 .social_box {
     display: flex;
     margin-right: auto;
@@ -108,8 +121,10 @@ export default {
 
 .main_container {
     position: relative;
-    width: 390px;
-    height: 844px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+    height: 812px;
 }
 
 .sub_logo {
@@ -125,11 +140,9 @@ export default {
     list-style: none;
     display: flex;
     width: 350px;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 20px 8px 20px;
+    padding: 20px 20px 8px 20px;
     background-color: white;
     border-bottom: #6CB7F8 1px solid;
 }

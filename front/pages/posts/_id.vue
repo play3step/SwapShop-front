@@ -46,10 +46,18 @@
                             favorite
                         </span>
                         <span>{{ post.price }}원</span>
-                        <span class="material-symbols-outlined">
-                            forum
-                        </span>
+                        <div class="chat">
+                            <span class="material-symbols-outlined">
+                                forum
+                            </span>
+                        </div>
                     </div>
+                </div>
+                <div>
+                    <form @submit.prevent="submitComment">
+                        <input v-model="comment.content" placeholder="Write a comment..." />
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
         </v-container>
@@ -68,6 +76,13 @@ export default {
     components: {
         PostCard,
     },
+    data() {
+        return {
+            comment: {
+                content: '',
+            },
+        };
+    },
     computed: {
         post() {
             if (this.$store.state.posts.mainPosts) {
@@ -84,13 +99,22 @@ export default {
             });
         },
         onEditPost() {
-            
+
         },
         goToIndex() {
             this.$router.push('/');
         },
+        submitComment() {
+            this.$store.dispatch("posts/comment", {
+                content: this.comment.content,
+                postId: this.post.id,
+                // token: 여기에 사용자의 토큰을 전달해야 합니다.
+            });
+            // 폼을 초기화합니다.
+            this.comment.content = '';
+        },
     },
-    
+
 }
 
 </script>
@@ -230,12 +254,16 @@ body {
 
 .icon_container span:first-child {
     font-size: 24px;
-    border-right: white 1px solid;
     padding-right: 18px;
 }
 
-.icon_container span:last-child {
+.chat {
+    font-size: 16px;
+    margin-left: auto;
+    border-right: none;
     font-size: 24px;
-    margin-left: 134px;
+    display: flex;
+    align-items: center;
+
 }
 </style>

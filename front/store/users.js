@@ -23,6 +23,8 @@ export const actions = {    /*비동기 작업할 때는 actions*/
             authenticationType: payload.authenticationType,
         }).then((data) => {
             commit('setMe', payload)
+        }).catch((err)=>{
+            alert(err.response)
         })
     },
     logIn({ commit }, payload) {    //로그인 구간은 아직 미정

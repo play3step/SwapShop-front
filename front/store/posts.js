@@ -17,9 +17,6 @@ export const mutations = {
         const index = state.mainPosts.findIndex(v => v.id === payload.postId);
         state.mainPosts[index].Comments.unshift(payload);
     },
-    setMainPosts(state, posts) {
-        state.mainPosts = posts.data;
-    },
 
 };
 export const actions = {
@@ -80,4 +77,25 @@ export const actions = {
                 console.error(error);
             });
     },
+    comment({ commit }, payload) {
+        let commentObject = {
+            content: payload.content,
+            nickname: "닉네임",
+
+        };
+        let axiosConfig = {
+            headers: {
+                'Authorization': 'Bearer ' + payload.token,
+            }
+        };
+        this.$axios.post(`http://localhost:8080/post/${payload.postId}/comment`, commentObject, axiosConfig)
+            .then((response) => {
+                // Use the new comment data from the server response
+                commit('addComment', response.data);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    }
+    
 };

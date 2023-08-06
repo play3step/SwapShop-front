@@ -1,6 +1,5 @@
 <template>
     <div>
-
         <div class="post_container">
             <div class="image-container">
                 <v-img v-if="post.images && post.images[0]" :src="post.images[0].filePath" />
@@ -21,7 +20,6 @@
                 </span>
             </div>
         </div>
-
     </div>
 </template>
 
@@ -33,7 +31,6 @@ export default {
         post: {
             type: Object,
             required: true,
-
         },
     },
     data() {
@@ -51,9 +48,7 @@ export default {
 <style scoped>
 .card_container {
     width: 80%;
-    /* 카드의 너비를 조절합니다. */
     margin: 20px auto;
-    /* 상하로 20px의 마진을 주고 좌우로는 자동 마진을 줍니다. */
 }
 
 .post_container {

@@ -20,7 +20,7 @@
                     <v-btn class="img_btn" @click="onUploadButtonClick">이미지 업로드</v-btn>
                     <!-- 이미지 미리보기 추가 -->
                     <img v-if="imagePreview" :src="imagePreview"
-                        style="max-width: 200px; max-height: 200px; margin-top: 10px;" />
+                        style="max-width: 160px; max-height: 160px; margin-top: 10px;" />
                 </v-flex>
 
                 <v-text-field v-model="title" outlined auto-grow clearable label="제목" :hide-details="hideDetails"
@@ -182,5 +182,8 @@ body {
 .back_arrow {
     color: #6CB7F8;
     text-align: justify;
+}
+.back_arrow span {
+    font-size: 16px;
 }
 </style>
