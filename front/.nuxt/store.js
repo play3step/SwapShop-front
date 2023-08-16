@@ -19,6 +19,7 @@ let store = {};
   // Enforce store modules
   store.modules = store.modules || {}
 
+  resolveStoreModules(require('../store/note.js'), 'note.js')
   resolveStoreModules(require('../store/posts.js'), 'posts.js')
   resolveStoreModules(require('../store/users.js'), 'users.js')
 
@@ -28,6 +29,7 @@ let store = {};
     // Whenever any Vuex module is updated...
     module.hot.accept([
       '../store/index.js',
+      '../store/note.js',
       '../store/posts.js',
       '../store/users.js',
     ], () => {

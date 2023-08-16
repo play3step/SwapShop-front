@@ -30,15 +30,32 @@
                         <div class="nickname">닉네임</div>
                         <div class="major">컴퓨터공학과</div>
                     </div>
-                    <a href="#">
-                        <span class="material-symbols-outlined">
-                            settings
-                        </span>
-                    </a>
+                    <a @click="navigateToChat" class="Note">채팅하기</a>
+
                 </div>
                 <div class="detail_container">
                     <h1>{{ post.title }}</h1>
                     <p>{{ post.category.name }}, {{ post.category.professor }}, {{ post.category.major }}</p>
+                </div>
+
+                <div class="comment_container">
+                    <v-list>
+                        <v-list-item v-for="c in post.Comments" :key="c.id">
+                            <v-list-item-avatar color="teal">
+                                <span>{{ c.User.nickname[0] }}</span>
+                            </v-list-item-avatar>
+                            <v-list-item-content>
+                                <h3>{{ c.User.nickname }}</h3>
+                                <div>{{ c.content }}</div>
+                            </v-list-item-content>
+                        </v-list-item>
+                    </v-list>
+                </div>
+
+                <div class="open_comment">
+                    <template v-if="commentOpened">
+                        <CommentForm :post-id="post.id" />
+                    </template>
                 </div>
                 <div class="information_bar">
                     <div class="icon_container">
@@ -47,17 +64,11 @@
                         </span>
                         <span>{{ post.price }}원</span>
                         <div class="chat">
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined" @click="onToggleComment">
                                 forum
                             </span>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <form @submit.prevent="submitComment">
-                        <input v-model="comment.content" placeholder="Write a comment..." />
-                        <button type="submit">Submit</button>
-                    </form>
                 </div>
             </div>
         </v-container>
@@ -70,17 +81,22 @@
 
 <script>
 import PostCard from '../../components/PostCard.vue';
+import CommentForm from '../../components/CommentForm.vue';
 export default {
     layout: 'blank',
 
     components: {
         PostCard,
+        CommentForm,
+
     },
     data() {
         return {
             comment: {
                 content: '',
             },
+            commentOpened: false,
+
         };
     },
     computed: {
@@ -104,14 +120,15 @@ export default {
         goToIndex() {
             this.$router.push('/');
         },
-        submitComment() {
-            this.$store.dispatch("posts/comment", {
-                content: this.comment.content,
-                postId: this.post.id,
-                // token: 여기에 사용자의 토큰을 전달해야 합니다.
+        onToggleComment() {
+            this.commentOpened = !this.commentOpened;
+        },
+        navigateToChat() {
+            this.$store.dispatch('note/setSelectedPost', {
+                id: this.post.id,
+            }).then(() => {
+                this.$router.push('/note');
             });
-            // 폼을 초기화합니다.
-            this.comment.content = '';
         },
     },
 
@@ -170,6 +187,11 @@ body {
     border-top-right-radius: 10px;
     color: white;
 
+}
+
+.comment_container {
+    width: 100%;
+    height: 100%;
 }
 
 .profile {
@@ -265,5 +287,17 @@ body {
     display: flex;
     align-items: center;
 
+}
+
+.open_comment {
+    position: fixed;
+    width: 375px;
+    bottom: 10%;
+}
+
+.Note {
+    text-decoration: none;
+    margin-left: 180px;
+    color: white;
 }
 </style>

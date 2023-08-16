@@ -8,6 +8,7 @@
             <nuxt-link :to="'/posts/' + post.id" class="post_text">
                 <div v-if="post">
                     <p>{{ post.title }}</p>
+                    <p class="post_major">{{ post.category.major }}</p>
                     <p>{{ post.content }}</p>
                 </div>
             </nuxt-link>
@@ -96,6 +97,13 @@ export default {
 }
 
 .post_text p {
-    line-height: 1.6;
+    line-height: 1.2;
     text-align: justify;
-}</style>
+}
+.post_major{
+    font-size: 10px;
+    color: #ADAAAA;
+    
+}
+
+</style>

@@ -40,33 +40,23 @@
             </div>
         </div>
         <div v-else>
-            <div class="alarm_container">
-                <div>
-                    <div class="alarm_title">닉네임</div>
-                    <div class="alarm_time">쪽지 내용</div>
-                </div>
-            </div>
-            <div class="alarm_container">
-                <div>
-                    <div class="alarm_title">닉네임</div>
-                    <div class="alarm_time">쪽지 내용</div>
-                </div>
-            </div>
-            <div class="alarm_container">
-                <div>
-                    <div class="alarm_title">닉네임</div>
-                    <div class="alarm_time">쪽지 내용</div>
-                </div>
-            </div>
-            
+            <NoteBox />
+            <NoteBox />
+            <NoteBox />
+
         </div>
     </div>
 </template>
 
 
 <script>
+import NoteBox from '../components/NoteBox.vue';
+
 export default {
     layout: 'blank',
+    components: {
+        NoteBox
+    },
     data() {
         return {
             index: 1,
