@@ -8,7 +8,6 @@
                 <button class="social_box" @click="loginkakao">Kakao</button>
                 <button class="social_box" @click="logingoogle">google</button>
             </div>
-
         </div>
         <v-container>
             <div v-if="me"> <!--로그인 성공 후 모습-->
@@ -28,8 +27,7 @@
                         </ul>
                     </div>
                     <div>
-                        <PostCard v-for="post in mainPosts" :key="post.id" :post="post" />
-                    
+                        <PostCard v-for="post in mainPosts" :key="post.id" :post="post" />            
                     </div>
                 </div>
             </div>
@@ -118,7 +116,6 @@ export default {
     justify-content: center;
     color: #6CB7F8;
 }
-
 .main_container {
     position: relative;
     margin-left: auto;
