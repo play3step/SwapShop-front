@@ -27,8 +27,8 @@
                 <div class="profile_container">
                     <div class="profile"></div>
                     <div>
-                        <div class="nickname">닉네임</div>
-                        <div class="major">컴퓨터공학과</div>
+                        <div class="nickname">{{ post.login.nickname }}</div>
+                        <div class="major">{{ post.login.major }}</div>
                     </div>
                     <a @click="navigateToChat" class="Note">채팅하기</a>
 
@@ -124,9 +124,8 @@ export default {
             this.commentOpened = !this.commentOpened;
         },
         navigateToChat() {
-            this.$store.dispatch('note/setSelectedPost', {
-                id: this.post.id,
-            }).then(() => {
+            const nickname = this.post.login.nickname;
+            this.$store.dispatch('note/setSelectedPost', nickname).then(() => {
                 this.$router.push('/note');
             });
         },

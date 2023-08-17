@@ -13,7 +13,7 @@
                 </li>
             </ul>
             {{ selectedPost }}
-            {{ me }}
+            {{ me.nickname }}
         </div>
         <v-container>
             <v-textarea v-model="content" class="custom_textarea" outlined auto-grow clearable label="내용을 입력하세요."
@@ -42,6 +42,9 @@ export default {
         me() {
             return this.$store.state.users.me;
         },
+        token() {
+            return this.me.token;
+        },
     },
     methods: {
         goToIndex() {
@@ -51,7 +54,8 @@ export default {
             if (this.$refs.form.validate()) {
                 this.$store.dispatch('note/sendNote', {
                     content: this.content,
-                    senderName: this.me,
+                    senderName: this.me.nickname,
+                    token: this.token,
                     receiverName: this.selectedPost,
                 })
                     .then(() => {

@@ -41,8 +41,7 @@
         </div>
         <div v-else>
             <NoteBox />
-            <NoteBox />
-            <NoteBox />
+
 
         </div>
     </div>
