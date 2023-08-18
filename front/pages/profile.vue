@@ -113,7 +113,9 @@ export default {
 
 
 .profile_container span {
-    margin-left: 176px;
+    position: absolute;
+    right: 30px;
+    top: 76px;
     color: #6CB7F8;
     text-decoration: none;
     padding: 5px 10px;

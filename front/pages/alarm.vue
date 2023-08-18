@@ -40,8 +40,7 @@
             </div>
         </div>
         <div v-else>
-            <NoteBox />
-
+            <NoteBox v-for="note in messages.messageBox" :key="note.id" :note="note"/>
 
         </div>
     </div>
@@ -55,6 +54,22 @@ export default {
     layout: 'blank',
     components: {
         NoteBox
+    },
+    computed: {
+        me() {
+            return this.$store.state.users.me;
+        },
+        messages() {
+            return this.$store.state.note.messages;
+        },
+        token() {
+            return this.me.token;
+        },
+    },
+    async mounted() {
+        await this.$store.dispatch('note/fetchMessages', {
+            token: this.token,
+        });
     },
     data() {
         return {
