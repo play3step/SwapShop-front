@@ -2,11 +2,8 @@
     <div>
         <div class="note_container">
             <div>
-
-                <div class="note_title">닉네임</div>
-                <div v-for="message in messages.messageBox" :key="message.id" class="note_content">
-                    <p>{{ message.lastMessage }}</p>
-                </div>
+                <div class="note_title">{{note.nickname}}</div>
+                <p class="note_content">{{ note.lastMessage }}</p>
             </div>
         </div>
     </div>
@@ -16,25 +13,10 @@
 
 export default {
 
-    computed: {
-        me() {
-            return this.$store.state.users.me;
-        },
-        token() {
-            return this.me.token;
-        },
-        messages() {
-            return this.$store.state.note.messages;
-        }
-    },
-    async mounted() {
-        await this.$store.dispatch('note/fetchMessages', {
-            token: this.token,
-        });
-    },
     props: {
-        post: {
-
+        note: {
+            type: Object,
+            required: true,
         },
     },
     data() {
