@@ -1,11 +1,12 @@
 <template>
     <div>
-        <div class="note_container">
+
+        <nuxt-link :to="'/noteRoom/' + note.id" class="note_container">
             <div>
                 <div class="note_title">{{note.nickname}}</div>
                 <p class="note_content">{{ note.lastMessage }}</p>
             </div>
-        </div>
+        </nuxt-link>
     </div>
 </template>
 
@@ -42,6 +43,7 @@ export default {
     width: 350px;
     height: 65px;
     border-bottom: #6CB7F8 1px solid;
+    text-decoration: none;
 
 }
 
@@ -50,6 +52,7 @@ export default {
     margin-left: 16px;
     font-size: 14px;
     line-height: 30px;
+    color: black;
 }
 
 .note_content {
