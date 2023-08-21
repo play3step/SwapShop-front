@@ -1,28 +1,21 @@
 <template>
     <div>
         <div class="back_arrow">
-            <a @click="goToIndex">
+            <a @click="goBack">
                 <span class="material-symbols-outlined">
                     arrow_back_ios
                 </span>
             </a>
             <span>쪽지</span>
         </div>
-        <div class="alarm_list">
-            <span @click="show_alarm" v-bind:class="{ selected: index === 1 }">
-                알림
-            </span>
-            <span @click="show_note" v-bind:class="{ selected: index === 2 }">
-                쪽지함
-            </span>
-        </div>
-        <div v-if="index === 1">
-            
-        </div>
-        <div v-else>
-
+        <div v-for="detail in message.messageDetail" :key="detail.id" class="detail_container">
+            <div>
+                <div class="detail_state">{{ detail.state }}</div>
+                <p class="detail_content">{{ detail.lastMessage }}</p>
+            </div>
 
         </div>
+
     </div>
 </template>
 
@@ -34,20 +27,35 @@ export default {
 
     data() {
         return {
-
+            messageId: this.$route.params.room
         };
     },
-    methods: {
-        goToIndex() {
-            this.$router.push('/');
+    async created() {
+        console.log(this.$route.params); // 현재 라우트의 파라미터 출력
+        this.$store.dispatch('note/loadMessages', {
+            token: this.token,
+            id: this.messageId
+
+        });
+    },
+    computed: {
+        message() {
+            return this.$store.state.note.messageDetail;
         },
-        show_alarm() {
-            this.index = 1;
+        me() {
+            return this.$store.state.users.me;
         },
-        show_note() {
-            this.index = 2;
+        token() {
+            return this.me.token;
         },
     },
+
+    methods: {
+        goBack() {
+            this.$router.go(-1);
+        },
+    },
+
 }
 
 </script>
@@ -71,34 +79,12 @@ export default {
     font-size: 14px;
 }
 
-.alarm_list {
-    font-size: 14px;
-    color: #a5b5c4;
-    text-align: justify;
-    margin-top: 45px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 350px;
-    height: 30px;
-    border-bottom: #6CB7F8 1px solid;
-
-}
-
-.selected {
-    font-weight: bold;
-    color: #6CB7F8; /* 여기에 원하는 색상을 설정하세요 */
-}
-
-.alarm_list span:last-child {
-    margin-left: 14px;
-}
-
-.alarm_container {
+.detail_container {
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 0 10px 14px;
+    padding: 20px 0 10px 14px;
     text-align: left;
     width: 350px;
     height: 65px;
@@ -106,24 +92,17 @@ export default {
 
 }
 
-.alarm_png {
-    width: 35px;
-    height: 35px;
-    background-color: #6CB7F8;
-    border-radius: 50px;
-    margin-left: -10px;
-
-}
-
-.alarm_title {
-    margin-left: 16px;
+.detail_state {
+    margin-left: 10px;
     font-size: 14px;
     line-height: 30px;
+    color: #333333;
+
 }
 
-.alarm_time {
-    font-size: 10px;
-    color: #ADAAAA;
-    margin-left: 16px;
+.detail_content {
+    font-size: 12px;
+    color: #333333;
+    margin-left: 10px;
 }
 </style>

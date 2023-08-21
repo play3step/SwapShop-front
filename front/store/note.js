@@ -13,6 +13,9 @@ export const mutations = {
     setMessages(state, messages) {
         state.messages = messages;
     },
+    loadMessages(state, messages) {
+        state.messageDetail = messages;
+    },
 };
 export const actions = {
     setSelectedPost({ commit }, payload) {
@@ -49,5 +52,18 @@ export const actions = {
             console.error(error);
         }
     },
-
+    loadMessages({ commit }, payload) {
+        let axiosConfig = {
+            headers: {
+                'Authorization': 'Bearer ' + payload.token,
+            }
+        };
+        this.$axios.get(`http://localhost:8080/messages/${payload.id}`, axiosConfig)
+            .then((response) => {
+                commit('loadMessages', response.data);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    },
 };
