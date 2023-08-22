@@ -5,8 +5,8 @@ export const state = () => ({
 });
 
 export const mutations = {
-    setSelectedPost(state, post) {
-        state.selectedPost = post;
+    setSelectedPost(state, nickname) {
+        state.selectedPost = nickname;
     },
     sendNote(state, payload){
     },
@@ -58,7 +58,7 @@ export const actions = {
                 'Authorization': 'Bearer ' + payload.token,
             }
         };
-        this.$axios.get(`http://localhost:8080/messages/1`, axiosConfig)
+        this.$axios.get(`http://localhost:8080/messages/${payload.id}`, axiosConfig)
             .then((response) => {
                 commit('loadMessages', response.data);
             })

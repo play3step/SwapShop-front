@@ -3,48 +3,56 @@
     "name": "alarm",
     "path": "/alarm",
     "component": "/Users/echo/Desktop/myCoding/myVue/SwapShop-front/front/pages/alarm.vue",
-    "chunkName": "pages/alarm"
+    "chunkName": "pages/alarm",
+    "_name": "_4ae64f82"
   },
   {
     "name": "note",
     "path": "/note",
     "component": "/Users/echo/Desktop/myCoding/myVue/SwapShop-front/front/pages/note.vue",
-    "chunkName": "pages/note"
+    "chunkName": "pages/note",
+    "_name": "_f0b1ea18"
   },
   {
     "name": "post",
     "path": "/post",
     "component": "/Users/echo/Desktop/myCoding/myVue/SwapShop-front/front/pages/post.vue",
-    "chunkName": "pages/post"
+    "chunkName": "pages/post",
+    "_name": "_5687eca2"
   },
   {
     "name": "profile",
     "path": "/profile",
     "component": "/Users/echo/Desktop/myCoding/myVue/SwapShop-front/front/pages/profile.vue",
-    "chunkName": "pages/profile"
+    "chunkName": "pages/profile",
+    "_name": "_9faa43d2"
   },
   {
     "name": "user-login",
     "path": "/user/login",
     "component": "/Users/echo/Desktop/myCoding/myVue/SwapShop-front/front/pages/user/login.vue",
-    "chunkName": "pages/user/login"
+    "chunkName": "pages/user/login",
+    "_name": "_38ed2e27"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/echo/Desktop/myCoding/myVue/SwapShop-front/front/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_54dd4380"
   },
   {
     "name": "noteRoom-room",
     "path": "/noteRoom/:room?",
     "component": "/Users/echo/Desktop/myCoding/myVue/SwapShop-front/front/pages/noteRoom/_room.vue",
-    "chunkName": "pages/noteRoom/_room"
+    "chunkName": "pages/noteRoom/_room",
+    "_name": "_7221decc"
   },
   {
     "name": "posts-id",
     "path": "/posts/:id?",
     "component": "/Users/echo/Desktop/myCoding/myVue/SwapShop-front/front/pages/posts/_id.vue",
-    "chunkName": "pages/posts/_id"
+    "chunkName": "pages/posts/_id",
+    "_name": "_199d4dec"
   }
 ]

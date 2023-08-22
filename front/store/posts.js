@@ -23,7 +23,7 @@ export const mutations = {
     },
 };
 export const actions = {
-    add({ commit }, payload) {
+    add({ commit, dispatch }, payload) {
         let postObject = {
             title: payload.title,
             content: payload.content,
@@ -53,6 +53,9 @@ export const actions = {
         this.$axios.post('http://localhost:8080/post', formData, axiosConfig)
             .then((response) => {
                 commit('addMainPost', postObject);
+                dispatch('loadPosts');
+
+                
             })
             .catch((error) => {
                 console.error(error);

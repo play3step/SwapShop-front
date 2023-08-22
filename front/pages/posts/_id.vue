@@ -3,7 +3,6 @@
         <v-container v-if="post">
             <div class="post_container">
                 <v-img v-if="post.images && post.images[0]" :src="post.images[0].filePath" />
-
                 <v-img v-else src="https://www.eclosio.ong/wp-content/uploads/2018/08/default.png" />
                 <div class="hamburger_btn">
                     <a class="back_arrow" @click="goToIndex">
@@ -40,12 +39,12 @@
                 </div>
                 <div class="comment_container">
                     <v-list>
-                        <v-list-item v-for="c in commentBox" :key="c.id">
-                            <v-list-item-content>
-                                <h3>{{ c.nickname }}</h3>
-                                <div>{{ c.content }}</div>
-                            </v-list-item-content>
-                        </v-list-item>
+                        <div class="comment_box" v-for="c in commentBox" :key="c.id">
+                            <div>
+                                <div class="comment_nickname">{{ c.nickname }}</div>
+                                <div class="comment_contents">{{ c.content }}</div>
+                            </div>
+                        </div>
                     </v-list>
                 </div>
                 <div class="open_comment">
@@ -132,7 +131,7 @@ export default {
         },
         navigateToChat() {
             const nickname = this.post.nickname;
-            this.$store.dispatch('note/setSelectedPost', nickname ).then(() => {
+            this.$store.dispatch('note/setSelectedPost', nickname).then(() => {
                 this.$router.push('/note');
             });
         },
@@ -197,7 +196,9 @@ body {
 
 .comment_container {
     width: 100%;
-    height: 100%;
+    height: 360px;
+    overflow: scroll;
+
 }
 
 .profile {
@@ -306,5 +307,29 @@ body {
     text-decoration: none;
     right: 30px;
     color: white;
+}
+
+.comment_box {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0 10px 14px;
+    text-align: left;
+    width: 350px;
+    height: 65px;
+    border-bottom: #6CB7F8 1px solid;
+
+}
+.comment_nickname {
+    margin-left: 16px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.comment_contents {
+    font-size: 10px;
+    color: #ADAAAA;
+    margin-left: 16px;
 }
 </style>
