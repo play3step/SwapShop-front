@@ -58,7 +58,7 @@ export const actions = {
                 'Authorization': 'Bearer ' + payload.token,
             }
         };
-        this.$axios.get(`http://localhost:8080/messages/${payload.id}`, axiosConfig)
+        this.$axios.get(`http://localhost:8080/messages/1`, axiosConfig)
             .then((response) => {
                 commit('loadMessages', response.data);
             })

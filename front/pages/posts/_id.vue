@@ -3,6 +3,7 @@
         <v-container v-if="post">
             <div class="post_container">
                 <v-img v-if="post.images && post.images[0]" :src="post.images[0].filePath" />
+
                 <v-img v-else src="https://www.eclosio.ong/wp-content/uploads/2018/08/default.png" />
                 <div class="hamburger_btn">
                     <a class="back_arrow" @click="goToIndex">
@@ -27,34 +28,29 @@
                 <div class="profile_container">
                     <div class="profile"></div>
                     <div>
-                        <div class="nickname">{{ post.login.nickname }}</div>
-                        <div class="major">{{ post.login.major }}</div>
+                        <div class="nickname">{{ post.nickname }}</div>
+                        <div class="major">{{ post.major }}</div>
                     </div>
                     <a @click="navigateToChat" class="Note">채팅하기</a>
-
                 </div>
                 <div class="detail_container">
+
                     <h1>{{ post.title }}</h1>
                     <p>{{ post.category.name }}, {{ post.category.professor }}, {{ post.category.major }}</p>
                 </div>
-
                 <div class="comment_container">
                     <v-list>
-                        <v-list-item v-for="c in post.Comments" :key="c.id">
-                            <v-list-item-avatar color="teal">
-                                <span>{{ c.User.nickname[0] }}</span>
-                            </v-list-item-avatar>
+                        <v-list-item v-for="c in commentBox" :key="c.id">
                             <v-list-item-content>
-                                <h3>{{ c.User.nickname }}</h3>
+                                <h3>{{ c.nickname }}</h3>
                                 <div>{{ c.content }}</div>
                             </v-list-item-content>
                         </v-list-item>
                     </v-list>
                 </div>
-
                 <div class="open_comment">
                     <template v-if="commentOpened">
-                        <CommentForm :post-id="post.id" />
+                        <CommentForm :postId="post.id" />
                     </template>
                 </div>
                 <div class="information_bar">
@@ -99,12 +95,23 @@ export default {
 
         };
     },
+    async mounted() {
+        if (this.post) {
+            await this.$store.dispatch('posts/loadComment', {
+                postId: this.post.id,
+            });
+        }
+    },
     computed: {
         post() {
             if (this.$store.state.posts.mainPosts) {
                 return this.$store.state.posts.mainPosts.find(v => v.id === parseInt(this.$route.params.id, 10));
             }
-        }
+        },
+        commentBox() {
+            return this.$store.state.posts.commentBox;
+        },
+
     },
     methods: {
         onRemovePost() {
@@ -124,8 +131,8 @@ export default {
             this.commentOpened = !this.commentOpened;
         },
         navigateToChat() {
-            const nickname = this.post.login.nickname;
-            this.$store.dispatch('note/setSelectedPost', nickname).then(() => {
+            const nickname = this.post.nickname;
+            this.$store.dispatch('note/setSelectedPost', nickname ).then(() => {
                 this.$router.push('/note');
             });
         },
@@ -295,8 +302,9 @@ body {
 }
 
 .Note {
+    position: absolute;
     text-decoration: none;
-    margin-left: 180px;
+    right: 30px;
     color: white;
 }
 </style>

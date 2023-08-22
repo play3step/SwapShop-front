@@ -1,5 +1,6 @@
 export const state = () => ({
     mainPosts: [],
+    commentBox: [],
 });
 
 export const mutations = {
@@ -13,16 +14,12 @@ export const mutations = {
         const index = state.mainPosts.findIndex(v => v.id === payload.id);
         state.mainPosts.splice(index, 1);
     },
+    loadComment(state, comment){
+        state.commentBox = comment;
+
+    },
     addComment(state, payload) {
-        const index = state.mainPosts.findIndex(v => v.id === payload.postId);
-        if (index !== -1) {
-            if (!state.mainPosts[index].Comments) {
-                state.mainPosts[index].Comments = []; // 초기화
-            }
-            state.mainPosts[index].Comments.unshift(payload);
-        } else {
-            console.error('Post not found');
-        }
+        state.commentBox.unshift(payload);
     },
 };
 export const actions = {
@@ -80,26 +77,33 @@ export const actions = {
                 console.error(error);
             });
     },
-    addComment({ commit }, payload) {
-        commit('addComment', payload);
+    loadComment({commit}, payload) {
+        this.$axios.get(`http://localhost:8080/post/${payload.postId}/comment`)
+            .then((response) => {
+                commit('loadComment', response.data);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    },
+    addComment({ commit, dispatch}, payload) {
+        let commentObject = {
+            content: payload.content,
+            nickname: payload.nickname,
 
-        // let commentObject = {
-        //     content: payload.content,
-        //     nickname: "닉네임",
-
-        // };
-        // let axiosConfig = {
-        //     headers: {
-        //         'Authorization': 'Bearer ' + payload.token,
-        //     }
-        // };
-        // this.$axios.post(`http://localhost:8080/post/${payload.postId}/comment`, commentObject, axiosConfig)
-        //     .then((response) => {
-        //         // Use the new comment data from the server response
-        //         commit('addComment', response.data);
-        //     })
-        //     .catch((error) => {
-        //         console.error(error);
-        //     });
+        };
+        let axiosConfig = {
+            headers: {
+                'Authorization': 'Bearer ' + payload.token,
+            }
+        };
+        this.$axios.post(`http://localhost:8080/post/${payload.postId}/comment`, commentObject, axiosConfig)
+            .then((response) => {
+                commit('addComment', response.data);
+                dispatch('loadComment', { postId: payload.postId });
+            })
+            .catch((error) => {
+                console.error(error);
+            });
     },
 };
