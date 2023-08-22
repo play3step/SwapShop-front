@@ -42,6 +42,9 @@
                 </a>
             </div>
         </div>
+        <div>
+            <v-btn type="submit" class="success_btn" color="#6CB7F8" @click="logout">로그아웃</v-btn>
+        </div>
     </div>
 </template>
 
@@ -63,7 +66,15 @@ export default {
             this.$store.dispatch('users/changeNickname', {
                 nickname: this.nickname
             })
-        }
+        },
+        async logout() {
+            try {
+                await this.$store.dispatch('users/logOut');
+                this.$router.push('/');
+            } catch (error) {
+                console.error('로그아웃 중 오류 발생:', error);
+            }
+        },
     },
     computed: {
         me() {
