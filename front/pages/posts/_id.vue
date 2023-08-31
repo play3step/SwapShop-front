@@ -25,7 +25,9 @@
                     </v-card-action>
                 </div>
                 <div class="profile_container">
-                    <div class="profile"></div>
+                    <div class="material-symbols-outlined" style="font-size: 40px;">
+                        account_circle
+                    </div>
                     <div>
                         <div class="nickname">{{ post.nickname }}</div>
                         <div class="major">{{ post.major }}</div>
@@ -33,23 +35,33 @@
                     <a @click="navigateToChat" class="Note">채팅하기</a>
                 </div>
                 <div class="detail_container">
-
                     <h1>{{ post.title }}</h1>
                     <p>{{ post.category.name }}, {{ post.category.professor }}, {{ post.category.major }}</p>
                 </div>
                 <div class="comment_container">
                     <v-list>
                         <div class="comment_box" v-for="c in commentBox" :key="c.id">
-                            <div>
+                            <div class="comment_header">
+                                <div class="material-symbols-outlined" style="font-size: 23px; color: #6CB7F8;">
+                                    account_circle
+                                </div>
                                 <div class="comment_nickname">{{ c.nickname }}</div>
-                                <div class="comment_contents">{{ c.content }}</div>
+                                <div> {{ c.parentCommentId }}</div>
+                                <div class="delete_button" @click="openCommentForm(c.id)">댓글</div>
+                                <div class="delete_button" @click="onRemoveComment(c.id)">삭제</div>
                             </div>
+                            <div class="comment_contents">{{ c.content }}</div>
+                            <div v-if="c.parentCommentId == c.postId">
+                                <div class="comment_nickname">{{ c.nickname }}</div>
+                                <div> {{ c.parentCommentId }}</div>
+                            </div>
+
                         </div>
                     </v-list>
                 </div>
                 <div class="open_comment">
                     <template v-if="commentOpened">
-                        <CommentForm :postId="post.id" />
+                        <CommentForm :postId="post.id" :parentId="commentParentId" v-if="commentOpened" />
                     </template>
                 </div>
                 <div class="information_bar">
@@ -59,7 +71,7 @@
                         </span>
                         <span>{{ post.price }}원</span>
                         <div class="chat">
-                            <span class="material-symbols-outlined" @click="onToggleComment">
+                            <span class="material-symbols-outlined" @click="() => openCommentForm()">
                                 forum
                             </span>
                         </div>
@@ -87,9 +99,6 @@ export default {
     },
     data() {
         return {
-            comment: {
-                content: '',
-            },
             commentOpened: false,
 
         };
@@ -110,11 +119,25 @@ export default {
         commentBox() {
             return this.$store.state.posts.commentBox;
         },
+        me() {
+            return this.$store.state.users.me
+        },
+        token() {
+            return this.me.token;
+        },
 
     },
     methods: {
+        openCommentForm(parentId = null) {
+            if (this.commentOpened) {
+                this.commentOpened = false;
+            } else {
+                this.commentParentId = parentId;
+                this.commentOpened = true;
+            }
+        },
         onRemovePost() {
-            this.$store.dispatch("posts/remove", {
+            this.$store.dispatch("posts/removeMainPost", {
                 id: this.post.id,
             }).then(() => {
                 this.$router.push('/');
@@ -126,13 +149,20 @@ export default {
         goToIndex() {
             this.$router.push('/');
         },
-        onToggleComment() {
-            this.commentOpened = !this.commentOpened;
-        },
         navigateToChat() {
             const nickname = this.post.nickname;
             this.$store.dispatch('note/setSelectedPost', nickname).then(() => {
                 this.$router.push('/note');
+            });
+        },
+        onRemoveComment(commentId) {
+            this.$store.dispatch("posts/removeComment", {
+                postId: this.post.id,
+                id: commentId,
+                token: this.token,
+
+            }).then(() => {
+                alert("삭제완료")
             });
         },
     },
@@ -201,13 +231,6 @@ body {
 
 }
 
-.profile {
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border-radius: 50px;
-    margin-left: -10px;
-}
 
 .nickname {
     margin-left: 12px;
@@ -311,25 +334,47 @@ body {
 
 .comment_box {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 0 10px 14px;
+    flex-direction: column;
+    padding: 5px 0;
     text-align: left;
-    width: 350px;
+    width: 100%;
     height: 65px;
     border-bottom: #6CB7F8 1px solid;
 
 }
+
+.comment_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.material-symbols-outlined {
+    margin-right: 10px;
+}
+
 .comment_nickname {
-    margin-left: 16px;
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 10px;
+    color: #333333;
+    flex-grow: 1;
 }
 
 .comment_contents {
-    font-size: 10px;
+    font-size: 12px;
     color: #ADAAAA;
-    margin-left: 16px;
+    margin-left: 5px;
+    color: #333333;
+    margin-top: 5px;
+}
+
+.delete_button {
+    font-size: 10px;
+    color: #FF0000;
+    cursor: pointer;
+    margin-left: 10px;
 }
 </style>
