@@ -1,13 +1,20 @@
 <template>
     <div>
         <div class="back_arrow">
-            <a @click="goBack">
-                <span class="material-symbols-outlined">
-                    arrow_back_ios
-                </span>
-            </a>
-            <span>쪽지</span>
+            <div class="left_section">
+                <a @click="goBack">
+                    <span class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span>
+                </a>
+                <span>쪽지</span>
+            </div>
+            <span class="material-symbols-outlined" style="font-size: 20px;" @click="navigateToChat">
+                mail
+            </span>
         </div>
+
+
         <div v-for="detail in message.messageDetail" :key="detail.id" class="detail_container">
             <div>
                 <div class="detail_state">{{ detail.state }}</div>
@@ -27,7 +34,7 @@ export default {
 
     data() {
         return {
-            messageId: this.$route.params.room
+            messageId: this.$route.params.room,
         };
     },
     async created() {
@@ -48,11 +55,20 @@ export default {
         token() {
             return this.me.token;
         },
+        nickname() {
+            return this.$store.state.note.selectedNickname;
+        },
     },
 
     methods: {
         goBack() {
             this.$router.go(-1);
+        },
+        navigateToChat() {
+            const nickname = this.nickname;
+            this.$store.dispatch('note/setSelectedPost', nickname).then(() => {
+                this.$router.push('/note');
+            });
         },
     },
 
@@ -63,11 +79,19 @@ export default {
 
 <style scoped>
 .back_arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-left: 20px;
     color: #6CB7F8;
-    text-align: justify;
     margin-top: 44px;
 }
+
+.left_section {
+    display: flex;
+    align-items: center;
+}
+
 
 .back_arrow a {
     text-decoration: none;

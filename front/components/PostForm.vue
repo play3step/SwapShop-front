@@ -40,7 +40,6 @@
 
 <script>
 import Category from "../components/category.vue";
-import { mapState } from 'vuex';
 
 export default {
     
@@ -108,7 +107,7 @@ export default {
                 return;
             }
             if (this.$refs.form.validate()) {
-                this.$store.dispatch('posts/add', {
+                this.$store.dispatch('posts/addMainPost', {
                     title: this.title,
                     content: this.content,
                     price: this.price,

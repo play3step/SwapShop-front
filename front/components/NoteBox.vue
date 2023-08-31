@@ -1,12 +1,11 @@
 <template>
     <div>
-
-        <nuxt-link :to="'/noteRoom/' + note.id" class="note_container">
+        <div class="note_container" @click="setNicknameAndNavigate">
             <div>
-                <div class="note_title">{{note.nickname}}</div>
+                <div class="note_title">{{ note.nickname }}</div>
                 <p class="note_content">{{ note.lastMessage }}</p>
             </div>
-        </nuxt-link>
+        </div>
     </div>
 </template>
 
@@ -25,7 +24,11 @@ export default {
         }
     },
     methods: {
-
+        setNicknameAndNavigate() {
+            this.$store.dispatch('note/setSelectedNickname', this.note.nickname).then(() => {
+                this.$router.push(`/noteRoom/${this.note.id}`);
+            });
+        },
     },
 }
 
