@@ -2,8 +2,8 @@
     <div class="container">
         <v-container v-if="post">
             <div class="post_container">
-                <v-img v-if="post.images && post.images[0]" :src="post.images[0].filePath" />
-                <v-img v-else src="https://www.eclosio.ong/wp-content/uploads/2018/08/default.png" />
+                <v-img v-if="post.images && post.images[0]" :src="post.images[0].filePath" class="img_size"/>
+                <v-img v-else src="https://www.eclosio.ong/wp-content/uploads/2018/08/default.png" class="img_size"/>
                 <div class="hamburger_btn">
                     <a class="back_arrow" @click="goToIndex">
                         <span class="material-symbols-outlined">
@@ -55,7 +55,6 @@
                                 <div class="comment_nickname">{{ c.nickname }}</div>
                                 <div> {{ c.parentCommentId }}</div>
                             </div>
-
                         </div>
                     </v-list>
                 </div>
@@ -109,6 +108,11 @@ export default {
                 postId: this.post.id,
             });
         }
+    },
+    async created() {
+        this.$store.dispatch('posts/viewsupdate',{
+            postId: this.post.id,
+        });
     },
     computed: {
         post() {
@@ -199,6 +203,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     position: relative;
+}
+.img_size {
+    width: 100% !important;
+    height: 300px !important;
+    background-position: center center;
+
 }
 
 .post_container h1 {

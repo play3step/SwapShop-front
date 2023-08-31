@@ -7,6 +7,13 @@
     "_name": "_4ae64f82"
   },
   {
+    "name": "favorite",
+    "path": "/favorite",
+    "component": "/Users/echo/Desktop/myCoding/myVue/SwapShop-front/front/pages/favorite.vue",
+    "chunkName": "pages/favorite",
+    "_name": "_2e317a9e"
+  },
+  {
     "name": "note",
     "path": "/note",
     "component": "/Users/echo/Desktop/myCoding/myVue/SwapShop-front/front/pages/note.vue",

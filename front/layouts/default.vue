@@ -9,7 +9,7 @@
                             home
                         </span>
                     </nuxt-link>
-                    <nuxt-link to="/">
+                    <nuxt-link to="/favorite">
                         <span class="material-symbols-outlined">
                             favorite
                         </span>

@@ -43,7 +43,7 @@
             </div>
         </div>
         <div>
-            <v-btn type="submit" class="success_btn" color="#6CB7F8" @click="logout">로그아웃</v-btn>
+            <v-btn type="submit" class="success_btn" color="#6CB7F8" style="margin-top: 50px;" @click="logout">로그아웃</v-btn>
         </div>
     </div>
 </template>

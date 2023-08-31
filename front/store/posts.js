@@ -1,6 +1,7 @@
 export const state = () => ({
     mainPosts: [],
     commentBox: [],
+    favoriteBox: [],
 });
 
 export const mutations = {
@@ -16,7 +17,6 @@ export const mutations = {
     },
     loadComment(state, comment) {
         state.commentBox = comment;
-
     },
     addComment(state, payload) {
         state.commentBox.unshift(payload);
@@ -28,16 +28,18 @@ export const mutations = {
     replyComment(state, payload) {
         state.commentBox.unshift(payload);
     },
+    viewsupdate(state, posts) {
+    },
+    addfavoriteBox(state, payload) {
+        state.favoriteBox.unshift(payload);
+    },
 };
 export const actions = {
-    add({ commit, dispatch }, payload) {
+    addMainPost({ commit, dispatch }, payload) {
         let postObject = {
             title: payload.title,
             content: payload.content,
             price: payload.price,
-            location: "E동",
-            status: "WAITING",
-            views: 0,
             category: {
                 major: payload.major,
                 name: payload.course,
@@ -61,8 +63,6 @@ export const actions = {
             .then((response) => {
                 commit('addMainPost', postObject);
                 dispatch('loadPosts');
-
-
             })
             .catch((error) => {
                 console.error(error);
@@ -138,5 +138,27 @@ export const actions = {
             .catch((error) => {
                 console.error(error);
             });
+    },
+    viewsupdate({ commit }, payload) {
+        this.$axios.get(`http://localhost:8080/post/${payload.postId}`)
+            .then((response) => {
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    },
+    addfavoriteBox({ commit }, payload){
+        let axiosConfig = {
+            headers: {
+                'Authorization': 'Bearer ' + payload.token,
+            }
+        };
+        this.$axios.post(`http://localhost:8080/favorite/${payload.postId}`,axiosConfig)
+        .then((response) => {
+            commit('addfavoriteBox', response.data);
+        })
+        .catch((error) => {
+            console.error(error);
+        });
     },
 };

@@ -12,8 +12,6 @@
                     <v-btn type="submit" class="success_btn" color="#6CB7F8" absolute right>완료</v-btn>
                 </li>
             </ul>
-            {{ selectedPost }}
-            {{ me.nickname }}
         </div>
         <v-container>
             <v-textarea v-model="content" class="custom_textarea" outlined auto-grow clearable label="내용을 입력하세요."
@@ -48,7 +46,7 @@ export default {
     },
     methods: {
         goToIndex() {
-            this.$router.push('/');
+            this.$router.go(-1);
         },
         onSubmitForm(){
             if (this.$refs.form.validate()) {

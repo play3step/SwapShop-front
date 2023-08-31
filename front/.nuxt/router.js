@@ -5,6 +5,7 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _4ae64f82 = () => interopDefault(import('../pages/alarm.vue' /* webpackChunkName: "pages/alarm" */))
+const _2e317a9e = () => interopDefault(import('../pages/favorite.vue' /* webpackChunkName: "pages/favorite" */))
 const _f0b1ea18 = () => interopDefault(import('../pages/note.vue' /* webpackChunkName: "pages/note" */))
 const _5687eca2 = () => interopDefault(import('../pages/post.vue' /* webpackChunkName: "pages/post" */))
 const _9faa43d2 = () => interopDefault(import('../pages/profile.vue' /* webpackChunkName: "pages/profile" */))
@@ -28,6 +29,10 @@ export const routerOptions = {
     path: "/alarm",
     component: _4ae64f82,
     name: "alarm"
+  }, {
+    path: "/favorite",
+    component: _2e317a9e,
+    name: "favorite"
   }, {
     path: "/note",
     component: _f0b1ea18,
