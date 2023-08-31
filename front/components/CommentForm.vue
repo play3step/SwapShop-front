@@ -13,6 +13,10 @@ export default {
             type: Number,
             required: true,
         },
+        parentId: {
+            type: Number,
+            default: null
+        }
     },
     data() {
         return {
@@ -38,19 +42,28 @@ export default {
         },
         onSubmitForm() {
             if (this.$refs.form.validate()) {
-                this.$store.dispatch('posts/addComment', {
+                const payload = {
                     postId: this.postId,
                     content: this.content,
                     nickname: this.me.nickname,
+                };
 
-                }).then(() => {
-                    this.content = '';
-                    this.success = true;
-                    this.successMessages = '댓글이 작성되었습니다.';
-                    this.hideDetails = false;
-                })
+                if (this.parentId) {  // 답글인 경우
+                    payload.parentId = this.parentId;  // parentId 추가
+
+                    this.$store.dispatch("posts/replyComment", payload).then(() => {
+                        // 답글이 성공적으로 작성된 후의 처리
+                    });
+                } else {  // 일반 댓글인 경우
+                    this.$store.dispatch('posts/addComment', payload).then(() => {
+                        this.content = '';
+                        this.success = true;
+                        this.successMessages = '댓글이 작성되었습니다.';
+                        this.hideDetails = false;
+                    });
+                }
             }
-        },
+        }
     }
 }
 </script>

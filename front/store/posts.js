@@ -14,11 +14,18 @@ export const mutations = {
         const index = state.mainPosts.findIndex(v => v.id === payload.id);
         state.mainPosts.splice(index, 1);
     },
-    loadComment(state, comment){
+    loadComment(state, comment) {
         state.commentBox = comment;
 
     },
     addComment(state, payload) {
+        state.commentBox.unshift(payload);
+    },
+    removeComment(state, payload) {
+        const index = state.commentBox.findIndex(v => v.id === payload.id);
+        state.commentBox.splice(index, 1);
+    },
+    replyComment(state, payload) {
         state.commentBox.unshift(payload);
     },
 };
@@ -55,14 +62,14 @@ export const actions = {
                 commit('addMainPost', postObject);
                 dispatch('loadPosts');
 
-                
+
             })
             .catch((error) => {
                 console.error(error);
             });
 
     },
-    remove({ commit }, payload) {
+    removeMainPost({ commit }, payload) {
         this.$axios.delete(`http://localhost:8080/post/${payload.id}`)
             .then((response) => {
                 commit('removeMainPost', payload);
@@ -80,7 +87,7 @@ export const actions = {
                 console.error(error);
             });
     },
-    loadComment({commit}, payload) {
+    loadComment({ commit }, payload) {
         this.$axios.get(`http://localhost:8080/post/${payload.postId}/comment`)
             .then((response) => {
                 commit('loadComment', response.data);
@@ -89,20 +96,43 @@ export const actions = {
                 console.error(error);
             });
     },
-    addComment({ commit, dispatch}, payload) {
+    addComment({ commit, dispatch }, payload) {
         let commentObject = {
             content: payload.content,
             nickname: payload.nickname,
 
         };
+        this.$axios.post(`http://localhost:8080/post/${payload.postId}/comment`, commentObject)
+            .then((response) => {
+                commit('addComment', response.data);
+                dispatch('loadComment', { postId: payload.postId });
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    },
+    removeComment({ commit }, payload) {
         let axiosConfig = {
             headers: {
                 'Authorization': 'Bearer ' + payload.token,
             }
         };
-        this.$axios.post(`http://localhost:8080/post/${payload.postId}/comment`, commentObject, axiosConfig)
+        this.$axios.delete(`http://localhost:8080/post/${payload.postId}/comment/${payload.id}`, axiosConfig)
             .then((response) => {
-                commit('addComment', response.data);
+                commit('removeComment', payload);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    },
+    replyComment({ commit, dispatch }, payload) {
+        let commentObject = {
+            content: payload.content,
+            nickname: payload.nickname,
+        };
+        this.$axios.post(`http://localhost:8080/post/${payload.postId}/comment/${payload.parentId}`, commentObject)
+            .then((response) => {
+                commit('replyComment', response.data);
                 dispatch('loadComment', { postId: payload.postId });
             })
             .catch((error) => {
