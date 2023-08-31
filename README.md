@@ -57,3 +57,10 @@ swapshop-frontend
 
  - 23/08/16 ~ 08/ 26:
     - 게시글 대댓글 구현 완료 --> 백 연결 O
+  
+---
+### 데모 영상
+
+
+https://github.com/play3step/SwapShop-front/assets/97451257/7a433406-432e-4bf2-a2e9-601ac01dfa5a
+
