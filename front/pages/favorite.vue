@@ -47,11 +47,7 @@ export default {
             });
         },
     },
-    async created() {
-        this.$store.dispatch('posts/loadavoritelist', {
-            token: this.token,
-        });
-    },
+ 
     data() {
         return {
         };
