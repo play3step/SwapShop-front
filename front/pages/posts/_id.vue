@@ -5,7 +5,7 @@
                 <v-img v-if="post.images && post.images[0]" :src="post.images[0].filePath" class="img_size"/>
                 <v-img v-else src="https://www.eclosio.ong/wp-content/uploads/2018/08/default.png" class="img_size"/>
                 <div class="hamburger_btn">
-                    <a class="back_arrow" @click="goToIndex">
+                    <a class="back_arrow" @click="goBack">
                         <span class="material-symbols-outlined">
                             arrow_back_ios
                         </span>
@@ -150,8 +150,8 @@ export default {
         onEditPost() {
 
         },
-        goToIndex() {
-            this.$router.push('/');
+        goBack() {
+            this.$router.go(-1);
         },
         navigateToChat() {
             const nickname = this.post.nickname;

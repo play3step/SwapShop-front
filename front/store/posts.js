@@ -30,8 +30,8 @@ export const mutations = {
     },
     viewsupdate(state, posts) {
     },
-    addfavoriteBox(state, payload) {
-        state.favoriteBox.unshift(payload);
+    loadfavoriteBox(state, payload) {
+        state.favoriteBox = payload.data;
     },
 };
 export const actions = {
@@ -100,7 +100,6 @@ export const actions = {
         let commentObject = {
             content: payload.content,
             nickname: payload.nickname,
-
         };
         this.$axios.post(`http://localhost:8080/post/${payload.postId}/comment`, commentObject)
             .then((response) => {
@@ -147,18 +146,35 @@ export const actions = {
                 console.error(error);
             });
     },
-    addfavoriteBox({ commit }, payload){
+    addfavoriteBox({ commit }, payload) {
         let axiosConfig = {
             headers: {
                 'Authorization': 'Bearer ' + payload.token,
             }
         };
-        this.$axios.post(`http://localhost:8080/favorite/${payload.postId}`,axiosConfig)
-        .then((response) => {
-            commit('addfavoriteBox', response.data);
-        })
-        .catch((error) => {
-            console.error(error);
-        });
+        let postObject = {
+            postId: payload.postId
+        };
+
+        this.$axios.post(`http://localhost:8080/favorite`, postObject, axiosConfig)
+            .then((response) => {
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    },
+    loadavoritelist({ commit }, payload) {
+        let axiosConfig = {
+            headers: {
+                'Authorization': 'Bearer ' + payload.token,
+            }
+        };
+        this.$axios.get(`http://localhost:8080/favorite/my`,axiosConfig)
+            .then((response) => {
+                commit('loadfavoriteBox', response.data);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
     },
 };
