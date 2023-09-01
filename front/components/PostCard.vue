@@ -49,21 +49,16 @@ export default {
     },
     methods: {
         toggleFavorite() {
-            if(this.isFavorite ===false){
-                this.isFavorite = !this.isFavorite;
-                this.$store.dispatch('posts/addfavoriteBox', {            
-                    token: this.token,
-                    postId: this.post.id
+            this.isFavorite = !this.isFavorite;
+            this.$store.dispatch('posts/addfavoriteBox', {
+                token: this.token,
+                postId: this.post.id
+            })
+                .then(() => {
                 })
-                    .then(() => {
-                    })
-                    .catch((error) => {
-                        console.error(error);
-                    })
-            }
-            else{
-                this.isFavorite = !this.isFavorite;
-            }
+                .catch((error) => {
+                    console.error(error);
+                })
         },
     },
 }
@@ -117,9 +112,11 @@ export default {
     color: #6CB7F8;
 
 }
+
 .favorite-active {
     color: red !important;
 }
+
 .post_text {
     margin-left: 20px;
     display: inline-block;
@@ -138,6 +135,4 @@ export default {
     color: #ADAAAA;
 
 }
-
-
 </style>
