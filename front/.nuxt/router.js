@@ -9,6 +9,7 @@ const _2e317a9e = () => interopDefault(import('../pages/favorite.vue' /* webpack
 const _f0b1ea18 = () => interopDefault(import('../pages/note.vue' /* webpackChunkName: "pages/note" */))
 const _5687eca2 = () => interopDefault(import('../pages/post.vue' /* webpackChunkName: "pages/post" */))
 const _9faa43d2 = () => interopDefault(import('../pages/profile.vue' /* webpackChunkName: "pages/profile" */))
+const _dec739c2 = () => interopDefault(import('../pages/result.vue' /* webpackChunkName: "pages/result" */))
 const _38ed2e27 = () => interopDefault(import('../pages/user/login.vue' /* webpackChunkName: "pages/user/login" */))
 const _54dd4380 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 const _7221decc = () => interopDefault(import('../pages/noteRoom/_room.vue' /* webpackChunkName: "pages/noteRoom/_room" */))
@@ -45,6 +46,10 @@ export const routerOptions = {
     path: "/profile",
     component: _9faa43d2,
     name: "profile"
+  }, {
+    path: "/result",
+    component: _dec739c2,
+    name: "result"
   }, {
     path: "/user/login",
     component: _38ed2e27,
