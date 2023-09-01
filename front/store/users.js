@@ -2,6 +2,7 @@ export const state = () => ({
     me: null,   //초기값 null
     followerList: [],
     followingList: [],
+    
 });
 
 export const mutations = {  /*동기 작업할 때는 mutations*/
