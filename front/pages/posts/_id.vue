@@ -2,8 +2,8 @@
     <div class="container">
         <v-container v-if="post">
             <div class="post_container">
-                <v-img v-if="post.images && post.images[0]" :src="post.images[0].filePath" class="img_size"/>
-                <v-img v-else src="https://www.eclosio.ong/wp-content/uploads/2018/08/default.png" class="img_size"/>
+                <v-img v-if="post.images && post.images[0]" :src="post.images[0].filePath" class="img_size" />
+                <v-img v-else src="https://www.eclosio.ong/wp-content/uploads/2018/08/default.png" class="img_size" />
                 <div class="hamburger_btn">
                     <a class="back_arrow" @click="goBack">
                         <span class="material-symbols-outlined">
@@ -65,7 +65,8 @@
                 </div>
                 <div class="information_bar">
                     <div class="icon_container">
-                        <span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined" :class="{ 'favorite-active': isFavorite }"
+                            @click="toggleFavorite">
                             favorite
                         </span>
                         <span>{{ post.price }}원</span>
@@ -99,6 +100,7 @@ export default {
     data() {
         return {
             commentOpened: false,
+            isFavorite: false,
 
         };
     },
@@ -110,7 +112,7 @@ export default {
         }
     },
     async created() {
-        this.$store.dispatch('posts/viewsupdate',{
+        this.$store.dispatch('posts/viewsupdate', {
             postId: this.post.id,
         });
     },
@@ -129,6 +131,18 @@ export default {
         token() {
             return this.me.token;
         },
+        favoriteList() {
+            return this.$store.state.posts.favoriteBox;
+        },
+        filteredFavoriteList() {
+            if (this.favoriteList && this.me) {
+                return this.favoriteList.filter(item => item.nickName === this.me.nickname);
+            }
+            return [];  // 또는 null, undefined 등 초기값
+        },
+        postIds() {
+            return this.filteredFavoriteList.map(item => item.postId);
+        }
 
     },
     methods: {
@@ -169,8 +183,30 @@ export default {
                 alert("삭제완료")
             });
         },
+        toggleFavorite() {
+            this.isFavorite = !this.isFavorite;
+            this.$store.dispatch('posts/addfavoriteBox', {
+                token: this.token,
+                postId: this.post.id
+            })
+                .then(() => {
+                })
+                .catch((error) => {
+                    console.error(error);
+                })
+        },
     },
+    async created() {
+        try {
+            await this.$store.dispatch('posts/loadfavoritelist', {
+                token: this.token,
+            });
+            this.isFavorite = this.postIds.includes(this.post.id);
 
+        } catch (error) {
+            console.error('Error loading favorites:', error);
+        }
+    },
 }
 
 </script>
@@ -204,6 +240,7 @@ body {
     margin-right: auto;
     position: relative;
 }
+
 .img_size {
     width: 100% !important;
     height: 300px !important;
@@ -241,6 +278,9 @@ body {
 
 }
 
+.favorite-active {
+    color: red !important;
+}
 
 .nickname {
     margin-left: 12px;

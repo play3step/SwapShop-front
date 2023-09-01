@@ -44,8 +44,14 @@ export default {
         favoriteList() {
             return this.$store.state.posts.favoriteBox;
         },
+        filteredFavoriteList() {
+            if (this.favoriteList && this.me) {
+                return this.favoriteList.filter(item => item.nickName === this.me.nickname);
+            }
+            return [];  // 또는 null, undefined 등 초기값
+        },
         postIds() {
-            return this.favoriteList.map(item => item.postId);
+            return this.filteredFavoriteList.map(item => item.postId);
         }
     },
     data() {
@@ -77,7 +83,7 @@ export default {
         }
     },
     watch: {
-        favoriteList: { 
+        filteredFavoriteList: {
             handler(newVal) {   //this.isFavorite는 this.postIds에 this.post.id가 존재하는지에 따라 업데이트됩니다.
                 this.isFavorite = this.postIds.includes(this.post.id);
             },
