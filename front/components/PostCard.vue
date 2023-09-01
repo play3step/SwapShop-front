@@ -41,6 +41,12 @@ export default {
         token() {
             return this.me.token;
         },
+        favoriteList() {
+            return this.$store.state.posts.favoriteBox;
+        },
+        postIds() {
+            return this.favoriteList.map(item => item.postId);
+        }
     },
     data() {
         return {
@@ -60,6 +66,24 @@ export default {
                     console.error(error);
                 })
         },
+    },
+    async created() {
+        try {
+            await this.$store.dispatch('posts/loadfavoritelist', {
+                token: this.token,
+            });
+        } catch (error) {
+            console.error('Error loading favorites:', error);
+        }
+    },
+    watch: {
+        favoriteList: { 
+            handler(newVal) {   //this.isFavorite는 this.postIds에 this.post.id가 존재하는지에 따라 업데이트됩니다.
+                this.isFavorite = this.postIds.includes(this.post.id);
+            },
+            immediate: true,    //watch가 처음 설정될 때 handler 함수를 즉시 실행합니다. 즉, 컴포넌트가 생성되자마자 한 번 실행됩니다.
+            deep: true  //favoriteList가 객체나 배열과 같은 복잡한 데이터 타입일 경우, 내부의 속성까지 따져서 어떤 변화가 있는지 감지합니다.
+        }
     },
 }
 
