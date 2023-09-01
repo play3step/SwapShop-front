@@ -110,12 +110,21 @@ export default {
                 postId: this.post.id,
             });
         }
-    },
-    async created() {
-        this.$store.dispatch('posts/viewsupdate', {
+
+        await this.$store.dispatch('posts/viewsupdate', {
             postId: this.post.id,
         });
+
+        try {
+            await this.$store.dispatch('posts/loadfavoritelist', {
+                token: this.token,
+            });
+            this.isFavorite = this.postIds.includes(this.post.id);
+        } catch (error) {
+            console.error('Error loading favorites:', error);
+        }
     },
+
     computed: {
         post() {
             if (this.$store.state.posts.mainPosts) {
@@ -196,17 +205,7 @@ export default {
                 })
         },
     },
-    async created() {
-        try {
-            await this.$store.dispatch('posts/loadfavoritelist', {
-                token: this.token,
-            });
-            this.isFavorite = this.postIds.includes(this.post.id);
 
-        } catch (error) {
-            console.error('Error loading favorites:', error);
-        }
-    },
 }
 
 </script>
