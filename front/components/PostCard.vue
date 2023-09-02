@@ -9,15 +9,12 @@
                 <div v-if="post">
                     <p>{{ post.title }}</p>
                     <p class="post_major"> {{ timeAgo }} / 조회 : {{ post.views }}</p>
-                    <p>{{ post.price }} 원</p>
+                    <p>{{ post.price.toLocaleString() }} 원</p>
                 </div>
             </nuxt-link>
             <div class="icons">
                 <span class="material-symbols-outlined" :class="{ 'favorite-active': isFavorite }" @click="toggleFavorite">
                     favorite
-                </span>
-                <span class="material-symbols-outlined">
-                    forum
                 </span>
             </div>
         </div>
