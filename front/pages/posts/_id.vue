@@ -32,7 +32,7 @@
                         <div class="nickname">{{ post.nickname }}</div>
                         <div class="major">{{ post.major }}</div>
                     </div>
-                    <a @click="navigateToChat" class="Note">채팅하기</a>
+                    <a @click="navigateToChat" class="Note">쪽지</a>
                 </div>
                 <div class="detail_container">
                     <h1>{{ post.title }}</h1>
@@ -69,7 +69,7 @@
                             @click="toggleFavorite">
                             favorite
                         </span>
-                        <span>{{ post.price }}원</span>
+                        <span>{{ post.price.toLocaleString() }}원</span>
                         <div class="chat">
                             <span class="material-symbols-outlined" @click="() => openCommentForm()">
                                 forum
