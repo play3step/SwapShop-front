@@ -18,10 +18,10 @@
                     </li>
                 </ul>
                 <div class="button_container">
-                    <button class="custom_button" @click="">최신순</button>
+                    <button class="custom_button" @click="LatestSort">최신순</button>
                     <button class="custom_button" @click="priceSort">가격순</button>
-                    <button class="custom_button">Button 3</button>
-                    <button class="custom_button">Button 4</button>
+                    <button class="custom_button" @click="nameSort">이름순</button>
+                    <button class="custom_button" @click="majorSort">전공순</button>
                 </div>
             </div>
             <div class="post_box">
@@ -57,6 +57,10 @@ export default {
             searchQuery: '',
         };
     },
+    async created() {
+        let reversedArray = [...this.searchlist].reverse();
+        this.$store.commit('posts/setPosts', reversedArray);
+    },
     methods: {
         goToIndex() {
             this.$router.push('/');
@@ -78,6 +82,10 @@ export default {
                     })
             }
         },
+        LatestSort() {
+            let reversedArray = [...this.searchlist].reverse();
+            this.$store.commit('posts/setPosts', reversedArray);
+        },
         priceSort() {
             this.$store.dispatch('posts/priceSort', {
                 token: this.token
@@ -88,11 +96,29 @@ export default {
                 .catch((error) => {
                     console.error(error);
                 })
-
         },
-        LatestSort(){
-
-        }
+        nameSort() {
+            this.$store.dispatch('posts/nameSort', {
+                token: this.token
+            })
+                .then(() => {
+                    this.content = '';
+                })
+                .catch((error) => {
+                    console.error(error);
+                })
+        },
+        majorSort() {
+            this.$store.dispatch('posts/majorSort', {
+                token: this.token
+            })
+                .then(() => {
+                    this.content = '';
+                })
+                .catch((error) => {
+                    console.error(error);
+                })
+        },
     },
 
 }
@@ -105,6 +131,7 @@ export default {
     color: #6CB7F8;
     text-align: justify;
 }
+
 .main_container {
     position: relative;
     margin-left: auto;
@@ -112,6 +139,7 @@ export default {
     width: 375px;
     height: 812px;
 }
+
 .back_arrow a {
     text-decoration: none;
     color: #6CB7F8;
@@ -121,6 +149,7 @@ export default {
 .back_arrow span {
     font-size: 14px;
 }
+
 .search_bar {
     list-style: none;
     display: flex;
@@ -130,11 +159,13 @@ export default {
     padding: 20px 0 8px 10px;
     background-color: white;
 }
-.post_box{
+
+.post_box {
     overflow: scroll;
     width: 375px;
     height: 730px;
 }
+
 .back_arrow_container {
     flex: 1;
     display: flex;
@@ -163,7 +194,6 @@ export default {
     padding: 10px;
     border-bottom: #6CB7F8 1px solid;
 }
-
 .custom_button {
     width: 80px;
     height: 30px;
