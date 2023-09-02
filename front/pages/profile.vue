@@ -122,6 +122,17 @@ export default {
 
 }
 
+.search_bar {
+    list-style: none;
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 8px 20px;
+    background-color: white;
+    border-bottom: #6CB7F8 1px solid;
+}
+
 
 .profile_container span {
     position: absolute;

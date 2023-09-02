@@ -8,8 +8,8 @@
             <nuxt-link :to="'/posts/' + post.id" class="post_text">
                 <div v-if="post">
                     <p>{{ post.title }}</p>
-                    <p class="post_major">조회 : {{ post.views }}</p>
-                    <p>{{ post.content }}</p>
+                    <p class="post_major"> {{ timeAgo }} / 조회 : {{ post.views }}</p>
+                    <p>{{ post.price }} 원</p>
                 </div>
             </nuxt-link>
             <div class="icons">
@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import moment from 'moment';
 
 export default {
     props: {
@@ -51,6 +52,10 @@ export default {
         },
         postIds() {
             return this.filteredFavoriteList.map(item => item.postId);
+        },
+        timeAgo() {
+            moment.locale('ko');
+            return moment(this.post.createdDate).fromNow();
         }
     },
     data() {

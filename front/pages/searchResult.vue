@@ -17,6 +17,12 @@
                         </span>
                     </li>
                 </ul>
+                <div class="button_container">
+                    <button class="custom_button" @click="">최신순</button>
+                    <button class="custom_button" @click="priceSort">가격순</button>
+                    <button class="custom_button">Button 3</button>
+                    <button class="custom_button">Button 4</button>
+                </div>
             </div>
             <div>
                 <PostCard v-for="post in searchlist" :key="post.id" :post="post" />
@@ -41,9 +47,9 @@ export default {
         token() {
             return this.me.token;
         },
-        searchlist(){
+        searchlist() {
             return this.$store.state.posts.mainPosts;
-        }
+        },
     },
 
     data() {
@@ -57,8 +63,7 @@ export default {
         },
         performSearch() {
             if (this.searchQuery.trim() === '') {
-                // 검색어가 비어 있으면 리턴
-                return;
+                this.$store.dispatch('posts/loadPosts');
             }
             else {
                 this.$store.dispatch('posts/searchpost', {
@@ -73,6 +78,21 @@ export default {
                     })
             }
         },
+        priceSort() {
+            this.$store.dispatch('posts/priceSort', {
+                token: this.token
+            })
+                .then(() => {
+                    this.content = '';
+                })
+                .catch((error) => {
+                    console.error(error);
+                })
+
+        },
+        LatestSort(){
+
+        }
     },
 
 }
@@ -113,7 +133,6 @@ export default {
     align-items: center;
     padding: 20px 0 8px 10px;
     background-color: white;
-    border-bottom: #6CB7F8 1px solid;
 }
 
 .back_arrow_container {
@@ -135,6 +154,23 @@ export default {
     height: 35px;
     border-radius: 15px;
     border: 1px solid #6CB7F8;
-    padding: 5px;
+    padding: 16px;
+}
+
+.button_container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: #6CB7F8 1px solid;
+}
+
+.custom_button {
+    width: 80px;
+    height: 30px;
+    background-color: #6CB7F8;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 12px;
 }
 </style>

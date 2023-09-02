@@ -29,7 +29,7 @@
                         </ul>
                     </div>
                     <div>
-                        <PostCard v-for="post in mainPosts" :key="post.id" :post="post" />
+                        <PostCard v-for="post in reversedMainPosts" :key="post.id" :post="post" />
                     </div>
                 </div>
             </div>
@@ -60,7 +60,11 @@ export default {
         },
         mainPosts() {
             return this.$store.state.posts.mainPosts;
+        },
+        reversedMainPosts() {
+            return [...this.mainPosts].reverse();
         }
+
     },
     methods: {
         loginkakao() {   //백이 만든 localhost로 (이동 로그인 과정)
@@ -73,7 +77,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -166,5 +170,4 @@ export default {
 .search_bar .search span {
     font-size: 18px;
 }
-
 </style>
