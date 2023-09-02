@@ -33,6 +33,9 @@ export const mutations = {
     loadfavoritelist(state, payload) {
         state.favoriteBox = payload.data;
     },
+    searchpost(state, payload) {
+        state.mainPosts = payload.data;
+    },
 };
 export const actions = {
     addMainPost({ commit, dispatch }, payload) {
@@ -173,6 +176,20 @@ export const actions = {
         this.$axios.get(`http://localhost:8080/favorite/my`,axiosConfig)
             .then((response) => {
                 commit('loadfavoritelist', response.data);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    },
+    searchpost({ commit,dispatch }, payload) {
+        let axiosConfig = {
+            headers: {
+                'Authorization': 'Bearer ' + payload.token,
+            }
+        };
+        this.$axios.get(`http://localhost:8080/post/search/${payload.query}`,axiosConfig)
+            .then((response) => {
+                commit('searchpost', response.data);
             })
             .catch((error) => {
                 console.error(error);

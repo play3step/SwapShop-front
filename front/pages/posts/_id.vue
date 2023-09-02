@@ -105,16 +105,15 @@ export default {
         };
     },
     async mounted() {
+        if (!this.post) return; // 이 줄 추가
         if (this.post) {
             await this.$store.dispatch('posts/loadComment', {
                 postId: this.post.id,
             });
         }
-
         await this.$store.dispatch('posts/viewsupdate', {
             postId: this.post.id,
         });
-
         try {
             await this.$store.dispatch('posts/loadfavoritelist', {
                 token: this.token,
@@ -129,6 +128,9 @@ export default {
         post() {
             if (this.$store.state.posts.mainPosts) {
                 return this.$store.state.posts.mainPosts.find(v => v.id === parseInt(this.$route.params.id, 10));
+            }
+            if (this.$store.state.posts.searchpostList) {
+                return this.$store.state.posts.searchpostList.find(v => v.id === parseInt(this.$route.params.id, 10));
             }
         },
         commentBox() {

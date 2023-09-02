@@ -19,15 +19,17 @@
                             </li>
                             <ul class="search">
                                 <li>
-                                    <span class="material-symbols-outlined">
-                                        search
-                                    </span>
+                                    <nuxt-link to="/searchResult">
+                                        <span class="material-symbols-outlined">
+                                            search
+                                        </span>
+                                    </nuxt-link>
                                 </li>
                             </ul>
                         </ul>
                     </div>
                     <div>
-                        <PostCard v-for="post in mainPosts" :key="post.id" :post="post" />            
+                        <PostCard v-for="post in mainPosts" :key="post.id" :post="post" />
                     </div>
                 </div>
             </div>
@@ -95,6 +97,7 @@ export default {
     width: 344px;
     height: 193px;
 }
+
 .social_container {
     display: flex;
     margin-top: 24px;
@@ -102,6 +105,7 @@ export default {
     align-items: center;
 
 }
+
 .social_box {
     display: flex;
     margin-right: auto;
@@ -116,6 +120,7 @@ export default {
     justify-content: center;
     color: #6CB7F8;
 }
+
 .main_container {
     position: relative;
     margin-left: auto;
@@ -161,4 +166,5 @@ export default {
 .search_bar .search span {
     font-size: 18px;
 }
+
 </style>
