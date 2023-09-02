@@ -14,7 +14,7 @@
             </ul>
         </div>
         <v-container>
-            <v-textarea v-model="content" class="custom_textarea" outlined auto-grow clearable label="내용을 입력하세요."
+            <v-textarea v-model="content" outlined auto-grow clearable label="내용을 입력하세요."
                 :hide-details="hideDetails" :success-messages="successMessages" :success="success"
                 :rules="[v => !!v.trim() || '내용을 입력하세요.']" @input="onChangeTextarea" />
         </v-container>
@@ -76,7 +76,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -97,23 +97,29 @@ body {
     border-radius: 15px !important;
     color: white !important;
 }
-
+.search_bar {
+    list-style: none;
+    display: flex;
+    width: 350px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0 8px 10px;
+    background-color: white;
+}
 .back_arrow {
     color: #6CB7F8;
     text-align: justify;
 }
-
+.success_btn {
+    width: 30px !important;
+    height: 24px !important;
+    border-radius: 15px !important;
+    color: white !important;
+}
 .back_arrow span {
     font-size: 16px;
 }
 
-.custom_textarea .v-text-field__slot {
-    height: 500px !important;
-}
-
-.custom_textarea textarea {
-    height: 500px !important;
-}
 </style>
 
 

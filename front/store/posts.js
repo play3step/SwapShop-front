@@ -36,6 +36,9 @@ export const mutations = {
     searchpost(state, payload) {
         state.mainPosts = payload.data;
     },
+    priceSort(state, payload) {
+        state.mainPosts = payload.data;
+    },
 };
 export const actions = {
     addMainPost({ commit, dispatch }, payload) {
@@ -173,7 +176,7 @@ export const actions = {
                 'Authorization': 'Bearer ' + payload.token,
             }
         };
-        this.$axios.get(`http://localhost:8080/favorite/my`,axiosConfig)
+        this.$axios.get(`http://localhost:8080/favorite/my`, axiosConfig)
             .then((response) => {
                 commit('loadfavoritelist', response.data);
             })
@@ -181,13 +184,13 @@ export const actions = {
                 console.error(error);
             });
     },
-    searchpost({ commit,dispatch }, payload) {
+    searchpost({ commit, dispatch }, payload) {
         let axiosConfig = {
             headers: {
                 'Authorization': 'Bearer ' + payload.token,
             }
         };
-        this.$axios.get(`http://localhost:8080/post/search/${payload.query}`,axiosConfig)
+        this.$axios.get(`http://localhost:8080/post/search/${payload.query}`, axiosConfig)
             .then((response) => {
                 commit('searchpost', response.data);
             })
@@ -195,4 +198,19 @@ export const actions = {
                 console.error(error);
             });
     },
+    priceSort({ commit, state, dispatch }, payload) {
+        let axiosConfig = {
+            headers: {
+                'Authorization': 'Bearer ' + payload.token,
+            }
+        };
+        this.$axios.post('http://localhost:8080/post/search/price', state.mainPosts, axiosConfig)
+            .then((response) => {
+                commit('priceSort', response.data); // 서버에서 받은 정렬된 데이터로 상태 업데이트
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    }
+
 };

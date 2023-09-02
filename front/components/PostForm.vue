@@ -137,7 +137,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -162,6 +162,16 @@ body {
     float: left;
 }
 
+.search_bar {
+    list-style: none;
+    display: flex;
+    width: 350px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0 8px 10px;
+    background-color: white;
+}
+
 .contain {
     width: 375px;
     height: 812px;
@@ -170,6 +180,17 @@ body {
     margin-right: auto;
     overflow: scroll;
 }
+.search_bar {
+    list-style: none;
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 8px 20px;
+    background-color: white;
+    border-bottom: #6CB7F8 1px solid;
+}
+
 
 .success_btn {
     width: 30px !important;
