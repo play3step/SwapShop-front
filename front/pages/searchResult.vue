@@ -24,7 +24,7 @@
                     <button class="custom_button">Button 4</button>
                 </div>
             </div>
-            <div>
+            <div class="post_box">
                 <PostCard v-for="post in searchlist" :key="post.id" :post="post" />
             </div>
         </div>
@@ -105,7 +105,13 @@ export default {
     color: #6CB7F8;
     text-align: justify;
 }
-
+.main_container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+    height: 812px;
+}
 .back_arrow a {
     text-decoration: none;
     color: #6CB7F8;
@@ -115,16 +121,6 @@ export default {
 .back_arrow span {
     font-size: 14px;
 }
-
-.contain {
-    width: 375px;
-    height: 812px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: scroll;
-}
-
 .search_bar {
     list-style: none;
     display: flex;
@@ -134,7 +130,11 @@ export default {
     padding: 20px 0 8px 10px;
     background-color: white;
 }
-
+.post_box{
+    overflow: scroll;
+    width: 375px;
+    height: 730px;
+}
 .back_arrow_container {
     flex: 1;
     display: flex;
