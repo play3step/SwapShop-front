@@ -36,7 +36,16 @@ export const mutations = {
     searchpost(state, payload) {
         state.mainPosts = payload.data;
     },
+    setPosts(state, payload) {
+        state.mainPosts = payload;
+    },
     priceSort(state, payload) {
+        state.mainPosts = payload.data;
+    },
+    nameSort(state, payload) {
+        state.mainPosts = payload.data;
+    },
+    majorSort(state, payload) {
         state.mainPosts = payload.data;
     },
 };
@@ -211,6 +220,34 @@ export const actions = {
             .catch((error) => {
                 console.error(error);
             });
-    }
+    },
+    nameSort({ commit, state, dispatch }, payload) {
+        let axiosConfig = {
+            headers: {
+                'Authorization': 'Bearer ' + payload.token,
+            }
+        };
+        this.$axios.post('http://localhost:8080/post/search/title', state.mainPosts, axiosConfig)
+            .then((response) => {
+                commit('priceSort', response.data); // 서버에서 받은 정렬된 데이터로 상태 업데이트
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    },
+    majorSort({ commit, state, dispatch }, payload) {
+        let axiosConfig = {
+            headers: {
+                'Authorization': 'Bearer ' + payload.token,
+            }
+        };
+        this.$axios.post('http://localhost:8080/post/search/major', state.mainPosts, axiosConfig)
+            .then((response) => {
+                commit('priceSort', response.data); // 서버에서 받은 정렬된 데이터로 상태 업데이트
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    },
 
 };
