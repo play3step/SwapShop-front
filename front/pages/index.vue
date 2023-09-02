@@ -28,7 +28,7 @@
                             </ul>
                         </ul>
                     </div>
-                    <div>
+                    <div class="post_box">
                         <PostCard v-for="post in reversedMainPosts" :key="post.id" :post="post" />
                     </div>
                 </div>
@@ -90,7 +90,6 @@ export default {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    overflow: scroll;
 }
 
 #logo {
@@ -132,7 +131,11 @@ export default {
     width: 375px;
     height: 812px;
 }
-
+.post_box{
+    overflow: scroll;
+    width: 375px;
+    height: 730px;
+}
 .sub_logo {
     margin-left: -20px;
 }
