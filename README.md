@@ -1,44 +1,53 @@
 
-프로젝트 소개 : SwapShop
+# 프로젝트 소개 : SwapShop
 
 ![logo](https://github.com/play3step/SwapShop-front/assets/97451257/93b9794a-53dd-4ccc-86ce-07ebc4120993)
+<br>
 
+23/07/04~
 ---
 
-📖 기술 스택
+## 📖 기술 스택
 
 <div>
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 <img src="https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white">
 </div>   
 
+<br>
 
-사용법
-1. npm i nuxt
+## 실행방법
+  ```
+  1. npm i nuxt
 
-2. npm run dev
+  2. npm run dev
 
+  ```
 
+<br>
 
-
-📆 프로젝트 기간
+## 📆 프로젝트 기간
 23/07/04 ~ 23/09/03
+<br>
+
+## 💻 front: 
+https://github.com/play3step/SwapShop-front 
+<br>
+
+
+- 개발한 기능 목록
+  - 로그인 (카카오, 구글)
+  - 게시글 작성
+  - 댓글
+  - 찜하기
+  - 쪽지 보내기
+  - 카테고리
+  - 검색 및 정렬
+    
+<br>
+
 ---
-
-백 : https://github.com/SangWoon123/swapshop-backend
-
-
-### 어플리케이션 기능: 
-○ 로그인
-○ 게시글 작성
-○ 댓글
-○ 찜하기
-○ 쪽지 보내기
-○ 카테고리
-○ 검색 및 정렬
-
----
-### 기능 개발
+## 📝 기능 개발 현황
 - 23/06/25 ~ 07/05 :
     - 페이지 디자인 (피그마 활용)
  
@@ -72,7 +81,6 @@
     - 전체 페이지 수정
 ---
 ### 데모 영상
-
 
 https://github.com/play3step/SwapShop-front/assets/97451257/7a433406-432e-4bf2-a2e9-601ac01dfa5a
 
