@@ -2,7 +2,6 @@
 # 프로젝트 소개 : SwapShop
 
 ![logo](https://github.com/play3step/SwapShop-front/assets/97451257/93b9794a-53dd-4ccc-86ce-07ebc4120993)
-<br>
 
 23/07/04~
 ---
@@ -14,7 +13,6 @@
 <img src="https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white">
 </div>   
 
-<br>
 
 ## 실행방법
   ```
@@ -24,15 +22,12 @@
 
   ```
 
-<br>
 
 ## 📆 프로젝트 기간
 23/07/04 ~ 23/09/03
-<br>
 
 ## 💻 front: 
 https://github.com/play3step/SwapShop-front 
-<br>
 
 
 - 개발한 기능 목록
@@ -44,7 +39,6 @@ https://github.com/play3step/SwapShop-front
   - 카테고리
   - 검색 및 정렬
     
-<br>
 
 ---
 ## 📝 기능 개발 현황
