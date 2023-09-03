@@ -10,7 +10,7 @@
                             arrow_back_ios
                         </span>
                     </a>
-                    <v-card-action>
+                    <v-card-action v-if="post.nickname === me.nickname">
                         <v-menu offset-y open-on-hover>
                             <template v-slot:activator="{ on }">
                                 <v-btn text color="orange" v-on="on">
@@ -269,6 +269,7 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     color: white;
+    text-align: justify;
 
 }
 
@@ -382,7 +383,6 @@ body {
     right: 30px;
     color: white;
 }
-
 .comment_box {
     display: flex;
     align-items: flex-start;

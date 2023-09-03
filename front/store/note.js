@@ -41,6 +41,7 @@ export const actions = {
                 commit('sendNote', payload);
             })
             .catch((error) => {
+                alert("자기 자신에게 쪽지를 보낼 수 없습니다.")
                 console.error(error);
             });
     },

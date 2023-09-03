@@ -5,14 +5,15 @@
                 <div class="note_title">{{ note.nickname }}</div>
                 <p class="note_content">{{ note.lastMessage }}</p>
             </div>
+            <p class="note_date">{{ timeAgo }}</p>
         </div>
     </div>
 </template>
 
 <script>
+import moment from 'moment';
 
 export default {
-
     props: {
         note: {
             type: Object,
@@ -22,6 +23,12 @@ export default {
     data() {
         return {
         }
+    },
+    computed: {
+        timeAgo() {
+            moment.locale('ko');
+            return moment(this.note.lastDate).fromNow();
+        },
     },
     methods: {
         setNicknameAndNavigate() {
@@ -47,7 +54,14 @@ export default {
     height: 65px;
     border-bottom: #6CB7F8 1px solid;
     text-decoration: none;
+}
 
+.note_date {
+    position: absolute;
+    text-decoration: none;
+    right: 30px;
+    font-size: 12px;
+    color: #ADAAAA;
 }
 
 

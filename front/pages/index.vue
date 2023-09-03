@@ -63,7 +63,8 @@ export default {
         },
         reversedMainPosts() {
             return [...this.mainPosts].reverse();
-        }
+        },
+        
 
     },
     methods: {

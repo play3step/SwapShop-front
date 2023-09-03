@@ -13,6 +13,7 @@
                 </div>
             </nuxt-link>
             <div class="icons">
+                {{ favoriteCountForThisPost }}
                 <span class="material-symbols-outlined" :class="{ 'favorite-active': isFavorite }" @click="toggleFavorite">
                     favorite
                 </span>
@@ -53,7 +54,10 @@ export default {
         timeAgo() {
             moment.locale('ko');
             return moment(this.post.createdDate).fromNow();
-        }
+        },
+        favoriteCountForThisPost() {
+            return this.favoriteList.filter(item => item.postId === this.post.id).length;
+        },
     },
     data() {
         return {
