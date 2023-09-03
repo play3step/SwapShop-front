@@ -1,34 +1,39 @@
 
-# 프로젝트 소개 : SwapShop
+<h1>프로젝트 소개 : SwapShop</h1> 
+<br>
 
 ![logo](https://github.com/play3step/SwapShop-front/assets/97451257/93b9794a-53dd-4ccc-86ce-07ebc4120993)
 
-23/07/04~
----
+<br>
 
-## 📖 기술 스택
+
+### 📖 기술 스택
+<br>
 
 <div>
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 <img src="https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white">
 </div>   
+<br>
 
 
-## 실행방법
+### ✈️ 실행방법
+<br>
+
   ```
   1. npm i nuxt
 
   2. npm run dev
-
   ```
-<a href ="https://nomadcoders.co/dashboard">📆</a>
 
+<br>
 
-## 📆 프로젝트 기간
+### 📆 프로젝트 기간
 23/07/04 ~ 23/09/03
 
-## 💻 front: 
+### 💻 front: 
 https://github.com/play3step/SwapShop-front 
+<br>
 
 
 - 개발한 기능 목록
@@ -40,9 +45,13 @@ https://github.com/play3step/SwapShop-front
   - 카테고리
   - 검색 및 정렬
     
+<br>
 
 ---
-## 📝 기능 개발 현황
+
+<br>
+
+### 📝 기능 개발 현황
 - 23/06/25 ~ 07/05 :
     - 페이지 디자인 (피그마 활용)
  
@@ -74,7 +83,13 @@ https://github.com/play3step/SwapShop-front
  - 23/08/27 ~ 09/03:
     - 검색 기능 및 정렬 구현 --> 백 연결 O
     - 전체 페이지 수정
+  
+<br>
+
 ---
+
+<br>
+
 ### 데모 영상
 
 https://github.com/play3step/SwapShop-front/assets/97451257/7a433406-432e-4bf2-a2e9-601ac01dfa5a
