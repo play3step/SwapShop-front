@@ -38,6 +38,7 @@ export const actions = {    /*비동기 작업할 때는 actions*/
         .then((data)=>{
             commit('setMe', payload)
         }).catch((err)=>{
+            alert("이미 사용중인 닉네임 입니다.")
             console.error(err);
         })
     },

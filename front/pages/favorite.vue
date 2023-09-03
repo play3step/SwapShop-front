@@ -9,6 +9,7 @@
             <span>찜하기</span>
         </div>
         <div class="container">
+            {{  }}
             <nuxt-link :to="'/posts/' + item.id" class="box" v-for="item in filteredFavorites" :key="item.id">
                 <v-img v-if="item.images && item.images[0]" :src="item.images[0].filePath"
                     style="width: 150px; height: 90px;" />
@@ -43,10 +44,7 @@ export default {
             return this.$store.state.posts.mainPosts;
         },
         filteredFavorites() {
-            // 일단 favoriteList에서 nickname과 me의 nickname이 일치하는 것만 추려냅니다.
             const filteredFavoriteList = this.favoriteList.filter(item => item.nickName === this.me.nickname);
-
-            // 그리고 mainPosts와 비교하여 일치하는 것만 반환합니다.
             return this.mainPosts.filter(mainPost => {
                 return filteredFavoriteList.some(favorite => favorite.postId === mainPost.id);
             });

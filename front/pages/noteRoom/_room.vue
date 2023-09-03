@@ -13,14 +13,12 @@
                 mail
             </span>
         </div>
-
-
         <div v-for="detail in message.messageDetail" :key="detail.id" class="detail_container">
             <div>
                 <div class="detail_state">{{ detail.state }}</div>
                 <p class="detail_content">{{ detail.lastMessage }}</p>
             </div>
-
+            <p class="note_date">{{ timeAgo(detail.lastDate) }}</p>
         </div>
 
     </div>
@@ -28,6 +26,7 @@
 
 
 <script>
+import moment from 'moment';
 
 export default {
     layout: 'blank',
@@ -58,6 +57,7 @@ export default {
         nickname() {
             return this.$store.state.note.selectedNickname;
         },
+
     },
 
     methods: {
@@ -69,6 +69,10 @@ export default {
             this.$store.dispatch('note/setSelectedPost', nickname).then(() => {
                 this.$router.push('/note');
             });
+        },
+        timeAgo(date) {
+            moment.locale('ko');
+            return moment(date).fromNow();
         },
     },
 
@@ -128,5 +132,13 @@ export default {
     font-size: 12px;
     color: #333333;
     margin-left: 10px;
+}
+
+.note_date {
+    position: absolute;
+    text-decoration: none;
+    right: 30px;
+    font-size: 12px;
+    color: #ADAAAA;
 }
 </style>
