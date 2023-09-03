@@ -31,12 +31,14 @@
 ### 📆 프로젝트 기간
 23/07/04 ~ 23/09/03
 
-### 💻 front: 
-https://github.com/play3step/SwapShop-front 
+<br>
+
+### 💻 Back : https://github.com/play3step/SwapShop-front 
+
 <br>
 
 
-- 개발한 기능 목록
+### 📝 어플리케이션 기능
   - 로그인 (카카오, 구글)
   - 게시글 작성
   - 댓글
