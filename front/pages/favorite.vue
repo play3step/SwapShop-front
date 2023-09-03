@@ -9,7 +9,6 @@
             <span>찜하기</span>
         </div>
         <div class="container">
-            {{  }}
             <nuxt-link :to="'/posts/' + item.id" class="box" v-for="item in filteredFavorites" :key="item.id">
                 <v-img v-if="item.images && item.images[0]" :src="item.images[0].filePath"
                     style="width: 150px; height: 90px;" />

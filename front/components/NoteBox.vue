@@ -64,7 +64,6 @@ export default {
     color: #ADAAAA;
 }
 
-
 .note_title {
     margin-left: 16px;
     font-size: 14px;

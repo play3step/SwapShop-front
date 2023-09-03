@@ -32,7 +32,7 @@
                         <div class="nickname">{{ post.nickname }}</div>
                         <div class="major">{{ post.major }}</div>
                     </div>
-                    <a @click="navigateToChat" class="Note">쪽지</a>
+                    <a v-if="post.nickname != me.nickname" @click="navigateToChat" class="Note">쪽지</a>
                 </div>
                 <div class="detail_container">
                     <h1>{{ post.title }}</h1>
@@ -41,17 +41,16 @@
                 <div class="comment_container">
                     <v-list>
                         <div class="comment_box" v-for="c in commentBox" :key="c.id">
-                            <div class="comment_header">
+                            <div v-if="c.parentCommentId === null" class="comment_header">
                                 <div class="material-symbols-outlined" style="font-size: 23px; color: #6CB7F8;">
                                     account_circle
                                 </div>
                                 <div class="comment_nickname">{{ c.nickname }}</div>
-                                <div> {{ c.parentCommentId }}</div>
                                 <div class="delete_button" @click="openCommentForm(c.id)">댓글</div>
                                 <div class="delete_button" @click="onRemoveComment(c.id)">삭제</div>
                             </div>
                             <div class="comment_contents">{{ c.content }}</div>
-                            <div v-if="c.parentCommentId == c.postId">
+                            <div v-if="c.parentCommentId === c.id">
                                 <div class="comment_nickname">{{ c.nickname }}</div>
                                 <div> {{ c.parentCommentId }}</div>
                             </div>
@@ -153,8 +152,7 @@ export default {
         },
         postIds() {
             return this.filteredFavoriteList.map(item => item.postId);
-        }
-
+        },
     },
     methods: {
         openCommentForm(parentId = null) {
@@ -383,6 +381,7 @@ body {
     right: 30px;
     color: white;
 }
+
 .comment_box {
     display: flex;
     align-items: flex-start;

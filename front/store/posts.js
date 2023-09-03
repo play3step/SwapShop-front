@@ -19,7 +19,6 @@ export const mutations = {
         state.commentBox = comment;
     },
     addComment(state, payload) {
-        state.commentBox.unshift(payload);
     },
     removeComment(state, payload) {
         const index = state.commentBox.findIndex(v => v.id === payload.id);
@@ -134,6 +133,7 @@ export const actions = {
         this.$axios.delete(`http://localhost:8080/post/${payload.postId}/comment/${payload.id}`, axiosConfig)
             .then((response) => {
                 commit('removeComment', payload);
+                dispatch('loadComment', { postId: payload.postId });
             })
             .catch((error) => {
                 console.error(error);
