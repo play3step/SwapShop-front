@@ -17,31 +17,10 @@
             </span>
         </div>
         <div v-if="index === 1">
-            <div class="alarm_container">
-                <div class="alarm_png"></div>
-                <div>
-                    <div class="alarm_title">알림 내용</div>
-                    <div class="alarm_time">시간</div>
-                </div>
-            </div>
-            <div class="alarm_container">
-                <div class="alarm_png"></div>
-                <div>
-                    <div class="alarm_title">알림 내용</div>
-                    <div class="alarm_time">시간</div>
-                </div>
-            </div>
-            <div class="alarm_container">
-                <div class="alarm_png"></div>
-                <div>
-                    <div class="alarm_title">알림 내용</div>
-                    <div class="alarm_time">시간</div>
-                </div>
-            </div>
+            
         </div>
         <div v-else>
             <NoteBox v-for="note in messages.messageBox" :key="note.id" :note="note"/>
-
         </div>
     </div>
 </template>
