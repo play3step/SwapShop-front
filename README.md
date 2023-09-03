@@ -3,11 +3,9 @@
 
 ![logo](https://github.com/play3step/SwapShop-front/assets/97451257/93b9794a-53dd-4ccc-86ce-07ebc4120993)
 
-23/07/04~
 ---
 
 📖 기술 스택
-<div><h3> 사용기술</h3></div>
 
 <div>
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
@@ -19,6 +17,8 @@
 1. npm i nuxt
 
 2. npm run dev
+
+
 
 
 📆 프로젝트 기간
