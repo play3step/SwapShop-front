@@ -33,7 +33,7 @@
 
 <br>
 
-### 💻 Back : https://github.com/play3step/SwapShop-front 
+### 💻 Back : https://github.com/SangWoon123/swapshop-backend
 
 <br>
 
