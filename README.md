@@ -33,8 +33,11 @@
 
 <br>
 
-### 💻 Back : https://github.com/SangWoon123/swapshop-backend
-
+### 💻 Back : 
+https://github.com/SangWoon123/swapshop-backend
+<br>
+### 🎨 Figma : 
+https://www.figma.com/file/2TifyX6NtV6FFHvBFszvAy/Swap-Shop?type=design&node-id=0%3A1&mode=design&t=XnyTI9LiQyZZPlAV-1
 <br>
 
 
